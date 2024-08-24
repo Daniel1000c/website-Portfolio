@@ -1,0 +1,43 @@
+/*General Formatting.*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding: 10px 5px 10px 5px;
+    text-align: right;
+}
+nav li{
+    display: inline-block; /*Put nav list on one line*/
+    margin-right: 25px;
+}
+nav li a{
+    text-decoration: none;
+    color: #304254;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.imgContainer{
+    background-image: url(../images/mountainwithTrees.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.btnFormat{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    padding: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: large;
+    border: none;
+    background-color: #C27ED5;
+}
+
+
