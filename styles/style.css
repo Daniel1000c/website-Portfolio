@@ -24,3 +24,16 @@ nav li a{
 nav li a:hover{
     color: rgb(93, 127, 162);
 }
+
+
+/*Media query format*/
+@media screen and (max-width: 600px) {
+    
+    /*Format nav list to be on top of each other if less than 600 pixels*/
+    nav li{
+        display: block;
+        margin-right: 25px;
+        padding: 15px;
+        display: none; /*hide list when pixels is less than 600*/ 
+    }
+}
