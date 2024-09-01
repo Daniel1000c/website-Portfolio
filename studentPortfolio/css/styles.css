@@ -1,0 +1,110 @@
+/*General Formatting*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Keyframe Formatting*/
+@keyframes fadeDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Body Formatting*/
+body{
+    background-color: #0D324D;
+    color: white;
+    font-family: sans-serif;
+}
+
+/*Nav menu formatting*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+nav li{
+    display: inline-block;
+    margin-right: 25px;
+    padding: 10px;
+    animation: fadeDown 1s; /*Create down fade animation for links*/
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+/*Contact.html*/
+.bodyBackgroundImg{
+    background-image: url(../images/animeWall.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+}
+.goBackLink{
+    text-decoration: none;
+    color: white;
+}
+.contactInfo h2{
+    margin-top: 50px;
+}
+.contactInfo p{
+    margin-left: 40px;
+    padding: 5px;
+}
+form{
+    text-align: right;
+    padding: 35px;
+}
+label{
+    font-weight: bold;
+}
+input{
+    margin: 35px 35px 35px 0px;
+}
+input::placeholder{
+    color: black;
+    font-style: italic;
+    font-weight: bolder;
+}
+.inputFormat{
+    border: none;
+    background-color: transparent; /*Get rid of background of input*/
+    border-bottom: 2px solid white;
+    outline: none;
+}
+.inputContainer{
+    justify-content: center;
+}
+input::placeholder{
+    color: black;
+}
+.btnFormat{
+    width: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: orange;
+    color: white;
+    margin: 20px;
+}
+
+
+/*Footer Formatting*/
+.centerFooter{
+    text-align: center;
+}
+
