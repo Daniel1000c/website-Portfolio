@@ -16,6 +16,24 @@
         transform: translateY(0);
     }
 }
+@keyframes revealTitle {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeAppear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /*Body Formatting*/
 body{
@@ -25,21 +43,142 @@ body{
 }
 
 /*Nav menu formatting*/
+.h1Animation{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;/*Prevents the title from going over to next line*/
+    opacity: 0;/*Make the title invisible*/
+    animation: revealTitle 2s ease forwards; /*Apply revealTitle animation*/
+}
 header{
     display: flex;
     justify-content: space-between;
     padding: 15px;
 }
-nav li{
+nav{
+    padding: 15px;
+    animation: fadeDown 0.5s ease-in-out;
+}
+nav ul li{
     display: inline-block;
     margin-right: 25px;
-    padding: 10px;
-    animation: fadeDown 1s; /*Create down fade animation for links*/
 }
-nav li a{
-    color: white;
+nav ul li a{
     text-decoration: none;
-    transition: color 0.5s ease;
+    color: white;
+    transition: 0.5s;/*Create transition effect for link hover*/
+}
+nav ul li a:hover{
+    color: #E0F2F1;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+    font-size: large;
+}
+
+/*index.html*/
+.creatorContainer{
+    height: 100vh;
+   display: flex;
+   align-items: center;
+   padding: 0 15%;
+}
+.creatorSummary{
+    max-width: 600px;
+}
+.creatorSummary h1{
+    font-size: 56px;
+    font-weight: bold;
+}
+.creatorSummary h3{
+    font-size: 32px;
+    font-weight: bold;
+    color: #E0F2F1;
+    margin-bottom: 5px;
+}
+.creatorSummary p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+.creatorSummary .btnContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btnContainer a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #E0F2F1;
+    border: 2px solid #E0F2F1;
+    border-radius: 8px;
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333333;
+    z-index: 1;
+    overflow: hidden;
+}
+.btnContainer a:hover{
+    color: #F5F5DC;
+}
+.btnContainer a:nth-child(2){
+    background: transparent;
+    color: #F5F5DC; 
+}
+.btnContainer a:nth-child(2):hover{
+    color: #333333;
+}
+.btnContainer a:nth-child(2)::before{
+    background: #E0F2F1;
+}
+.btnContainer a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0D324D;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btnContainer a:hover::before{
+    width: 100%;
+}
+.creatorSocialContainer{
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-around;
+    bottom: 40px;
+    width: 100px;
+}
+.creatorSocialContainer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #E0F2F1;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #E0F2F1;
+    text-decoration: none;
+}
+.imgFormat:hover{
+    background: #0D324D;
+    opacity: 0.5; /*Make picture fade in darker when hovered*/
+}
+.sectionFormat{
+    padding: 10px;
+}
+.sectionFormat h2{
+    text-align: center;
 }
 
 /*Contact.html*/
@@ -55,6 +194,12 @@ nav li a{
 .goBackLink{
     text-decoration: none;
     color: white;
+    transition: 0.5s;
+}
+.goBackLink:hover{
+    font-size: larger;
+    font-weight: bolder;
+    color: #333333;
 }
 .contactInfo h2{
     margin-top: 50px;
@@ -72,6 +217,12 @@ label{
 }
 input{
     margin: 35px 35px 35px 0px;
+}
+textarea{
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
 }
 input::placeholder{
     color: black;
@@ -104,7 +255,31 @@ input::placeholder{
 
 
 /*Footer Formatting*/
+.footerLinks ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 15px;
+}
+.footerLinks ul li{
+   display: inline-block;
+   margin-right: 25px;
+}
+.footerLinks ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;/*Create transition effect for footer links*/
+}
+.footerLinks ul li a:hover{
+    color: #E0F2F1;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+    font-size: large;
+}
+
 .centerFooter{
+    padding: 15px;
     text-align: center;
 }
 
+
+/*Media Queries*/

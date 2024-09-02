@@ -5,10 +5,11 @@
         <title>Daniel Velez | Web Developer</title>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" type="image/x-icon" href="favicon/portfolioColor.png"> <!--Insert portfolio tab logo-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Import boxicons from boxicons.com-->
     </head>
     <body>
         <header>
-            <h1>Daniel Velez | Web Developer</h1>
+            <h1 class="h1Animation">Daniel Velez | Web Developer</h1>
 
             <!--Create nav bar containing links: home,about,projects,skills,contact,resume-->
             <nav>
@@ -24,9 +25,54 @@
         </header>
         <main>
 
+            <!--Create a container to store creator image and summary text-->
+            <div class="creatorContainer">
+                <div class="creatorSummary">
+                    <h1>Hello, I'm Daniel Velez</h1>
+                    <h3>Web Developer</h3>
+                    <!-- Create small introduction about me-->
+                    <p>Welcome to my webpage. Here you will find some of my projects and skills. 
+                    This page is meant to be some type of progress tracker for my career and future clients. Here on this website you can find my resume,contact info, skills, and projects that I have done. 
+                    If you would want to contract me, please use the link below.</p>
+                    <div class="btnContainer">
+                        <a href="contact.html">Hire Me</a>
+                        <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="creatorSocialContainer">
+                    <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:velezdaniel516@gmail.com"><i class='bx bxs-envelope'></i></a>
+                </div>
+                <div class="creatorImage">
+                </div>
+            </div>
+
+            <!--Create Project highlights section-->
+            <section class="sectionFormat">
+                <h2>Project Highlights</h2>
+            </section>
+            <!--Create Creator summary section-->
+            <section class="sectionFormat">
+                <h2>Creator Summary</h2>
+            </section>
+            <!--Create skills section-->
+            <section class="sectionFormat">
+                <h2>Coding Expertise</h2>
+            </section>
         </main>
         <footer>
             <!--Create footer section with links-->
+            <div class="footerLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank">GitHub</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
             
             <div class="centerFooter">
                 &copy; 2024 Broward College    
