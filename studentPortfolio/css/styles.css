@@ -180,7 +180,62 @@ nav ul li a:hover{
 .sectionFormat h2{
     text-align: center;
 }
+.columnContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 370px;
+    margin: 100px;
+    text-align: center;
+}
+.columnBox{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    background-color: #1A1A1A;
+}
+.columnContent{
+    padding: 16px;
+}
+.columnContent h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.columnContent p{
+    font-family: monospace;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+}
+.columnContent a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px;
+    width: 150px;
+    height: 100%;
+    background: #E0F2F1;
+    border: 2px solid #E0F2F1;
+    border-radius: 8px;
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333333;
+    z-index: 1;
+    overflow: hidden;
+}
+.columnContent a:hover{
+    color: #E0F2F1;
+    background-color: #333333;
+    transition: 0.5s;
+}
+.columnContent a:nth-child(1){
+    background-color: transparent;
 
+}
 /*Contact.html*/
 .bodyBackgroundImg{
     background-image: url(../images/animeWall.jpg);
