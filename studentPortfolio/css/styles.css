@@ -34,6 +34,20 @@
         opacity: 1;
     }
 }
+@keyframes projectSlide {
+    0%,25%{
+        transform: translateX(0);
+    }
+    33%,58%{
+        transform: translateX(-33.333%);
+    }
+    66%,91%{
+        transform: translateX(-66.666%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 
 /*Body Formatting*/
 body{
@@ -54,6 +68,8 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    background-color: #1A3A5B;
+    border-bottom: 1px solid black;
 }
 nav{
     padding: 15px;
@@ -156,23 +172,17 @@ nav ul li a:hover{
     display: inline-flex;
     justify-content: space-around;
     bottom: 40px;
-    width: 100px;
+    width: 200px;
 }
-.creatorSocialContainer a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #E0F2F1;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #E0F2F1;
-    text-decoration: none;
+.imgFormat{
+    margin-left: 120px;
+    width: 600px;
+    transition: 0.5s ease-in;
 }
 .imgFormat:hover{
-    background: #0D324D;
-    opacity: 0.5; /*Make picture fade in darker when hovered*/
+    background: transparent;
+    background-color: #0D324D;
+    opacity: 0.8; /*Make picture fade in darker when hovered*/
 }
 .sectionFormat{
     padding: 10px;
@@ -234,8 +244,77 @@ nav ul li a:hover{
 }
 .columnContent a:nth-child(1){
     background-color: transparent;
-
 }
+#projectSlider{
+    overflow: hidden; /*Hide each project slide when starting out*/
+    position: relative;
+    width: 60%;
+    margin: 0 auto; /*Center project slider for content*/
+}
+.projectWrapper{
+    display: flex; /*Display card content in one single row*/
+    width: 300%;
+    height: 100%;
+    animation: projectSlide 24s infinite /*Create infinite animation loop*/
+}
+.projectContent{
+    margin: 8px;
+    margin-top: 10px;
+    width: 33%;
+    padding: 15px;
+    background-color: #333333;
+    border-radius: 8px;
+}
+.projectContent h4{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.projectContent p{
+    text-indent: 15px;
+    font-size: 15px;
+    line-height: 2;
+    font-family: monospace;
+}
+.creatorSociContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.socialStatement{
+    margin: 0 auto;
+    max-width: 500px;
+    font-family: monospace;
+    text-align: center; 
+    padding: 10px; 
+    margin-bottom: 10px;
+}
+.creatorSociContainer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #E0F2F1;
+    margin: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #E0F2F1;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.creatorSociContainer a:nth-child(1):hover{
+    background: #E0F2F1;
+    color: #333333;
+}
+.creatorSociContainer a:nth-child(2):hover{
+    background: #E0F2F1;
+    color: #333333;
+}
+.creatorSociContainer a:nth-child(3):hover{
+    background: #E0F2F1;
+    color: #333333;
+}
+
 /*Contact.html*/
 .bodyBackgroundImg{
     background-image: url(../images/animeWall.jpg);
@@ -308,8 +387,24 @@ input::placeholder{
     margin: 20px;
 }
 
+/*About.html*/
+.fixedImgBackground{
+    background-image: url(../images/leaves.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+    position: fixed;/*Make picture fixed to stay in place while scrolling*/
+}
+
 
 /*Footer Formatting*/
+footer{
+    background-color: #1A3A5B;
+    border-top: 1px solid black;
+    padding: 35px;
+}
 .footerLinks ul{
     list-style-type: none;
     text-align: center;
