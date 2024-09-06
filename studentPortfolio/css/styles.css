@@ -48,6 +48,24 @@
         transform: translateX(0);
     }
 }
+@keyframes fadeLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /*Body Formatting*/
 body{
@@ -313,28 +331,189 @@ nav ul li a:hover{
     background: #E0F2F1;
     color: #333333;
 }
+/*Icon hovering formatting*/
+/*vs code*/
+.bxl-visual-studio{
+    transition: 0.5s;
+}
+.bxl-visual-studio:hover{
+    color: #007ACC;
+    opacity: 0.8;
+}
+/*SEO Design*/
+.bx-window{
+    transition: 0.5s;
+}
+.bx-window:hover{
+    color: lightcoral;
+    opacity: 0.8;
+}
+/*UI/UX Design*/
+.bxs-palette{
+    transition: 0.5s;
+}
+.bxs-palette:hover{
+    color: orangered;
+    opacity: 0.8;
+}
 
 /*Contact.html*/
-.bodyBackgroundImg{
+/*Align both contact Info and form to the middle of page*/
+.contactContainer{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-image: url(../images/leaves.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    z-index: -1;
     height: 100vh;
     width: 100vw;
 }
+/*Format contact header*/
+.contactContainer .contentTitle{
+    text-align: center;
+    max-width: 800px;
+}
+.contactContainer .contentTitle h2{
+    font-family: monospace;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+/*Format header text*/
+.contactContainer .contentTitle p{
+    font-size: 16px;
+    font-family: monospace;
+    text-align: center;
+    line-height: 2;
+}
+/*Format contact form and contact info container to be side by side*/
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+/*Give both contact info and form same width and on separate sides of page*/
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    animation: fadeLeft 0.5s ease;
+}
+/*Format contact info headers*/
+.container .contactInfo .contactBox{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+/*Format contact info header icons*/
+.container .contactInfo .contactBox .contactIcon{
+    color: black;
+    font-size: 36px;
+    min-width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    border-radius: 50%; /*Make contact icon round*/
+    margin-right: 20px;
+    transition: 0.5s;
+}
+.container .contactInfo .contactBox .contactIcon:hover{
+    color: red;
+}
+/*Format contact Info header text*/
+.container .contactInfo .contactBox .contactText{
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+}
+.container .contactInfo .contactBox .contactText h3{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: aqua;
+}
+.container .contactInfo .contactBox .contactText p{
+    text-indent: 5px;
+    line-height: 2;
+    font-family: monospace;
+}
+/*Format Contact Form*/
+.contactFormContainer{
+    width: 40%;
+    padding: 40px;
+    background-color: #0C090D;
+    border-radius: 8px;
+    animation: appear 0.5s ease;
+    border: 2px solid white;
+}
+.contactFormContainer h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/*Format contact form input fields*/
+.contactFormContainer .formInputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactFormContainer .formInputBox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    margin-bottom: 10px;
+    color: white;
+}
+.contactFormContainer .formInputBox label{
+    color: cyan;
+    font-size: 24px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+.contactFormContainer .formInputBox input::placeholder, .contactFormContainer .formInputBox textarea::placeholder{
+    font-size: 12px;
+    font-style: italic;
+}
 
-
-/*About.html*/
-.fixedImgBackground{
-    background-image: url(../images/leaves.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 50vh;
-    width: 100vw;
-    position: fixed;/*Make picture fixed to stay in place while scrolling*/
+.contactFormContainer .formInputBox input[type="submit"]{
+    padding: 10px;
+    width: 100px;
+    font-size: 18px;
+    font-family: monospace;
+    transition: 0.5s;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: cyan;
+    font-weight: bold;
+}
+.contactFormContainer .formInputBox input[type="submit"]:hover{
+    font-weight: bold;
+    font-size: large;
+    background-color: white;
+    color: cyan;
+    border: 2px solid cyan;
+}
+.contactFormContainer .formInputBox textarea{
+    outline: none;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid white;
 }
 
 

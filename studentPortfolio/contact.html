@@ -7,7 +7,7 @@
         <link rel="icon" type="image/x-icon" href="favicon/portfolioColor.png">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Import boxicons from boxicons.com-->
     </head>
-    <body class="bodyBackgroundImg">
+    <body>
         <header>
             <h1>Contact</h1>
 
@@ -24,7 +24,99 @@
             </nav>
         </header>
         <main>
-            
+            <!--Create section tag with contact info and contact form-->
+            <section class="contactContainer">
+                <!--Section title-->
+                <div class="contentTitle">
+                    <h2>Contact Me</h2>
+                    <p>If you would like to contact me for future projects or business ventures, please use the form below.</p>
+                </div>
+
+                <div class="container">
+                    <div class="contactInfo">
+                        <!--Create three contact boxes: contact us, business location, business Hours-->
+
+                        <div class="contactBox">
+                            <div class="contactIcon"><i class='bx bxs-phone'></i></div>
+                            <div class="contactText">
+                                <h3>Contact Us</h3>
+                                <p>velezdaniel6162@gmail.com</p>
+                                <p>(305) 527-0765</p>
+                                <p>Daniel 1000c</p>
+                            </div>
+                        </div>
+
+                        <div class="contactBox">
+                            <div class="contactIcon"><i class='bx bxs-map'></i></div>
+                            <div class="contactText">
+                                <h3>Business Location</h3>
+                                <p>3051 Davie Rd.</p>
+                                <p>Davie, FL 33314</p>
+                            </div>
+                        </div>
+
+                        <div class="contactBox">
+                            <div class="contactIcon"><i class='bx bxs-time'></i></div>
+                            <div class="contactText">
+                                <h3>Business Hours</h3>
+                                <p><strong>Monday - Friday: </strong> 9am - 5pm</p>
+                                <p><strong>Saturday: </strong> 10am - 3pm</p>
+                                <p><strong>Sunday: </strong> Closed</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <!--Create contact form container-->
+                    <div class="contactFormContainer">
+                        <form action="https://professorcooke.org/forms/processform.php" method="post">
+                            <h3>Send Message</h3>
+
+                            <!--Create input boxes for name, email, phone #, and address and message-->
+                            <div class="formInputBox">
+                                <!--Full Name-->
+                                <!--Add input validation for input fields-->
+                                <label for="fullName">Full Name:</label>
+                                <input type="text" name="fullName" id="fullName" required placeholder="Type in Name...">
+                            </div>
+
+                            <div class="formInputBox">
+                                <!--Email Address-->
+                                <!--Add input validation for input fields-->
+                                <label for="emailAddress">Email Address:</label>
+                                <input type="email" name="emailAddress" id="emailAddress" required placeholder="user@example.com..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            </div>
+
+                            <div class="formInputBox">
+                                <!--Phone Number-->
+                                <!--Add input validation for input fields-->
+                                <label for="phoneNumber">Phone Number:</label>
+                                <input type="tel" name="phoneNumber" id="phoneNumber" required placeholder="(xxx) xxx-xxxx..." pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                            </div>
+
+                            <div class="formInputBox">
+                                <!--Address-->
+                                <!--Add input validation for input fields-->
+                                <label for="address">Address:</label>
+                                <input type="text" name="address" id="address" required placeholder="123 Main St, Apt 4B..." pattern="[A-Za-z0-9'\.\-\s\,]{5,}">
+                            </div>
+
+                            <div class="formInputBox">
+                                <!--Message-->
+                                <!--Add input validation for input fields-->
+                                <textarea name="message" id="message" cols="30" rows="5" required placeholder="Type in your purpose..."></textarea>
+                            </div>
+
+                            <div class="formInputBox">
+                                <!--Submit button-->
+                                <input type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
         </main>
         <footer>
             <!--Create footer section with links-->
