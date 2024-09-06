@@ -5,7 +5,7 @@
         <title>Contact</title>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" type="image/x-icon" href="favicon/portfolioColor.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--link to font awesome to get icons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Import boxicons from boxicons.com-->
     </head>
     <body class="bodyBackgroundImg">
         <header>
@@ -24,53 +24,7 @@
             </nav>
         </header>
         <main>
-            <!--Create container to house location info and contact form-->
-            <div class="container">
-                <!--Create Arrow that leads user back to index.html-->
-                <a href="index.html" class="goBackLink"><h5><i class="fas fa-arrow-left"></i> Go back</h5></a>
-
-                <!--List business hours, location, and contact info-->
-
-                <!--List Business hours-->
-                <div class="contactInfo">
-                    <h2><i class="fas fa-clock"></i> Business Hours</h2>
-                    <p>Monday - Friday: 9am - 5pm</p>
-                    <p>Saturday: Closed</p>
-                    <p>Sunday: Closed</p>
-
-                    <!--List business Address-->
-                    <h2><i class="fas fa-map-marker-alt"></i> Business Location</h2>
-                    <P>3501 Davie Rd. Davie, FL 33314</P>
-
-                    <!--List creator contact info-->
-                    <h2><i class="fas fa-phone-alt"></i> Contact Info</h2>
-                    <p>305-527-0765</p>
-                    <p>velezdaniel516@gmail.com</p>
-                    <p><a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank" style="text-decoration: none; color
-                        :white;">Github</a></p> <!--Link text to creator github-->
-                </div>
-                <!--Create form-->
-                <form action="https://professorcooke.org/forms/processform.php" method="POST">
-                    <!--Prompt user for name, email, and address-->
-
-                    <!--Center name and email prompt-->
-                    <label for="clientName">Full Name:</label>
-                    <input type="text" id="clientName" name="clientName" class="inputFormat" required placeholder="Type in Name...">
-
-                    <label for="clientEmail">Email:</label>
-                    <input type="email" id="clientEmail" name="clientEmail" class="inputFormat" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Email Address"><br>
-
-                    <label for="clientAddress">Address:</label>
-                    <input type="text" id="clientAddress" name="clientAddress" class="inputFormat" pattern="[a-zA-Z0-9\s,.-]+" placeholder="Type in Address..." required><br>
-
-                    <!--Create textarea for user to enter comments-->
-                    <label for="clientComments" style="vertical-align: top; text-align: left;">Comments:</label>
-                    <textarea id="clientComments" name="clientComments" placeholder="Write your message..." cols="50" rows="10" required></textarea><br>
-
-                    <!--Create submit button-->
-                    <input type="submit" value="Submit" class="btnFormat">
-                </form>
-            </div>
+            
         </main>
         <footer>
             <!--Create footer section with links-->

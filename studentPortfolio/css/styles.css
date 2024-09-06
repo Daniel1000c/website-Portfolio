@@ -69,7 +69,6 @@ header{
     justify-content: space-between;
     padding: 15px;
     background-color: #1A3A5B;
-    border-bottom: 1px solid black;
 }
 nav{
     padding: 15px;
@@ -317,7 +316,7 @@ nav ul li a:hover{
 
 /*Contact.html*/
 .bodyBackgroundImg{
-    background-image: url(../images/animeWall.jpg);
+    background-image: url(../images/leaves.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -325,67 +324,7 @@ nav ul li a:hover{
     height: 100vh;
     width: 100vw;
 }
-.goBackLink{
-    text-decoration: none;
-    color: white;
-    transition: 0.5s;
-}
-.goBackLink:hover{
-    font-size: larger;
-    font-weight: bolder;
-    color: #333333;
-}
-.contactInfo h2{
-    margin-top: 50px;
-}
-.contactInfo p{
-    margin-left: 40px;
-    padding: 5px;
-}
-form{
-    text-align: right;
-    padding: 35px;
-}
-label{
-    font-weight: bold;
-}
-input{
-    margin: 35px 35px 35px 0px;
-}
-textarea{
-    background-color: transparent;
-    border: 2px solid black;
-    border-radius: 5px;
-    outline: none;
-}
-input::placeholder{
-    color: black;
-    font-style: italic;
-    font-weight: bolder;
-}
-.inputFormat{
-    border: none;
-    background-color: transparent; /*Get rid of background of input*/
-    border-bottom: 2px solid white;
-    outline: none;
-}
-.inputContainer{
-    justify-content: center;
-}
-input::placeholder{
-    color: black;
-}
-.btnFormat{
-    width: 10%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: orange;
-    color: white;
-    margin: 20px;
-}
+
 
 /*About.html*/
 .fixedImgBackground{
@@ -402,7 +341,6 @@ input::placeholder{
 /*Footer Formatting*/
 footer{
     background-color: #1A3A5B;
-    border-top: 1px solid black;
     padding: 35px;
 }
 .footerLinks ul{
