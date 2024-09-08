@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*---End of General Formatting---*/
 
 /*Keyframe Formatting*/
 @keyframes fadeDown {
@@ -16,6 +17,7 @@
         transform: translateY(0);
     }
 }
+
 @keyframes revealTitle {
     0%{
         opacity: 0;
@@ -26,6 +28,7 @@
         transform: translateX(0);
     }
 }
+
 @keyframes fadeAppear {
     0%{
         opacity: 0;
@@ -34,6 +37,7 @@
         opacity: 1;
     }
 }
+
 @keyframes projectSlide {
     0%,25%{
         transform: translateX(0);
@@ -48,6 +52,7 @@
         transform: translateX(0);
     }
 }
+
 @keyframes fadeLeft{
     0%{
         opacity: 0;
@@ -58,6 +63,7 @@
         transform: translateX(0);
     }
 }
+
 @keyframes appear {
     0%{
         opacity: 0;
@@ -66,6 +72,7 @@
         opacity: 1;
     }
 }
+/*---End of Keyframe Formatting---*/
 
 /*Body Formatting*/
 body{
@@ -73,6 +80,7 @@ body{
     color: white;
     font-family: sans-serif;
 }
+/*---End of body Formatting---*/
 
 /*Nav menu formatting*/
 .h1Animation{
@@ -82,31 +90,37 @@ body{
     opacity: 0;/*Make the title invisible*/
     animation: revealTitle 2s ease forwards; /*Apply revealTitle animation*/
 }
+
 header{
     display: flex;
     justify-content: space-between;
     padding: 15px;
     background-color: #1A3A5B;
 }
+
 nav{
     padding: 15px;
     animation: fadeDown 0.5s ease-in-out;
 }
+
 nav ul li{
     display: inline-block;
     margin-right: 25px;
 }
+
 nav ul li a{
     text-decoration: none;
     color: white;
     transition: 0.5s;/*Create transition effect for link hover*/
 }
+
 nav ul li a:hover{
     color: #E0F2F1;
     border-bottom: 1px solid white;
     font-weight: bold;
     font-size: large;
 }
+/*---End of Nav menu formatting---*/
 
 /*index.html*/
 .creatorContainer{
@@ -115,30 +129,36 @@ nav ul li a:hover{
    align-items: center;
    padding: 0 15%;
 }
+
 .creatorSummary{
     max-width: 600px;
 }
+
 .creatorSummary h1{
     font-size: 56px;
     font-weight: bold;
 }
+
 .creatorSummary h3{
     font-size: 32px;
     font-weight: bold;
     color: #E0F2F1;
     margin-bottom: 5px;
 }
+
 .creatorSummary p{
     font-size: 16px;
     margin-bottom: 10px;
     font-family: monospace;
 }
+
 .creatorSummary .btnContainer{
     display: flex;
     justify-content: space-between;
     width: 345px;
     height: 50px;
 }
+
 .btnContainer a{
     position: relative;
     display: inline-flex;
@@ -157,19 +177,24 @@ nav ul li a:hover{
     z-index: 1;
     overflow: hidden;
 }
+
 .btnContainer a:hover{
     color: #F5F5DC;
 }
+
 .btnContainer a:nth-child(2){
     background: transparent;
     color: #F5F5DC; 
 }
+
 .btnContainer a:nth-child(2):hover{
     color: #333333;
 }
+
 .btnContainer a:nth-child(2)::before{
     background: #E0F2F1;
 }
+
 .btnContainer a::before{
     content: '';
     position: absolute;
@@ -181,9 +206,11 @@ nav ul li a:hover{
     z-index: -1;
     transition: 0.5s;
 }
+
 .btnContainer a:hover::before{
     width: 100%;
 }
+
 .creatorSocialContainer{
     position: absolute;
     display: inline-flex;
@@ -191,22 +218,27 @@ nav ul li a:hover{
     bottom: 40px;
     width: 200px;
 }
+
 .imgFormat{
     margin-left: 120px;
     width: 600px;
     transition: 0.5s ease-in;
 }
+
 .imgFormat:hover{
     background: transparent;
     background-color: #0D324D;
     opacity: 0.8; /*Make picture fade in darker when hovered*/
 }
+
 .sectionFormat{
     padding: 10px;
 }
+
 .sectionFormat h2{
     text-align: center;
 }
+
 .columnContainer{
     display: flex;
     justify-content: center;
@@ -215,6 +247,7 @@ nav ul li a:hover{
     margin: 100px;
     text-align: center;
 }
+
 .columnBox{
     width: 325px;
     border-radius: 8px;
@@ -222,21 +255,25 @@ nav ul li a:hover{
     margin: 20px;
     background-color: #1A1A1A;
 }
+
 .columnContent{
     padding: 16px;
 }
+
 .columnContent h3{
     font-size: 28px;
     margin-bottom: 8px;
     text-align: center;
     letter-spacing: 2px;
 }
+
 .columnContent p{
     font-family: monospace;
     text-align: center;
     font-size: 16px;
     line-height: 1;
 }
+
 .columnContent a{
     display: inline-block;
     margin-top: 15px;
@@ -254,26 +291,31 @@ nav ul li a:hover{
     z-index: 1;
     overflow: hidden;
 }
+
 .columnContent a:hover{
     color: #E0F2F1;
     background-color: #333333;
     transition: 0.5s;
 }
+
 .columnContent a:nth-child(1){
     background-color: transparent;
 }
+
 #projectSlider{
     overflow: hidden; /*Hide each project slide when starting out*/
     position: relative;
     width: 60%;
     margin: 0 auto; /*Center project slider for content*/
 }
+
 .projectWrapper{
     display: flex; /*Display card content in one single row*/
     width: 300%;
     height: 100%;
     animation: projectSlide 24s infinite /*Create infinite animation loop*/
 }
+
 .projectContent{
     margin: 8px;
     margin-top: 10px;
@@ -282,21 +324,25 @@ nav ul li a:hover{
     background-color: #333333;
     border-radius: 8px;
 }
+
 .projectContent h4{
     font-size: 16px;
     margin-bottom: 5px;
 }
+
 .projectContent p{
     text-indent: 15px;
     font-size: 15px;
     line-height: 2;
     font-family: monospace;
 }
+
 .creatorSociContainer{
     display: flex;
     justify-content: center;
     gap: 10px;
 }
+
 .socialStatement{
     margin: 0 auto;
     max-width: 500px;
@@ -305,6 +351,7 @@ nav ul li a:hover{
     padding: 10px; 
     margin-bottom: 10px;
 }
+
 .creatorSociContainer a{
     display: flex;
     justify-content: center;
@@ -319,43 +366,53 @@ nav ul li a:hover{
     text-decoration: none;
     transition: 0.5s;
 }
+
 .creatorSociContainer a:nth-child(1):hover{
     background: #E0F2F1;
     color: #333333;
 }
+
 .creatorSociContainer a:nth-child(2):hover{
     background: #E0F2F1;
     color: #333333;
 }
+
 .creatorSociContainer a:nth-child(3):hover{
     background: #E0F2F1;
     color: #333333;
 }
+
 /*Icon hovering formatting*/
 /*vs code*/
 .bxl-visual-studio{
     transition: 0.5s;
 }
+
 .bxl-visual-studio:hover{
     color: #007ACC;
     opacity: 0.8;
 }
+
 /*SEO Design*/
 .bx-window{
     transition: 0.5s;
 }
+
 .bx-window:hover{
     color: lightcoral;
     opacity: 0.8;
 }
+
 /*UI/UX Design*/
 .bxs-palette{
     transition: 0.5s;
 }
+
 .bxs-palette:hover{
     color: orangered;
     opacity: 0.8;
 }
+/*---End of index.html Formatting---*/
 
 /*Contact.html*/
 /*Align both contact Info and form to the middle of page*/
@@ -374,17 +431,20 @@ nav ul li a:hover{
     height: 100vh;
     width: 100vw;
 }
+
 /*Format contact header*/
 .contactContainer .contentTitle{
     text-align: center;
     max-width: 800px;
 }
+
 .contactContainer .contentTitle h2{
     font-family: monospace;
     font-size: 36px;
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
+
 /*Format header text*/
 .contactContainer .contentTitle p{
     font-size: 16px;
@@ -392,6 +452,7 @@ nav ul li a:hover{
     text-align: center;
     line-height: 2;
 }
+
 /*Format contact form and contact info container to be side by side*/
 .container{
     width: 100%;
@@ -400,6 +461,7 @@ nav ul li a:hover{
     align-items: center;
     margin-top: 30px;
 }
+
 /*Give both contact info and form same width and on separate sides of page*/
 .container .contactInfo{
     width: 50%;
@@ -407,12 +469,14 @@ nav ul li a:hover{
     flex-direction: column;
     animation: fadeLeft 0.5s ease;
 }
+
 /*Format contact info headers*/
 .container .contactInfo .contactBox{
     position: relative;
     padding: 20px 0;
     display: flex;
 }
+
 /*Format contact info header icons*/
 .container .contactInfo .contactBox .contactIcon{
     color: black;
@@ -427,15 +491,18 @@ nav ul li a:hover{
     margin-right: 20px;
     transition: 0.5s;
 }
+
 .container .contactInfo .contactBox .contactIcon:hover{
     color: red;
 }
+
 /*Format contact Info header text*/
 .container .contactInfo .contactBox .contactText{
     display: flex;
     font-size: 16px;
     flex-direction: column;
 }
+
 .container .contactInfo .contactBox .contactText h3{
     font-size: 24px;
     letter-spacing: 2px;
@@ -443,11 +510,13 @@ nav ul li a:hover{
     font-style: italic;
     color: aqua;
 }
+
 .container .contactInfo .contactBox .contactText p{
     text-indent: 5px;
     line-height: 2;
     font-family: monospace;
 }
+
 /*Format Contact Form*/
 .contactFormContainer{
     width: 40%;
@@ -457,18 +526,21 @@ nav ul li a:hover{
     animation: appear 0.5s ease;
     border: 2px solid white;
 }
+
 .contactFormContainer h3{
     font-size: 30px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 5px;
 }
+
 /*Format contact form input fields*/
 .contactFormContainer .formInputBox{
     position: relative;
     width: 100%;
     margin-bottom: 20px;
 }
+
 .contactFormContainer .formInputBox input{
     width: 100%;
     padding: 5px 0;
@@ -480,12 +552,14 @@ nav ul li a:hover{
     margin-bottom: 10px;
     color: white;
 }
+
 .contactFormContainer .formInputBox label{
     color: cyan;
     font-size: 24px;
     font-family: monospace;
     letter-spacing: 1px;
 }
+
 .contactFormContainer .formInputBox input::placeholder, .contactFormContainer .formInputBox textarea::placeholder{
     font-size: 12px;
     font-style: italic;
@@ -502,6 +576,7 @@ nav ul li a:hover{
     background-color: cyan;
     font-weight: bold;
 }
+
 .contactFormContainer .formInputBox input[type="submit"]:hover{
     font-weight: bold;
     font-size: large;
@@ -509,13 +584,288 @@ nav ul li a:hover{
     color: cyan;
     border: 2px solid cyan;
 }
+
 .contactFormContainer .formInputBox textarea{
     outline: none;
     border-radius: 8px;
     padding: 10px;
     border: 1px solid white;
 }
+/*---End of Contact Page Formatting---*/
 
+/*Skills.html Formatting*/
+.skillsContainer{
+    margin: 60px auto;
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #4FB0C6;
+    color: black;
+}
+
+.skillsContainer h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+.skillsContainer h3{
+    text-decoration: underline 2px;;
+    margin-top: 8px;
+    font-family: monospace;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.skillsContainer h4{
+    margin: 5px;
+    font-size: 20px;
+    font-family: monospace;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+/*Format list items in skill container*/
+.skillsContainer li{
+    margin: 10px;
+    margin: 20px 0;
+    padding: 10px;
+    list-style-type: none;
+
+}
+
+/*Format icons in skill container*/
+.bxl-html5{
+    color: #E34F26;
+    font-size: 36px;
+}
+
+.bxl-css3{
+    color: #1572B6;
+    font-size: 36px;
+}
+
+.bx-code{
+    color: green;
+    font-size: 36px;
+}
+
+.bxl-javascript{
+    color: #F7DF1E;
+    font-size: 36px;
+}
+
+.bx-data{
+    color: #00758F;
+    font-size: 36px;
+}
+
+.bxl-php{
+    color: #4F5D95;
+    font-size: 36px;
+}
+
+.bxl-wordpress{
+    color: #0073AA;
+    font-size: 36px;
+}
+
+.bxl-github{
+    font-size: 36px;
+}
+
+.bx-clipboard{
+    color: red;
+    font-size: 36px;
+}
+
+.bxs-time-five{
+    color: yellowgreen;
+    font-size: 36px;
+}
+
+.bxs-briefcase{
+    color: brown;
+    font-size: 36px;
+}
+
+/*Format status bar*/
+.statusBar{
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ;
+}
+.statusBar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(79,176,198,1)0%, rgba(255,153,102,1)100%);
+}
+
+.statusBar:hover{
+    box-shadow: 0 14px 3px;
+}
+/*Create bar animation*/
+.html{
+    width: 60%;
+    animation: html 3s;    
+}
+
+.css{
+    width: 50%;
+    animation: css 3s;
+}
+
+.python{
+    width: 40%;
+    animation: python 3s;
+}
+
+.javaScript{
+    width: 20%;
+    animation: javaScript 3s;
+}
+
+.structuredQueryLanguage{
+    width: 50%;
+    animation: structuredQueryLanguage 3s;
+}
+
+.php{
+    width: 20%;
+    animation: php 3s;
+}
+
+.wordPress{
+    width: 50%;
+    animation: wordPress 3s;
+}
+
+.gitHub{
+    width: 80%;
+    animation: gitHub 3s;
+}
+
+.projectManagement{
+    width: 100%;
+    animation: projectManagement 3s;
+}
+
+.timeManagement{
+    width: 100%;
+    animation: timeManagement 3s;
+}
+
+.officeProductivity{
+    width: 100%;
+    animation: officeProductivity 3s;
+}
+
+/*Create bar animation for each skill*/
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes javaScript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+@keyframes structuredQueryLanguage{    
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+@keyframes wordPress{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes gitHub{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes projectManagement{    
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}   
+
+@keyframes timeManagement{     
+    0%{        
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes officeProductivity{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
 
 /*Footer Formatting*/
 footer{
@@ -547,6 +897,7 @@ footer{
     padding: 15px;
     text-align: center;
 }
+/*---End of Footer Formatting---*/
 
 
 /*Media Queries*/
