@@ -12,7 +12,8 @@
             <h1 class="h1Animation">Daniel Velez | Web Developer</h1>
 
             <!--Create nav bar containing links: home,about,projects,skills,contact,resume-->
-            <nav>
+            <!--Create aria label for nav links-->
+            <nav aria-label="Web Page Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -46,7 +47,7 @@
             </div>
 
             <!--Create project hightlights section-->
-            <section class="sectionFormat">
+            <section class="sectionFormat" aria-label="Creator Project Highlights"> <!--Aria Section labels-->
                 <h2>Project Highlights</h2>
 
                 <!--Create project highlight slider-->
@@ -78,7 +79,7 @@
                         <h3>Web Development</h3>  
                             <i class='bx bxl-visual-studio' style="font-size: 150px;"></i>
                             <p>I specialize in web design and development. I work in front end mostly and try to keep up with the latest technologies. I try to help with keeping the client webpage up to date. </p>
-                            <a href="#">See More</a>
+                            <a href="#" aria-label="See More About Web Design and User Friendly Interfaces">See More</a> <!--Add services button aria label-->
                         </div>
                     </div>
 
@@ -87,7 +88,7 @@
                             <h3>SEO Design</h3>    
                             <i class='bx bx-window' style="font-size: 150px;"></i>
                             <p>For Search Engine Optimization, I try to make the client webpage more visible to search engines so that they can generate more user traffic to their site. Google mostly.</p>
-                            <a href="#">See More</a>
+                            <a href="#" aria-label="See More About Web Design and User Friendly Interfaces">See More</a> <!--Add services button aria label-->
                         </div>
                     </div>
 
@@ -109,9 +110,9 @@
 
                 <p class="socialStatement">If you would like to keep up with my latest projects and business ventures, please follow my social media below.</p>
                 <div class="creatorSociContainer">
-                    <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="mailto:velezdaniel516@gmail.com"><i class='bx bxs-envelope'></i></a>
-                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class='bx bxl-linkedin'></i></a>    
+                    <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank" aria-label="Creator GitHub"><i class='bx bxl-github'></i></a> <!--Create social media aria lable-->
+                    <a href="mailto:velezdaniel516@gmail.com" aria-label="Creator Email: velezdaniel516@gmail.com"><i class='bx bxs-envelope'></i></a> <!--Create social media aria lable-->
+                    <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="Creator LinkedIn Profile"><i class='bx bxl-linkedin'></i></a> <!--Create social media aria lable-->    
                 </div>
             </section>
         </main>
