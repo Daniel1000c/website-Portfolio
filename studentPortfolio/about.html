@@ -5,7 +5,10 @@
         <title>About</title>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" type="image/x-icon" href="favicon/portfolioColor.png"> <!--Insert portfolio tab logo-->
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Import boxicons from boxicons.com-->
     </head>
     <body>
         <header>
@@ -24,10 +27,120 @@
             </nav>
         </header>
         <main>
-            <!--Insert fixed image background-->
-            <div class="fixedImgBackground">
-                <h2>Mission Statement</h2>
+            <!--div container with sticky background img and title-->
+            <div class="stickyImgBackground">
+                <h2>Behind the Code</h2>
             </div>
+            
+            <!--Create about me div container-->
+            <div class="aboutMeContainer">
+                <div class="aboutMeParagraphContainer">
+                    <!--about me title-->
+                    <h3>About Me</h3>
+
+                    <p>My name is Daniel Velez, a student at Broward College that has a passion for web development.
+                        I am currently learning languages like HTML, CSS, Javascript, Python, and SQL. I enjoy bringing ideas to life through simple code.
+                        Whether it's designing user friendly interfaces, optimizing web search performance, or debugging more complicated code, I am always eager to take on new challenges that arrive at my doorstep.
+                        When I'm not training, you can find me trying to hone the latest tech trends when it comes to subjects like user accessability and artificial intelligence. Hope you enjoy your stay and you can see the progression of how I hone my skills for future projects.
+                    </p>
+                </div>
+
+                <div class="resumeBtnContainer">
+                    <h3>Resume</h3>
+
+                    <!--Resume button-->
+                    <a href="pdf/Daniel_Velez_Resume.pdf" download="Daniel_Velez_Resume">Resume</a>
+                </div>
+
+                <div class="projectStatsContainer">
+
+                    <!--Line divider-->
+                    <hr class="divider">
+
+                    <div class="creatorStat">
+                        <!--Years of experience-->
+                        <p>2</p>
+                        <h3>Years of Experience</h3>    
+                    </div>
+                    
+
+                    <!--Line divider-->
+                    <hr class="divider">
+
+                    <div class="creatorStat">
+                        <!--Projects completed-->
+                        <p>5</p>
+                        <h3>Projects Completed</h3>    
+                    </div>
+                    
+
+                    <!--Line divider-->
+                    <hr class="divider">
+                    
+                    <div class="creatorStat">
+                        <!--certificates-->
+                        <p>3</p>
+                        <h3>Certificates</h3>    
+                    </div>
+                    
+
+                    <!--Line divider-->
+                    <hr class="divider">
+
+                </div>
+            </div>
+
+            <!--Education & Certifications-->
+            <div class="professionalTraitsContainer">
+                <div class="educationContainer">
+                    <h3><i class='bx bxs-school' ></i>Education</h3>
+
+                    <!--Education definition list-->
+                    <dl>
+                        <dt>Broward College - Web Development BAS Degree</dt>
+                        <dd>06/2023 - Current</dd>
+
+                        <dt>Broward College - Web Development AA Degree</dt>
+                        <dd>08/2021 - 06/2023</dd>
+                        
+                        <dt>Cooper City High School - High School Graduate</dt>
+                        <dd>08/2017 - 06/2021</dd>
+                    </dl>
+
+                </div>
+
+
+                <div class="Certifications">
+                    <h3><i class='bx bxs-certification'></i>Certifications</h3>
+                    <!--Certifications list-->
+                    <ul>
+                        <li><i class='bx bxs-spreadsheet'></i>Excel</li>
+                        <li><i class='bx bx-file'></i>Word</li>
+                        <li><i class='bx bxs-slideshow'></i>Powerpoint<li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Interests and hobbies-->
+            <section class="interestsContainer">
+                <h3>Interests & Hobbies</h3>
+
+                <!--Hobbies image-->
+                <div class="imgFloatLeft">
+                    <img src="images/hobbies.jpg" alt="Creator Hobbies">
+                </div>
+                <!--Hobbies list-->
+                <div class="hobbiesList">
+                    <ul>
+                        <li>Playing Video Games</li>
+                        <li>Working Out</li>
+                        <li>Reading Manga</li>
+                        <li>Watching Anime</li>
+                    </ul>    
+                </div>
+                
+            </section>
+
         </main>
         <footer>
             <!--Create footer section with links-->
