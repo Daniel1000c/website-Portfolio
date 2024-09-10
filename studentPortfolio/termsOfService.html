@@ -11,7 +11,7 @@
             <h1>Terms of Service</h1>
 
             <!--Create nav bar containing links: home,about,projects,skills,contact,resume-->
-            <nav>
+            <nav aria-label="Web Page Navigation"> <!--Add aria label for nav menu-->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -24,7 +24,7 @@
             </nav>
         </header>
         <main>
-            <div class="termsContainer">
+            <div class="termsContainer" role="main">
                 <div class="termsText">
                     <h2>Terms of Service</h2>
                     <p>Last Edit: 9/9/2024</p>
@@ -78,8 +78,8 @@
 
                 <!--Accept and Decline buttons-->
                 <div class="termsBtnContainer">
-                    <a href="index.html">Accept</a>
-                    <a href="index.html">Decline</a>
+                    <a href="index.html" role="button" aria-label="Accept Terms">Accept</a> <!--Add aria labels to buttons-->
+                    <a href="index.html" role="button" aria-label="Decline Terms">Decline</a> <!--Add aria labels to buttons-->
                 </div>
             </div>
         </main>

@@ -15,7 +15,7 @@
             <h1>About</h1>
 
             <!--Create nav bar containing links: home,about,projects,skills,contact,resume-->
-            <nav>
+            <nav aria-label="Web Page Navigation"> <!--Add aria label for nav menu-->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Projects</a></li>
@@ -28,7 +28,7 @@
         </header>
         <main>
             <!--div container with sticky background img and title-->
-            <div class="stickyImgBackground">
+            <div class="stickyImgBackground"> <!--Add aria label to header-->
                 <h2>Behind the Code</h2>
             </div>
             
@@ -49,15 +49,15 @@
                     <h3>Resume</h3>
 
                     <!--Resume button-->
-                    <a href="pdf/Daniel_Velez_Resume.pdf" download="Daniel_Velez_Resume">Resume</a>
+                    <a href="pdf/Daniel_Velez_Resume.pdf" download="Daniel_Velez_Resume" aria-label="Download Creator Resume">Resume</a> <!--Add aria label for resume button link-->
                 </div>
 
-                <div class="projectStatsContainer">
+                <div class="projectStatsContainer" aria-labelledby="experience projects certificates"> <!--Add aria label for project stats container-->
 
                     <!--Line divider-->
                     <hr class="divider">
 
-                    <div class="creatorStat">
+                    <div class="creatorStat" id="experience">
                         <!--Years of experience-->
                         <p>2</p>
                         <h3>Years of Experience</h3>    
@@ -67,7 +67,7 @@
                     <!--Line divider-->
                     <hr class="divider">
 
-                    <div class="creatorStat">
+                    <div class="creatorStat" id="projects">
                         <!--Projects completed-->
                         <p>5</p>
                         <h3>Projects Completed</h3>    
@@ -77,7 +77,7 @@
                     <!--Line divider-->
                     <hr class="divider">
                     
-                    <div class="creatorStat">
+                    <div class="creatorStat" id="certificates">
                         <!--certificates-->
                         <p>3</p>
                         <h3>Certificates</h3>    
@@ -92,8 +92,8 @@
 
             <!--Education & Certifications-->
             <div class="professionalTraitsContainer">
-                <div class="educationContainer">
-                    <h3><i class='bx bxs-school' ></i>Education</h3>
+                <div class="educationContainer" aria-labelledby="creatorEducation"> <!--Add aria label to associate its content with heading-->
+                    <h3 id="creatorEducation"><i class='bx bxs-school' ></i>Education</h3>
 
                     <!--Education definition list-->
                     <dl>
@@ -110,8 +110,8 @@
                 </div>
 
 
-                <div class="Certifications">
-                    <h3><i class='bx bxs-certification'></i>Certifications</h3>
+                <div class="Certifications" aria-labelledby="creatorCertifications"> <!--Add aria label to associate its content with heading-->
+                    <h3 id="creatorCertifications"><i class='bx bxs-certification'></i>Certifications</h3> 
                     <!--Certifications list-->
                     <ul>
                         <li><i class='bx bxs-spreadsheet'></i>Excel</li>
@@ -122,16 +122,16 @@
             </div>
 
             <!--Interests and hobbies-->
-            <section class="interestsContainer">
-                <h3>Interests & Hobbies</h3>
+            <section class="interestsContainer" aria-labelledby="creator-Interests"> <!--Add aria label to associate its content with heading-->
+                <h3 id="creator-Interests">Interests & Hobbies</h3>
 
                 <!--Hobbies image-->
                 <div class="imgFloatLeft">
-                    <img src="images/hobbies.jpg" alt="Creator Hobbies">
+                    <img src="images/hobbies.jpg" alt="Creator Hobbies" aria-label="Creator Hobbies">
                 </div>
                 <!--Hobbies list-->
-                <div class="hobbiesList">
-                    <ul>
+                <div class="hobbiesList" aria-labelledby="creatorHobbyList"> <!--Add aria label to associate its content with list-->
+                    <ul id="creatorHobbyList">
                         <li>Playing Video Games</li>
                         <li>Working Out</li>
                         <li>Reading Manga</li>
