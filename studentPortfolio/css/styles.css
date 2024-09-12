@@ -1265,6 +1265,84 @@ nav ul li a:hover{
     animation: appear 1.5s ease-in-out;/*Apply appear animation*/
     z-index: 2;
 }
+.projectContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100%;
+    margin: 10rem auto;
+}
+.projectContainer img{
+    height: 400px;
+    width: 500px;
+    border-radius: 8px;
+    border: 2px solid cyan;
+    transition: 0.5s ease;/*Add hover transition to make image pop when user hovers*/
+}
+
+.projectContainer img:hover{
+    transform: scale(1.1);
+    border: 2px solid blue;
+    margin: 20px;
+}
+
+.projectContainer h3{
+    font-family: monospace;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.projectContainer h3 span{
+    font-style: italic;
+    font-size: 20px;
+}
+
+.projectContainer .projectText{
+    background-color: #333333;
+    width: 60%;
+    height: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.projectContainer .projectText p{
+    line-height: 1.5;
+    text-align: left;
+    font-size: 20px;
+    padding: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.projectContainer .projectText a{
+    text-decoration: none;
+    color: #E0F2F1;
+    background-color: #0073AA;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    text-transform: uppercase;
+    transition: 0.5s ease
+}
+
+.projectContainer .projectText a:hover{
+    background-color: transparent;
+    color: #0073AA;
+    font-weight: bold;
+    padding: 20px;
+    border: 2px solid #E0F2F1;
+}
+
+.btnTextContainer{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
 
 /*Footer Formatting*/
 footer{
