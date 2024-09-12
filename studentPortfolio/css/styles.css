@@ -348,6 +348,15 @@ nav ul li a:hover{
     border-radius: 8px;
 }
 
+.projectContent img{
+    padding: 15px;
+    width: 500px;
+}
+
+.alignImg{
+    text-align: center;
+}
+
 .projectContent h4{
     font-size: 16px;
     margin-bottom: 5px;
@@ -538,6 +547,16 @@ nav ul li a:hover{
     text-indent: 5px;
     line-height: 2;
     font-family: monospace;
+}
+.container .contactInfo .contactBox .contactText p a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.container .contactInfo .contactBox .contactText p a:hover{
+    color: cyan;
+    font-size: larger;
+    font-weight: bold;
 }
 
 /*Format Contact Form*/
@@ -1350,7 +1369,7 @@ nav ul li a:hover{
 .hideObject{
     opacity: 0; /*Make element invisible*/
     transform: translateY(20px); /*Start element a little bit lower*/
-    transition: 0.5s ease; /*Create a slow appear transition*/
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /*Create a slow appear transition*/
 }
 
 /*Create revealObject class*/
