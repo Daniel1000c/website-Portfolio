@@ -1342,7 +1342,23 @@ nav ul li a:hover{
     margin-bottom: 30px;
     margin-left: 20px;
 }
+/*---End of project page formatting---*/
 
+/*---Start of js scroll formatting formatting---*/
+
+/*Create hideObject class*/
+.hideObject{
+    opacity: 0; /*Make element invisible*/
+    transform: translateY(20px); /*Start element a little bit lower*/
+    transition: 0.5s ease; /*Create a slow appear transition*/
+}
+
+/*Create revealObject class*/
+.revealObject{
+    opacity: 1; /*Make element visible*/
+    transform: translateY(0); /*Reset element to normal position*/
+}
+/*---End of js scroll formatting formatting---*/
 
 /*Footer Formatting*/
 footer{

@@ -29,9 +29,10 @@
             </div>
 
             <!--Create three project divs-->
-            <div class="projectContainer" style="background-color: rgba(224,242,241,0.6);">
+            <!--Add hide object class for javascript appear transition-->
+            <div class="projectContainer hideObject" style="background-color: rgba(224,242,241,0.6);" aria-labelledby="anime-oasis">  <!--Add aria labels to each container-->
                 <div class="projectText">
-                    <h3>Anime Oasis - <span>Ongoing</span></h3>
+                    <h3 id="anime-oasis">Anime Oasis - <span>Ongoing</span></h3>
                     <p>Anime Oasis is an anime e-commerce website template. This was the first project that I decided to create with my basic knowledge of Html and Css.
                         I am currently working on this project so that I can learn more about the features of Css and Html but maybe in the future I will practice php using this project as well.
                     </p>
@@ -42,10 +43,10 @@
                 <img src="images/animeOasis.png" alt="Anime Oasis" style="margin-left: 30px;">
             </div>
 
-            <div class="projectContainer">
+            <div class="projectContainer hideObject" aria-labelledby="zenGarden"> <!--Add aria labels to each container-->
                 <img src="images/zenGarden.png" alt="Zen Garden" style="margin-right: 30px;">
                 <div class="projectText">
-                    <h3>Zen Garden - <span>Ongoing</span></h3>
+                    <h3 id="zenGarden">Zen Garden - <span>Ongoing</span></h3>
                     <p>
                         This project is pending for completion. The purpose of this project is to just master the inner workings of css and format the template page to your liking.
                     </p>
@@ -55,9 +56,9 @@
                 </div>
             </div>
 
-            <div class="projectContainer" style="background-color: rgba(224,242,241,0.6);">
+            <div class="projectContainer hideObject" style="background-color: rgba(224,242,241,0.6);" aria-labelledby="hospital-attendance"> <!--Add aria labels to each container-->
                 <div class="projectText">
-                    <h3>Hospital Attendance - <span>Completed</span></h3>
+                    <h3 id="hospital-attendance">Hospital Attendance - <span>Completed</span></h3>
                     <p>
                         This completed python project was a first attempt at doing a more complex program using arrays and lists. I wanted to create a simple attendance system that would let the user login, enter their role for that day and what time they punch in and out.
                     </p>
