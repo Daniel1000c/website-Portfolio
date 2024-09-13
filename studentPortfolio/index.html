@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" type="image/x-icon" href="favicon/portfolioColor.png"> <!--Insert portfolio tab logo-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Import boxicons from boxicons.com-->
+       
     </head>
     <body>
         <header>
@@ -14,7 +15,7 @@
             <!--Create nav bar containing links: home,about,projects,skills,contact,resume-->
             <!--Create aria label for nav links-->
             <nav aria-label="Web Page Navigation">
-                <ul>
+                <ul id="menuLinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="project.html">Projects</a></li>
@@ -22,6 +23,9 @@
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="pdf/Daniel_Velez_Resume.pdf" download="Daniel_Velez_Resume">Resume</a></li> <!--Make resume downloadable pdf link-->
                 </ul>
+                <div class="navIcon">
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i> <!--Add menu icon-->
+                </div>
             </nav>
         </header>
         <main>
@@ -144,5 +148,6 @@
 
         <!--Link to external javascript file-->
         <script src="scripts/script.js"></script>
+        <script src="https://kit.fontawesome.com/9a83fac9a4.js" crossorigin="anonymous"></script>
     </body>
 </html>

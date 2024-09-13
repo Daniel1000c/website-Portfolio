@@ -14,3 +14,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const hiddenElement = document.querySelectorAll('.hideObject');
     hiddenElement.forEach(el => observer.observe(el));
 });
+
+//Create open menu toggle
+let menuLinks = document.getElementById('menuLinks');
+menuLinks.style.maxHeight = "0px";
+
+
+function toggleMenu() {
+    if (menuLinks.style.maxHeight == "0px") {
+        //Open menu
+        menuLinks.style.maxHeight = "500px";
+    } else {
+        menuLinks.style.maxHeight = "0px";
+    }
+}

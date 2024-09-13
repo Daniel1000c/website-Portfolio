@@ -119,6 +119,8 @@ header{
     justify-content: space-between;
     padding: 15px;
     background-color: #1A3A5B;
+    position: relative;
+    z-index: 10; /*Set header above other elements*/
 }
 
 nav{
@@ -143,6 +145,12 @@ nav ul li a:hover{
     font-weight: bold;
     font-size: large;
 }
+
+.navIcon i{
+    cursor: pointer;
+    display: none; /*Hide icon when fully expanded*/
+}
+
 /*---End of Nav menu formatting---*/
 
 /*index.html*/
@@ -1400,7 +1408,6 @@ footer{
 }
 .footerLinks ul li a:hover{
     color: #E0F2F1;
-    border-bottom: 1px solid white;
     font-weight: bold;
     font-size: large;
 }
@@ -1413,3 +1420,44 @@ footer{
 
 
 /*Media Queries*/
+@media (max-width: 768px){
+    /*Format header*/
+    h1{
+        font-size: 25px;
+        padding: 10px;
+    }
+    /*Format nav links*/
+    nav ul{
+        display: flex;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background-color: #1A3A5B;
+        overflow: hidden;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 15px 0;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    .navIcon i{
+        display: block;
+    }
+
+    #menuLinks{
+        transition: all 0.5s ease-out;
+    }
+
+    /*Format creator picture*/
+    /*Format footer*/
+    .footerLinks ul li{
+        display: flex;
+        padding: 15px;
+        flex-direction: column;
+    }
+}

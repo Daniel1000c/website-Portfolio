@@ -13,13 +13,16 @@
 
             <!--Create nav bar containing links: home,about,projects,skills,contact,resume-->
             <nav aria-label="Web Page Navigation"> <!--Add aria label for nav menu-->
-                <ul>
+                <ul id="menuLinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="project.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="pdf/Daniel_Velez_Resume.pdf" download="Daniel_Velez_Resume">Resume</a></li> <!--Make resume downloadable pdf link-->
                 </ul>
+                <div class="navIcon">
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i> <!--Add menu icon-->
+                </div>
             </nav>
         </header>
         <main>
@@ -91,5 +94,7 @@
                 &copy; 2024 Broward College    
             </div>
         </footer>
+        <script src="scripts/script.js"></script>
+        <script src="https://kit.fontawesome.com/9a83fac9a4.js" crossorigin="anonymous"></script>
     </body>
 </html>
