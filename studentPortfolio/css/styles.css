@@ -253,13 +253,6 @@ nav ul li a:hover{
 .imgFormat{
     margin-left: 120px;
     width: 600px;
-    transition: 0.5s ease-in;
-}
-
-.imgFormat:hover{
-    background: transparent;
-    background-color: #0D324D;
-    opacity: 0.8; /*Make picture fade in darker when hovered*/
 }
 
 .sectionFormat{
@@ -1420,7 +1413,7 @@ footer{
 
 
 /*Media Queries*/
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     /*Format header*/
     h1{
         font-size: 25px;
@@ -1453,11 +1446,198 @@ footer{
         transition: all 0.5s ease-out;
     }
 
-    /*Format creator picture*/
+    /*Skills.html*/
+    /*Format skills container to smaller size and font*/
+    .skillsContainer{
+        width: 400px;
+    }
+    /*End of skills.html Formatting*/
+
+    /*About.html*/
+    /*Format about me container into a column*/
+    .aboutMeContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Format both containers to be column*/
+    .aboutMeParagraphContainer, .resumeBtnContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    /*Format header for page*/
+    .stickyImgBackground h2{
+        font-size: 30px;
+    }
+
+    /*Format size of font in about me paragraph*/
+    .aboutMeParagraphContainer p{
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    /*Format img*/
+    .imgFloatLeft img{
+        width: 300px;
+    } 
+
+    /*Format education header*/
+    .educationContainer  dl dt{
+        font-weight: lighter;
+        font-size: small;
+    }
+
+    .educationContainer dl dd{
+        font-size: medium;
+        color: cyan;
+    }
+
+    /*index.html*/
+
+    /*Format creator container items to be a column*/
+    .creatorContainer{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .creatorSummary h1{
+        font-size: 30px;
+    }
+
+    .creatorSummary h3{
+        font-size: 20px;
+    }
+
+    .creatorSummary p{
+        font-size: 15px;
+        text-align: left;
+        line-height: 2;
+        margin-bottom: 35px;
+    }
+
+    .creatorImage img{
+        width: 300px;
+        margin: 30px;
+    }
+
+    /*Format project container to be a smaller*/
+    .projectContent p{
+        text-indent: 0px;
+        font-size: 11px;
+        font-weight: bolder;
+        padding: 15px;
+    }
+
+    .projectContent .alignImg img{
+        width: 200px;
+    }
+
+    /*Format services container*/
+    .sectionFormat .columnBox .columnContent h3{
+        font-size: 15px;
+    }
+
+    .sectionFormat .columnBox .columnContent p{
+        font-size: 11px;
+        line-height: 2;
+        color: cyan;
+    }
+    
+    .stickyRainBackground h2{
+        font-size: 50px;
+    }
+
     /*Format footer*/
     .footerLinks ul li{
         display: flex;
         padding: 15px;
         flex-direction: column;
+    }
+}
+
+/*Format media query at max width of 1000px*/
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    /*Index.html*/
+
+    /*Format header*/
+    h1{
+        font-size: 15px;
+    }
+
+    /*Format size of nav list*/
+    nav ul li{
+       font-size: 15px;
+       transform: translateY(-12px);
+    }
+
+    /*Format container to have picture and text in a column*/
+
+    /*Format creator container items to be a column*/
+    .creatorContainer{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .creatorSummary h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .creatorSummary h3{
+        font-size: 20px;
+    }
+
+    .creatorSummary p{
+        text-align: left;
+        line-height: 2;
+    }
+
+    .creatorImage img{
+        width: 400px;
+        margin: 30px;
+    }
+
+    .creatorSummary .btnContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin-top: 15px;
+        margin-left: 80px;
+    }
+
+    /*Format size of project img of container*/
+    .projectContent .alignImg img{
+        width: 400px;
+    }
+
+    .projectContent p{
+        text-indent: 0px;
+        font-size: 15px;
+    }
+}
+
+/*Create more media queries at over max width 1500px*/
+@media screen and (max-width: 1350px){
+    /*index.html*/
+
+    /*Format creator summary font*/
+    .creatorSummary p{
+        line-height: 1.5;
+    }
+    /*Format creator image*/
+    .creatorImage img{
+        width: 400px;
+        margin: 30px;
     }
 }
