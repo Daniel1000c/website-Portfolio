@@ -461,8 +461,7 @@ nav ul li a:hover{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
 }
 
 /*Format contact header*/
@@ -488,7 +487,6 @@ nav ul li a:hover{
 
 /*Format contact form and contact info container to be side by side*/
 .container{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -501,6 +499,7 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     animation: fadeLeft 0.5s ease;
+    margin-right: 200px;
 }
 
 /*Format contact info headers*/
@@ -562,10 +561,11 @@ nav ul li a:hover{
 
 /*Format Contact Form*/
 .contactFormContainer{
-    width: 40%;
+    width: 100%;
     padding: 40px;
     background-color: #0C090D;
     border-radius: 8px;
+    max-width: 600px;
     animation: appear 0.5s ease;
     border: 2px solid white;
 }
@@ -629,6 +629,8 @@ nav ul li a:hover{
 }
 
 .contactFormContainer .formInputBox textarea{
+    max-width: 1000px;
+    resize: none; /*Get rid of resize option*/
     outline: none;
     border-radius: 8px;
     padding: 10px;
@@ -1554,6 +1556,55 @@ footer{
         font-size: 50px;
     }
 
+    /*Project.html*/
+
+    /*Format project container to have items in a column*/
+    .projectContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projectContainer img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .projectContainer .projectText{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    /*Contact.html*/
+    .contentTitle h2{
+        font-size: 15px;
+    }
+
+    /*Format contact container to be a column*/
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .container .contactInfo{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .container .contactInfo .contactBox .contactText h3{
+        font-size: 20px;
+    }
+
+    .contactFormContainer{
+        margin-top: 100px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contactText p{
+        font-size: 10px;
+    }
+
     /*Format footer*/
     .footerLinks ul li{
         display: flex;
@@ -1625,6 +1676,16 @@ footer{
         text-indent: 0px;
         font-size: 15px;
     }
+
+    /*Contact.html*/
+    .contactFormContainer{
+        padding: 15px;
+    }
+
+    .container .contactInfo{
+        margin-right: 100px;
+    }
+    
 }
 
 /*Create more media queries at over max width 1500px*/
