@@ -17,3 +17,31 @@
 /*End of general formatting*/
 
 /*Format header*/
+header{
+	padding: 10px;
+	font-family: monospace;
+	letter-spacing: 2px;
+}
+
+/*Format body*/
+body{
+	padding: 10px;
+	background-image: url(../zenGarden/images/temple.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200vh;
+}
+
+
+/*Format div*/
+div{
+	margin: 10px;
+}
+
+/*Format p tags*/
+p{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	line-height: 2;
+	font-size: 15px;
+}
