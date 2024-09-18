@@ -1,0 +1,43 @@
+/*General Formatting*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+/*End of general formatting*/
+
+/*Format header*/
+header{
+    padding: 15px;
+    /*Make header sticky*/
+    position: sticky;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 18px;
+}
+
+/*Format links*/
+nav ul li a{
+    text-decoration: none;
+    color: #304254;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #5D7FA2;
+}
+
+/*Format section headers*/
+section h2{
+    text-align: center;
+}
