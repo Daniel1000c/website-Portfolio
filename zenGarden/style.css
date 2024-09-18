@@ -26,11 +26,10 @@ header{
 /*Format body*/
 body{
 	padding: 10px;
-	background-image: url(../zenGarden/images/temple.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 200vh;
+	background-image: url(../zenGarden/images/temple.jpg);
 }
 
 
@@ -39,9 +38,93 @@ div{
 	margin: 10px;
 }
 
+/*Format div header*/
+div h3{
+	font-family: 'Noto Sans JP', sans-serif;
+	color: white;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-decoration: underline;
+	font-style: italic;
+}
+
 /*Format p tags*/
 p{
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	line-height: 2;
 	font-size: 15px;
 }
+
+/*Start of hamburger menu formatting*/
+.designToggleMenu{
+	display: none;/*Hide the hamburger menu*/
+}
+
+.conceptMenu{
+	cursor: pointer;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 1000; /*Have menu appear above rest of content*/
+}
+
+ /*Format menu and links*/
+.designMenu{
+	position: fixed;
+	right: -250px; /*Hidden at start*/
+	top: 0;
+	width: 250px;
+	height: 100%; /*Have menu take up all height*/
+	background-color: black;
+	transition: right 0.5s ease; /*Create slow transition for menu opening*/
+	background-image: url(../zenGarden/images/cherryBlossoms.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.designMenu ul{
+	list-style-type: none; /*Get rid of bullets*/
+	padding: 15px;
+	margin-top: 50px;
+}
+
+.designMenu ul li{
+	margin-right: 15px 0;
+	margin-bottom: 15px;
+}
+
+.designMenu ul li a{
+	text-decoration: none;
+	color: white;
+	font-family: monospace;
+}
+
+/*Show menu when icon is clicked*/
+.designToggleMenu:checked + .conceptMenu + .designMenu{
+	right: 0;/*Show template menu*/
+}
+
+/*Change icon when menu is open*/
+.designToggleMenu:checked + .conceptMenu i {
+	display: none; /*Hide hamburger icon when menu is open*/
+}
+
+/*Format menu to be an X when menu is open*/
+.designToggleMenu:checked + .conceptMenu::after{
+	content: "\f00d"; /*times icon from fontawesome*/
+	font-family: "Font Awesome 5 Free";
+	font-weight: bolder;
+	font-size: 30px;
+	color: white;
+	transition: 0.5s ease; /*Create hover effect for x button*/
+}
+
+/*Format menu icon*/
+.fa-bars{
+	color: white;
+	font-size: 30px;
+}
+
+
+

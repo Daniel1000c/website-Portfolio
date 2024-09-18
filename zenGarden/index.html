@@ -7,6 +7,7 @@
 	<link rel="stylesheet" media="screen" href="style.css?v=8may2013">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> <!--Link to google fonts-->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Dave Shea">
@@ -115,28 +116,51 @@
 
 		<aside>
 			<div>
+				<!--Create a hamburger menu that lets the user select a design from the right side of page-->
 
 				<div>
-					<h3>Select a Design:</h3>
-					<nav>
+					
+					<!--Insert hamburger fold icon-->
+					<input type="checkbox" id="designToggleMenu" class="designToggleMenu">
+					<label for="designToggleMenu" class="conceptMenu"><i class="fa-solid fa-bars"></i></label>
+					<nav class="designMenu">
+
+						<!--Place h3 tag in nav to appear in side menu-->
+						<h3>Select a Design:</h3>
+						
 						<ul>
-						<li>
-							<a href="/221/">Mid Century Modern</a> by						<a href="http://andrewlohman.com/">Andrew Lohman</a>
-						</li>					<li>
-							<a href="/220/">Garments</a> by						<a href="http://danielmall.com/">Dan Mall</a>
-						</li>					<li>
-							<a href="/219/">Steel</a> by						<a href="http://steffen-knoeller.de">Steffen Knoeller</a>
-						</li>					<li>
-							<a href="/218/">Apothecary</a> by						<a href="http://trentwalton.com">Trent Walton</a>
-						</li>					<li>
-							<a href="/217/">Screen Filler</a> by						<a href="http://elliotjaystocks.com/">Elliot Jay Stocks</a>
-						</li>					<li>
-							<a href="/216/">Fountain Kiss</a> by						<a href="http://jeremycarlson.com">Jeremy Carlson</a>
-						</li>					<li>
-							<a href="/215/">A Robot Named Jimmy</a> by						<a href="http://meltmedia.com/">meltmedia</a>
-						</li>					<li>
-							<a href="/214/">Verde Moderna</a> by						<a href="http://www.mezzoblue.com/">Dave Shea</a>
-						</li>					</ul>
+							<li>
+								<a href="/221/">Mid Century Modern</a> by <a href="http://andrewlohman.com/">Andrew Lohman</a>
+							</li>
+
+							<li>
+								<a href="/220/">Garments</a> by	<a href="http://danielmall.com/">Dan Mall</a>
+							</li>
+
+							<li>
+								<a href="/219/">Steel</a> by <a href="http://steffen-knoeller.de">Steffen Knoeller</a>
+							</li>
+
+							<li>
+								<a href="/218/">Apothecary</a> by<a href="http://trentwalton.com">Trent Walton</a>
+							</li>
+
+							<li>
+								<a href="/217/">Screen Filler</a> by <a href="http://elliotjaystocks.com/">Elliot Jay Stocks</a>
+							</li>
+
+							<li>
+								<a href="/216/">Fountain Kiss</a> by <a href="http://jeremycarlson.com">Jeremy Carlson</a>
+							</li>
+
+							<li>
+								<a href="/215/">A Robot Named Jimmy</a> by <a href="http://meltmedia.com/">meltmedia</a>
+							</li>
+
+							<li>
+								<a href="/214/">Verde Moderna</a> by <a href="http://www.mezzoblue.com/">Dave Shea</a>
+							</li>					
+						</ul>
 					</nav>
 				</div>
 
@@ -198,5 +222,7 @@
 	<div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
 	<div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
 
+	<!--Links to font awesome external js script-->
+	<script src="https://kit.fontawesome.com/9a83fac9a4.js" crossorigin="anonymous"></script>
 </body>
 </html>
