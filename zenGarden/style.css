@@ -77,10 +77,6 @@ p{
 	height: 100%; /*Have menu take up all height*/
 	background-color: black;
 	transition: right 0.5s ease; /*Create slow transition for menu opening*/
-	background-image: url(../zenGarden/images/cherryBlossoms.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 .designMenu ul{
@@ -125,6 +121,8 @@ p{
 	color: white;
 	font-size: 30px;
 }
+
+/*Format side menu to have moving fish background*/
 
 
 
