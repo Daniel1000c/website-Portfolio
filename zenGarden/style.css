@@ -16,7 +16,15 @@
 	}
 /*End of general formatting*/
 
-
+/*Keyframe Formatting*/
+@keyframes appear{
+	0%{
+		opacity: 0;/*Have links invisible*/
+	}
+	100%{
+		opacity: 1;/*Have links appear*/
+	}
+}
 
 /*Start of hamburger menu formatting*/
 .designToggleMenu{
@@ -40,13 +48,14 @@
 	width: 250px;
 	height: 100%; /*Have menu take up all height*/
 	background-color: black;
-	transition: right 0.5s ease; /*Create slow transition for menu opening*/
+	transition: right 0.7s ease-in; /*Create slow transition for menu opening*/
 	background-image:
 		 linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), /*Create a dark grey background on top of image*/
 		 url(../zenGarden/images/cherryBlossoms.jpg);
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
+	opacity: 0.9;
 }
 
 /*Format header*/
@@ -56,11 +65,15 @@
 	text-decoration: none;
 	font-family: monospace;
 	letter-spacing: normal;
+	color: white;
+	font-style: italic;
+	text-decoration: underline;
 }
 
 .designMenu{
 	border-left: 3px solid black;
 }
+
 .designMenu ul{
 	list-style-type: none; /*Get rid of bullets*/
 	padding: 15px;
@@ -108,16 +121,132 @@
 	font-weight: bolder;
 	font-size: 30px;
 	color: white;
-	transition: 0.5s ease; /*Create hover effect for x button*/
 }
 
 /*Format menu icon*/
 .fa-bars{
 	color: white;
 	font-size: 30px;
+	transition: 0.5s ease;/*Create transition effect for hover*/
 }
 
+.fa-bars:hover{
+	color: red;
+	font-size: 40px;/*Make icon larger when hovered*/
+}
 /*End of hamburger menu formatting*/
+
+
+/*Format headers for each section*/
+.sectionFormat h3{
+	font-family: 'Noto San JP', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+}
+.sectionFormat{
+	padding: 15px;
+}
+
+/*Format section links*/
+.sectionFormat a{
+	text-decoration: none;
+	font-family: 'Noto San JP', sans-serif;
+	color: #FFC0CB;
+	transition: 0.5s ease;/*Create transition effect for hover*/
+	font-weight: bolder;
+}
+
+.sectionFormat a:hover{
+	font-size: larger;
+	color: cyan;
+}
+
+.sectionFormat p{
+	line-height: 1.5;
+	font-family: 'Kokoro',sans-serif;
+	margin-left: 5px;
+}
+/*End of section Formatting*/
+
+/*Format title*/
+.titleFormat header{
+	text-align: center;
+	padding: 10px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	background-image: url(../zenGarden/images/bambooTrees.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 50vh;
+}
+
+.titleFormat header h1{
+	margin-bottom: 10px;
+}
+
+.titleFormat header h1, .titleFormat header h2{
+	font-size: 50px;
+	font-family: monospace;
+}
+
+.titleFormat a{
+	text-decoration: none;
+	color: #FFC0CB;
+	transition: 0.5s ease;/*Create transition effect for hover*/
+	font-family: 'Noto San JP', sans-serif;
+	font-size: medium;
+}
+
+.titleFormat a:hover{
+	color: cyan;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+.titleFormat header div{
+	margin-top: 25px;
+	line-height: 1.5;
+}
+
+/*Have the title be in the center with transform property*/
+.titleFormat header h1, .titleFormat header h2, .titleFormat header div{
+	transform: translateY(200px);
+	color: white;
+}
+/*End of title Formatting*/
+
+/*Format background image*/
+.imgBackground{
+	background-image: url(../zenGarden/images/darkJapanese.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+/*Format footer*/
+footer{
+	text-align: center;
+	padding: 25px;
+	background-color: #B73D3D;
+}
+
+/*Format footer links*/
+footer a{
+	text-decoration: none;
+	font-family: 'Noto San JP', sans-serif;
+	margin-right: 20px;
+	color: #FFC0CB;
+	font-size: 15px;
+	transition: 0.5s ease;/*Create transition effect for hover*/
+	animation: appear 0.5s ease-in;/*Create appear from left animation*/
+}
+
+/*Format hover links*/
+footer a:hover{
+	font-weight: bold;
+	font-size: larger;
+}
+/*End of footer Formatting*/
 
 
 
