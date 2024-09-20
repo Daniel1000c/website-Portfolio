@@ -26,6 +26,27 @@
 	}
 }
 
+@keyframes revealText{
+	0%{
+		opacity: 0;/*Hide text*/
+		transform: translateX(-100px);/*Start text off screen*/
+	}
+	100%{
+		opacity: 1;/*Make text visible*/
+		transform: translateX(0);/*Set text back to original position*/
+	}
+}
+
+/*Format body*/
+body{
+	background-image: url(../zenGarden/images/bambooTrees.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200vh;
+	height: 100%;
+}
+
 /*Start of hamburger menu formatting*/
 .designToggleMenu{
 	display: none;/*Hide the hamburger menu*/
@@ -51,17 +72,18 @@
 	transition: right 0.7s ease-in; /*Create slow transition for menu opening*/
 	background-image:
 		 linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), /*Create a dark grey background on top of image*/
-		 url(../zenGarden/images/cherryBlossoms.jpg);
+		 url(../zenGarden/images/darkBamboo.jpg);
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
 	opacity: 0.9;
+	z-index: 2;
 }
 
 /*Format header*/
 .designMenu h3{
 	font-size: 18px;
-	padding: 18px;
+	padding: 5px;
 	text-decoration: none;
 	font-family: monospace;
 	letter-spacing: normal;
@@ -76,14 +98,14 @@
 
 .designMenu ul{
 	list-style-type: none; /*Get rid of bullets*/
-	padding: 15px;
-	margin-top: 50px;
+	padding: 5px;
+	margin-top: 15px;
 }
 
 .designMenu ul li{
-	margin-right: 15px 0;
-	margin-bottom: 40px;
-	font-size: 12px;
+	margin-left: 25px;
+	margin-bottom: 30px;
+	font-size: 13px;
 }
 .designMenu ul li span{
 	color: white;
@@ -143,9 +165,14 @@
 	font-size: 30px;
 	letter-spacing: 2px;
 	margin-bottom: 5px;
+	color: white;
+	text-decoration: underline;
+	font-style: italic;
+	animation: appear 0.5s ease-in;/*Create appear animation for headers*/
 }
 .sectionFormat{
 	padding: 15px;
+	margin-top: 200px;
 }
 
 /*Format section links*/
@@ -163,9 +190,64 @@
 }
 
 .sectionFormat p{
-	line-height: 1.5;
-	font-family: 'Kokoro',sans-serif;
+	line-height: 2;
+	font-family: monospace;
+	color: bisque;
+	font-size: 20px;
 	margin-left: 5px;
+	text-wrap: normal;
+	animation: revealText  0.5s forwards;/*Create fade left to right matrix animation*/
+}
+
+.gridContainer{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	justify-content: center;
+	align-items: start;
+	background-image: 
+	linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), /*Create a dark grey background on top of image*/
+		url(../zenGarden/images/temple.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+	z-index: 1;
+}
+
+
+/*Create blur effect for top and bottom of gridContainer*/
+.gridContainer::before, .gridContainer::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 100px;
+	z-index: 2;
+	background: inherit;
+	filter: blur(5px);
+}
+
+.gridContainer::before{
+	top: 0; /*Put blur at top*/
+}
+
+.gridContainer::after{
+	bottom: 0;/*Put blur at bottom*/
+}
+
+/*Format imgBackground*/
+.sectionBackground{
+	background-image: 
+	linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),
+	url(../zenGarden/images/cherryBlossoms.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: lightgreen;
+	font-family: monospace;
+	font-weight: bolder;
 }
 /*End of section Formatting*/
 
@@ -174,10 +256,6 @@
 	text-align: center;
 	padding: 10px;
 	font-family: 'M PLUS Rounded 1c', sans-serif;
-	background-image: url(../zenGarden/images/bambooTrees.jpg);
-	background-position: center;
-	background-size: cover;
-	height: 50vh;
 }
 
 .titleFormat header h1{
@@ -208,6 +286,12 @@
 	line-height: 1.5;
 }
 
+/*Format title text*/
+.textFormat{
+	font-size: larger;
+	font-family: 'Times New Roman', Times, serif;
+}
+
 /*Have the title be in the center with transform property*/
 .titleFormat header h1, .titleFormat header h2, .titleFormat header div{
 	transform: translateY(200px);
@@ -216,12 +300,6 @@
 /*End of title Formatting*/
 
 /*Format background image*/
-.imgBackground{
-	background-image: url(../zenGarden/images/darkJapanese.jpg);
-	background-position: center;
-	background-size: cover;
-	height: 100vh;
-}
 
 /*Format footer*/
 footer{
@@ -249,6 +327,40 @@ footer a:hover{
 /*End of footer Formatting*/
 
 
+/*Create media query*/
+@media screen and (max-width: 768px) {
+	/*Display grid container items as a column*/
+	.gridContainer{
+		display: flex;
+		flex-direction: column;
+		padding: 50px;
+	}
+
+	/*Make font smaller */
+	.gridContainer .sectionFormat p{
+		font-size: 14px;
+		font-weight: bolder;
+	}
+
+	.gridContainer .sectionFormat{
+		margin: auto 0;
+	}
+
+	/*Format section font size*/
+	.sectionFormat p{
+		font-size: 15px;
+		padding: 15px;
+		font-weight: bolder;
+	}
+
+	/*Get rid of blur filter*/
+	.gridContainer::before,
+	.gridContainer::after{
+		filter: none;/*Get rid of blur filter*/
+		display: none;/*Hide blur elements in mobile mode*/
+	}
+
+}
 
 
 
