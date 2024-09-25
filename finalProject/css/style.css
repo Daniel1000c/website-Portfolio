@@ -30,7 +30,7 @@ header nav ul li a{
 
 /*Format link hover*/
 header nav ul li a:hover{
-    color: #5D7FA2;
+    color: #4d6a87;
 }
 
 /*End of header formatting*/
@@ -39,7 +39,7 @@ header nav ul li a:hover{
 .videoBackground{
    position: relative;
    overflow: hidden;
-   height: 100vh; 
+   height: 80vh; 
 }
 
 .videoBackground video{
@@ -65,25 +65,72 @@ header nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-image: url(../images/browardVillas.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 81.3vh;
 }
 
-.imgBackground h2{
+.itemContainer{
+    border: 2px solid white;
+}
+
+.innerContainerBorder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 100px;
+    margin: 5px;
+}
+
+.imgBackground .itemContainer .innerContainerBorder h2{
     color: white;
-    
+    font-size: 100px;
+    text-wrap: wrap;
+}
+
+.imgBackground .itemContainer .innerContainerBorder h3{
+    color: white;
+}
+
+.imgBackground .itemContainer .innerContainerBorder h4{
+    color: white;
+    font-weight: bold;
 }
 
 /*Format button*/
-.imgBackground .btnFormat{
+.imgBackground .itemContainer .innerContainerBorder .btnFormat{
     color: white;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
+    background-color: #9A7FAE;
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 25px;
 }
 
+/*--Home section Formatting--*/
+.home{
+    background-color: purple;
+    padding: 15px;
+}
+
+.home h2{
+    color: white;
+}
+/*--End of Home section Formatting--*/
+
+/*--Testimonials section Formatting--*/
+.testimonials{
+    background-color: purple;
+    padding: 15px;
+}
+
+.testimonials h2{
+    color: white;
+}
 /*Format section headers*/
 section h2{
     text-align: center;
@@ -97,4 +144,5 @@ footer{
     background-color: black;
     z-index: 1000;
     color: white;
+    padding: 10px;
 }
