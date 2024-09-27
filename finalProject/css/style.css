@@ -96,6 +96,11 @@ header nav ul li a:hover{
 
 .itemContainer{
     border: 2px solid white;
+    height: 575px;
+    width: 870px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .innerContainerBorder{
@@ -105,7 +110,11 @@ header nav ul li a:hover{
     flex-direction: column;
     border: 1px solid white;
     margin: 5px;
+    height: 555px;
+    width: 865px;
 }
+
+
 .imgBackground .itemContainer .innerContainerBorder h2{
     color: white;
     font-size: 100px;
@@ -114,11 +123,12 @@ header nav ul li a:hover{
 
 .imgBackground .itemContainer .innerContainerBorder h3{
     color: white;
+    font-size: 30px;
 }
 
 .imgBackground .itemContainer .innerContainerBorder h4{
     color: white;
-    font-weight: bold;
+    font-size: 25px;
 }
 
 /*Format button*/
@@ -157,6 +167,160 @@ header nav ul li a:hover{
     color: darkmagenta;
     font-size: 50px;
 }
+
+.offerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.offerContainer .imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.offerContainer .imgContainer img{
+    width: 180px;
+    height: 200px;
+}
+
+.offerContainer .imgText{
+    margin-top:25px;
+}
+
+.offerContainer .imgText h3{
+    text-align: center;
+    font-family: sans-serif;
+    color: purple;
+    font-weight: bolder;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.offerContainer .imgText p{
+    text-align: center;
+    max-width: 280px;
+    font-family: sans-serif;
+    color: darkmagenta;
+    margin-top: 10px;
+    font-size: 15px;
+}
+/*--End of Offer section Formatting*/
+
+/*--Villas section Formatting--*/
+.villasFormat{
+    padding: 40px;
+}
+.villasFormat h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: darkmagenta;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+/*Format outer container for villa types*/
+.villasFormat .villaTypeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+.villasFormat .villaTypeContainer .villaItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.villasFormat .villaTypeContainer .villaItem img{
+    width: 300px;
+    height: 350px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    margin-bottom: 20px;
+}
+.villasFormat .villaTypeContainer .villaItem h3{
+    font-family: sans-serif;
+    color: darkmagenta;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.villasFormat .villaTypeContainer .villaItem h4{
+    font-family: sans-serif;
+    color: darkmagenta;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.villasFormat .villaTypeContainer .villaItem p{
+    text-align: center;
+    color: darkmagenta;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+
+
+/*Format villas pricing container*/
+.villasFormat .villasPricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.villasFormat .villasPricing hr{
+    color: purple;
+    width: 18%;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.villasFormat .villasPricing p{
+    color: darkmagenta;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.villasFormat .villasPricing .pricePhotoFormat{
+    width: 650px;
+    height: 700px;
+}
+/*Format photo container to be at center of page*/
+.villasFormat .photoContainer{
+    background-color: #9A7FAE; /*Set to pastel purple*/
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.villasFormat .photoContainer img{
+    width: 500px;
+    height: 500px;
+}
+
+.villasFormat .photoContainer p{
+    font-family: sans-serif;
+    color: white;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.villasFormat .photoContainer p span{
+    text-align: center;
+}
+
 /*--Testimonials section Formatting--*/
 .testimonials{
     background-color: purple;
@@ -220,6 +384,12 @@ footer{
     z-index: 1000;
     color: white;
     padding: 10px;
+}
+
+footer p{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 /*Media Queries*/

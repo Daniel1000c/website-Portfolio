@@ -11,12 +11,12 @@
             <!--Create nav list-->
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#villas">Villas</a></li>
-                    <li><a href="#offers">Offers</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="pageLinkJump">Home</a></li>
+                    <li><a href="#about" class="pageLinkJump">About</a></li>
+                    <li><a href="#villas" class="pageLinkJump">Villas</a></li>
+                    <li><a href="#offers" class="pageLinkJump">Offers</a></li>
+                    <li><a href="#testimonials" class="pageLinkJump">Testimonials</a></li>
+                    <li><a href="#contact" class="pageLinkJump">Contact</a></li>
                 </ul>
 
                 <!--Create hamburger menu icon
@@ -50,11 +50,91 @@
             </section>
 
             <section class="villasFormat" id="villas">  
-               
+               <h2>Villas</h2>
+
+                <!--Create an outer container to store rooms and villa type-->
+                <div class="villaTypeContainer">
+                    <!--Create villa types-->
+                    <div class="villaItem">
+                        <img src="images/gardenVilla.jpg" alt="Garden Villa">
+                        <h3>Garden Villa</h3>
+                        <h4>Starts at $239/night</h4>
+                        <p>Max 3 Guests <br> 1 Queen or 2 Twin Beds</p>
+                    </div>
+
+                    <div class="villaItem">
+                        <img src="images/courtyardVilla.jpg" alt="Courtyard Villa">
+                        <h3>Courtyard Villa</h3>
+                        <h4>Starts at $399/night</h4>
+                        <p>Max 5 Guests <br> 2 Queen or 3 Twin Beds</p>
+                    </div>
+
+                    <div class="villaItem">
+                        <img src="images/villaPoolside.jpg" alt="Villa Poolside">
+                        <h3>2-BR Poolside Villa</h3>
+                        <h4>Starts at 399$/night</h4>
+                        <p>Max 5 guests <br> 2 King or 3 Queens</p>
+                    </div>
+                </div>  
+
+                <!--Create villas pricing Container-->
+                <div class="villasPricing">
+                    <!--Insert gardens villa header-->
+                    <h2>Garden Villas</h2>
+                    <hr>
+                    <p>Showcase the best your property has to offer <br> by highlighting one of your accommodations. <br> Add a flattering photo, then describe <br> the room's best feature.</p>
+                    <img src="images/villaFront.jpg" alt="Backyard of Villa" class="pricePhotoFormat">
+                </div>
+
+                <!--Create photo container-->
+                <div class="photoContainer">
+                    <img src="images/poolSide.jpg" alt="Villa PoolSide" style="margin-bottom: 40px;">
+
+                    <p>An intriguing caption that describes the room goes here. Use a <br> <span>flattering photo, then describe away.</span></p>
+
+                    <p>An intriguing caption that describes the room goes here. Use a <br> <span>flattering photo, then describe away.</span></p>
+
+                    <img src="images/beachSide.jpg" alt="Villa BeachSide" style="margin-top: 40px;">
+                </div>
             </section>
 
             <section class="offersFormat" id="offers">
                 <h2>Special Offers</h2>
+
+                <!--Create offers container-->
+                <div class="offerContainer">
+                    <!--Create image container-->
+                    <div class="imgContainer">
+                        <!--Flowers image-->
+                        <img src="images/drawnFlower.png" alt="Summer to remember">
+
+                        <!--Wine Image-->
+                        <img src="images/wineCase.png" alt="Wine and Dine" style="margin-right: 10px;">
+
+                        <!---Present Image-->
+                        <img src="images/compass.png" alt="Weekend Wanderlust">
+                    </div>
+
+                    <!--Create text container-->   
+                    <div class="imgText">
+                        <h3>Summer to Remember</h3>
+                        <p>List your offers, promos, or special</p>
+                        <p>membership privileges and perks here</p>
+                        <p>to entice people to book your property.</p>
+                        
+                        <h3>Wine and Dine</h3>
+                        <p>List your offers, promos, or special</p>
+                        <p>membership privileges and perks here</p>
+                        <p>to entice people to book your property.</p>
+
+                        <h3>Weekend Wanderlust</h3>
+                        <p>List your offers, promos, or special</p>
+                        <p>membership privileges and perks here</p>
+                        <p>to entice people to book your property.</p>
+                    </div> 
+
+                </div>
+                
             </section>
 
             <section class="testimonials" id="testimonials">
@@ -107,5 +187,6 @@
         </footer>
         <!--Insert Font Awesome external Javascript file-->
         <script src="https://kit.fontawesome.com/9a83fac9a4.js" crossorigin="anonymous"></script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
