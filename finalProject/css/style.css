@@ -6,6 +6,12 @@
 }
 /*End of general formatting*/
 
+/*Font Family Formatting*/
+@font-face {
+    font-family: 'edwardianScript';
+    src: url(../fonts/edwardian-script-tt-bold.ttf);
+}
+
 /*Format header*/
 header{
     display: flex;
@@ -58,6 +64,23 @@ header nav ul li a:hover{
     position: relative;
     z-index: 1;
     color: white;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+.videoBackground h3{
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    margin-top: 70px;
 }
 
 /*Format background image*/
@@ -81,14 +104,12 @@ header nav ul li a:hover{
     align-items: center;
     flex-direction: column;
     border: 1px solid white;
-    padding: 100px;
     margin: 5px;
 }
-
 .imgBackground .itemContainer .innerContainerBorder h2{
     color: white;
     font-size: 100px;
-    text-wrap: wrap;
+    font-family: 'edwardianScript', sans-serif;
 }
 
 .imgBackground .itemContainer .innerContainerBorder h3{
@@ -104,7 +125,7 @@ header nav ul li a:hover{
 .imgBackground .itemContainer .innerContainerBorder .btnFormat{
     color: white;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     background-color: #9A7FAE;
     padding: 15px;
     font-size: 15px;
@@ -112,16 +133,30 @@ header nav ul li a:hover{
 }
 
 /*--Home section Formatting--*/
-.home{
+.aboutFormat{
     background-color: purple;
     padding: 15px;
 }
 
-.home h2{
+.aboutFormat h2{
     color: white;
 }
 /*--End of Home section Formatting--*/
 
+/*--Villas section Formatting--*/
+
+
+/*--Offer section Formatting--*/
+.offersFormat{
+    padding: 30px;
+}
+
+.offersFormat h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: darkmagenta;
+    font-size: 50px;
+}
 /*--Testimonials section Formatting--*/
 .testimonials{
     background-color: purple;
@@ -130,7 +165,47 @@ header nav ul li a:hover{
 
 .testimonials h2{
     color: white;
+    font-size: 50px;
+    white-space: normal;
+    word-wrap: break-word;
 }
+
+.testContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0 20px 0;
+}
+
+.testimonials .testItem .subTitleFormat{
+    margin-top: 15px;
+    font-family: 'edwardianScript', sans-serif;
+    font-size: 40px;
+}
+
+.testimonials .testItem hr{
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.testimonials .testItem{
+    margin-top: 15px;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonials .testItem h3, .testimonials .testItem p{
+    color: white;
+    max-width: 300px;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /*Format section headers*/
 section h2{
     text-align: center;
@@ -146,3 +221,5 @@ footer{
     color: white;
     padding: 10px;
 }
+
+/*Media Queries*/
