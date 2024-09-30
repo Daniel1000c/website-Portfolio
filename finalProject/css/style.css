@@ -117,7 +117,7 @@ header nav ul li a:hover{
 
 .imgBackground .itemContainer .innerContainerBorder h2{
     color: white;
-    font-size: 100px;
+    font-size: 145px;
     font-family: 'edwardianScript', sans-serif;
 }
 
@@ -128,7 +128,8 @@ header nav ul li a:hover{
 
 .imgBackground .itemContainer .innerContainerBorder h4{
     color: white;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: lighter;
 }
 
 /*Format button*/
@@ -142,23 +143,71 @@ header nav ul li a:hover{
     margin-top: 25px;
 }
 
-/*--Home section Formatting--*/
+/*Format hr tags around h3 tag*/
+.imgBackground .itemContainer .innerContainerBorder .hrContainer{
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
+
+.imgBackground .itemContainer .innerContainerBorder .hrContainer .whiteHr{
+    flex: 1;
+    background-color: white;
+    height: 2px;
+    margin: 0 30px;
+    width: 140px;
+    border: none;
+}
+
+/*--About section Formatting--*/
 .aboutFormat{
     background-color: purple;
-    padding: 15px;
+    padding: 50px;
 }
 
 .aboutFormat h2{
     color: white;
+    font-weight: lighter;
+    font-size: 50px;
 }
-/*--End of Home section Formatting--*/
+
+/*Format img grid items*/
+.aboutFormat .imgGridContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.aboutFormat .imgGridContainer .imgItem{
+    width: calc(50% - 10px); /*Have two images on top*/
+}
+
+.aboutFormat .imgGridContainer .imgItem:nth-child(n+3){
+    width: calc(33.33% - 10px); /*Have three images on bottom*/
+}
+
+/*Format images to be reponsive to any screen size*/
+.aboutFormat .imgGridContainer .imgItem img{
+    width: 100%;
+}
+
+/*Format text*/
+.aboutFormat p{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+}
+/*--End of About section Formatting--*/
 
 /*--Villas section Formatting--*/
 
 
 /*--Offer section Formatting--*/
 .offersFormat{
-    padding: 30px;
+    padding: 40px;
 }
 
 .offersFormat h2{
@@ -212,7 +261,7 @@ header nav ul li a:hover{
 
 /*--Villas section Formatting--*/
 .villasFormat{
-    padding: 40px;
+    padding: 50px;
 }
 .villasFormat h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -324,7 +373,7 @@ header nav ul li a:hover{
 /*--Testimonials section Formatting--*/
 .testimonials{
     background-color: purple;
-    padding: 15px;
+    padding: 50px;
 }
 
 .testimonials h2{
