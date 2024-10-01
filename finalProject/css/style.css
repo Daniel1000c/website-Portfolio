@@ -667,7 +667,7 @@ footer a span{
 }
 
 footer .popupContainer a{
-    text-align: none;
+    
     color: black;
     font-family: sans-serif;
     background-color: rgba(211, 211, 211, 0.3);
@@ -767,7 +767,7 @@ footer .popupContainer .textLink{
     }
 
     .offersFormat .offerContainer .imgText .imgTextItem p{
-        font-size: 25;
+        font-size: 25px;
     }
 
 
