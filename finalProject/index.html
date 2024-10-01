@@ -9,9 +9,11 @@
     </head>
     <body>
         <header>
+            
             <!--Create nav list-->
             <nav>
-                <ul>
+                
+                <ul id="navigation">
                     <li><a href="#home" class="pageLinkJump">Home</a></li>
                     <li><a href="#about" class="pageLinkJump">About</a></li>
                     <li><a href="#villas" class="pageLinkJump">Villas</a></li>
@@ -26,6 +28,9 @@
                 </div>
             </nav>
         </header>
+
+        <!--Create overlay-->
+        <div id="overlay" class="navOverLay"></div>
         <main>
             <div class="imgBackground" id="home">
                 <div class="itemContainer">
@@ -54,7 +59,7 @@
                 <h2>by nature and grandeur.</h2>
 
                 <!--Create image grid that wraps to screen size-->
-                <div class="imgGridContainer">
+                <div class="imgGridContainer fadeIn">
                     <div class="imgItem">
                         <img src="images/palmTree.png" alt="Villa PalmTree">
                     </div>
@@ -77,7 +82,7 @@
                 </div>
 
                 <!--Create p tag to describe section-->
-                <p>Here at Broward Villas we offer a wide variety of stays. We offer villas such as: Countryside, Courtyards, and gardens with Poolside. We also offer our villas at cheap prices that beat out other competitors.</p>
+                <p class="fadeIn">Here at Broward Villas we offer a wide variety of stays. We offer villas such as: Countryside, Courtyards, and gardens with Poolside. We also offer our villas at cheap prices that beat out other competitors.</p>
 
             </section>
 
@@ -85,7 +90,7 @@
                <h2>Villas</h2>
 
                 <!--Create an outer container to store rooms and villa type-->
-                <div class="villaTypeContainer">
+                <div class="villaTypeContainer fadeIn">
                     <!--Create villa types-->
                     <div class="villaItem">
                         <img src="images/gardenVilla.jpg" alt="Garden Villa">
@@ -112,23 +117,33 @@
                 <!--Create villas pricing Container-->
                 <!--Create container for villa pricing-->
                 <div class="villasPricing">
-                    
-                    <h2>Garden Villas</h2>
-                    <hr>
-                    <p>Showcase the best your property has to offer <br> by highlighting one of your accommodations. <br> Add a flattering photo, then describe <br> the room's best feature.</p>    
+                    <!--Create container for section title-->
+                    <div class="pricingContainer">
+                        <h2>Garden Villas</h2>
+                        <hr>
+                        <p>Showcase the best your property has to offer <br> by highlighting one of your accommodations. <br> Add a flattering photo, then describe <br> the room's best feature.</p>    
+                    </div>
+                        
                     
                     <img src="images/villaFront.jpg" alt="Backyard of Villa" class="pricePhotoFormat">
                 </div>
 
                 <!--Create photo container-->
                 <div class="photoContainer">
-                    <img src="images/poolSide.jpg" alt="Villa PoolSide" style="margin-bottom: 40px;">
 
-                    <p>An intriguing caption that describes the room goes here. Use a <br> <span>flattering photo, then describe away.</span></p>
+                    <div class="photoText">
+                        <img src="images/poolSide.jpg" alt="Villa PoolSide" style="margin-bottom: 40px;">
 
-                    <p>An intriguing caption that describes the room goes here. Use a <br> <span>flattering photo, then describe away.</span></p>
+                        <p>An intriguing caption that describes the room goes here. Use a <br> <span>flattering photo, then describe away.</span></p>
+                    </div>
+                    
 
-                    <img src="images/beachSide.jpg" alt="Villa BeachSide" style="margin-top: 40px;">
+                    <div class="photoText">
+                        <p>An intriguing caption that describes the room goes here. Use a <br> <span>flattering photo, then describe away.</span></p>
+
+                        <img src="images/beachSide.jpg" alt="Villa BeachSide" style="margin-top: 40px;">    
+                    </div>
+                    
                 </div>
             </section>
 
@@ -150,21 +165,29 @@
                     </div>
 
                     <!--Create text container-->   
-                    <div class="imgText">
-                        <h3>Summer to Remember</h3>
-                        <p>List your offers, promos, or special</p>
-                        <p>membership privileges and perks here</p>
-                        <p>to entice people to book your property.</p>
-                        
-                        <h3>Wine and Dine</h3>
-                        <p>List your offers, promos, or special</p>
-                        <p>membership privileges and perks here</p>
-                        <p>to entice people to book your property.</p>
+                    <div class="imgText fadeIn">
 
-                        <h3>Weekend Wanderlust</h3>
-                        <p>List your offers, promos, or special</p>
-                        <p>membership privileges and perks here</p>
-                        <p>to entice people to book your property.</p>
+                        <div class="imgTextItem">
+                            <h3>Summer to Remember</h3>
+                            <p>List your offers, promos, or special</p>
+                            <p>membership privileges and perks here</p>
+                            <p>to entice people to book your property.</p>    
+                        </div>
+                        
+                        <div class="imgTextItem">
+                            <h3>Wine and Dine</h3>
+                            <p>List your offers, promos, or special</p>
+                            <p>membership privileges and perks here</p>
+                            <p>to entice people to book your property.</p>
+
+                        </div>
+                        <div class="imgTextItem">
+                            <h3>Weekend Wanderlust</h3>
+                            <p>List your offers, promos, or special</p>
+                            <p>membership privileges and perks here</p>
+                            <p>to entice people to book your property.</p>    
+                        </div>
+
                     </div> 
 
                 </div>
@@ -176,7 +199,7 @@
                 <h2>Say About Us</h2>
 
                 <!--Create container to hold testimonials-->
-                <div class="testContainer">
+                <div class="testContainer fadeIn">
                     <!--Create three testimonials-->
                     <div class="testItem">
                         <!--Create horizontial Rule-->
@@ -237,8 +260,21 @@
             <!--Create two links-->
 
             <!--Create popup message container-->
-            <p>Terms & Support</p>
-            <a href="https://www.canva.com/" target="_blank">Designed by <span>Canva</span></a>
+            <p id="termsLink">Terms & Support</p>
+
+            <div id="popUp" class="popupContainer">
+                <h3>Terms & Support</h3>
+                <p>This website has been created with Canva, but the content is User Content that is subject to our <a href="https://www.canva.com/policies/terms-of-use/" target="_blank" class="textLink">Terms of Use</a>. If you see anything that breaches our <a href="https://www.canva.com/policies/acceptable-use-policy/" target="_blank" class="textLink">acceptable use policy</a>, please report it to our content review team.</p>
+
+                <!--Create container to house button-->
+                <div class="btnContainer">
+                    <!--Create close button-->
+                    <button id="closePopUp">Close</button>
+                    <a href="https://www.canva.com/help/report-content/?source=design&link=https%3A%2F%2Fbrowardvillas.my.canva.site%2F" target="_blank">Report</a>    
+                </div>
+                
+            </div>
+            <a href="https://www.canva.com/" target="_blank" class="canvaLink">Designed by <span>Canva</span></a>
         </footer>
         <!--Insert Font Awesome external Javascript file-->
         <script src="https://kit.fontawesome.com/9a83fac9a4.js" crossorigin="anonymous"></script>
