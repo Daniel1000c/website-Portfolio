@@ -6,10 +6,59 @@
 }
 /*End of general formatting*/
 
+
+/*Keyframe Formatting*/
+@keyframes colorPulse{
+    0%{
+        background-color: #008080;
+    }
+    50%{
+        background-color: #FF7F50;
+    }
+    100% {
+        background-color: #008080; 
+    }
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes grow{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 140px;
+    }
+}
+
+@keyframes revealText{
+    0%{
+        width: 0;
+        opacity: 0;
+       
+    }
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
+
 /*Font Family Formatting*/
 @font-face {
     font-family: 'edwardianScript';
     src: url(../fonts/edwardian-script-tt-bold.ttf);
+}
+
+@font-face {
+    font-family: 'dancingScript';
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
 }
 
 /*Format header*/
@@ -37,6 +86,11 @@ header nav ul li a{
 /*Format link hover*/
 header nav ul li a:hover{
     color: #4d6a87;
+}
+
+/*Format hamburger icon*/
+.hamburger{
+    display: none;
 }
 
 /*End of header formatting*/
@@ -69,6 +123,10 @@ header nav ul li a:hover{
     font-size: 70px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: revealText 1s forwards;/*reveal text animation*/
 }
 
 .videoBackground h3{
@@ -81,6 +139,29 @@ header nav ul li a:hover{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
     margin-top: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: revealText 1s forwards; /*reveal text animation*/
+}
+
+/*Format contact info container*/
+.contactContainer{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    animation: appear 1s ease forwards;
+}
+
+.contactContainer p{
+    color: white;
+    font-family: sans-serif;
+    line-height: 1.3;
+    font-size: 25px;
+}
+
+.contactContainer .contactTextContainer{
+    margin-bottom: 50px;
 }
 
 /*Format background image*/
@@ -112,6 +193,7 @@ header nav ul li a:hover{
     margin: 5px;
     height: 555px;
     width: 865px;
+    
 }
 
 
@@ -130,6 +212,7 @@ header nav ul li a:hover{
     color: white;
     font-size: 30px;
     font-weight: lighter;
+    animation: appear 1s ease forwards;
 }
 
 /*Format button*/
@@ -141,6 +224,7 @@ header nav ul li a:hover{
     padding: 15px;
     font-size: 15px;
     margin-top: 25px;
+    animation: appear 1s ease forwards;
 }
 
 /*Format hr tags around h3 tag*/
@@ -155,8 +239,10 @@ header nav ul li a:hover{
     background-color: white;
     height: 2px;
     margin: 0 30px;
-    width: 140px;
+    width: 0;
+    transform-origin: left;
     border: none;
+    animation: grow 1s ease forwards;
 }
 
 /*--About section Formatting--*/
@@ -177,6 +263,7 @@ header nav ul li a:hover{
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    animation: appear 1s ease forwards;/*apply appear animation*/
 }
 
 .aboutFormat .imgGridContainer .imgItem{
@@ -199,6 +286,7 @@ header nav ul li a:hover{
     font-family: sans-serif;
     font-size: 20px;
     margin-top: 50px;
+    animation: appear 1s ease forwards;/*Apply appear animation*/
 }
 /*--End of About section Formatting--*/
 
@@ -216,6 +304,7 @@ header nav ul li a:hover{
     color: darkmagenta;
     font-size: 50px;
 }
+
 
 .offerContainer{
     display: flex;
@@ -381,6 +470,10 @@ header nav ul li a:hover{
     font-size: 50px;
     white-space: normal;
     word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: revealText 1s forwards;/*reveal text animation*/
 }
 
 .testContainer{
@@ -390,6 +483,7 @@ header nav ul li a:hover{
     align-items: center;
     gap: 20px;
     margin: 50px 0 20px 0;
+    animation: appear 1s ease forwards;
 }
 
 .testimonials .testItem .subTitleFormat{
@@ -441,4 +535,338 @@ footer p{
     font-weight: bold;
 }
 
+/*Format footer link*/
+footer a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+footer a::before{
+    content: '';
+    background: linear-gradient(to right, #008080, #FF7F50);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease;/*Create hover transition*/
+    z-index: -1;
+    border-radius: 8px;
+    animation: colorPulse 1s  infinite;/*Create infinite color pulse loop*/
+}
+
+footer a:hover::before{
+    width: 100%;
+    
+}
+
+/*Format footer span element*/
+footer a span{
+    font-family: 'dancingScript', sans-serif;
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
 /*Media Queries*/
+@media screen and (min-width:1100px){
+
+
+    
+    
+    /*Format offers section*/
+    
+    
+    /*Format villa container*/
+    .villasFormat .villaTypeContainer{
+        flex-direction: row;
+    }
+
+    .villasFormat .villaTypeContainer .villaItem{
+        margin: 50px;
+    }
+
+
+    
+    /*Format about format imgs*/
+
+    .aboutFormat .imgGridContainer .imgItem{
+        flex-basis: calc(10% - 10px); /* Five images in a row */
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /*Format imgs to be smaller*/
+    .aboutFormat .imgGridContainer .imgItem img{
+        width: 180px;
+    }
+
+    /*Format testimonial container*/
+    
+
+    /*Adjust hr rule for test items*/
+    .testimonials .testItem hr{
+        width: 45%;
+        margin-bottom: 5px;
+    }
+
+    .testimonials .testContainer{
+        flex-direction: row;
+        margin-left: 100px;
+        gap: 10px;
+        padding: 50px;
+    }
+
+    .testimonials .testContainer .testItem{
+        flex: 1;
+        min-height: 300px;
+        max-width: 450px;
+    }
+
+    .testimonials h2{
+        font-size: 65px;
+    }
+
+    /*Format test item font*/
+    .testimonials .testItem p{
+        font-size: 20px;
+        max-width: 350px;
+    }
+
+    /*Format video title*/
+    .videoTitle{
+        width: 60%;
+       margin: 0 auto;
+    }
+
+    .videoTitle h3, .videoTitle h2{
+        font-size: 80px;
+    }
+
+    /*Format video text*/
+    .videoBackground .contactContainer {
+        position: absolute;
+        top: 65%;
+        left: 30%; 
+        transform: translate(-50%, -50%);
+    }
+
+    .videoBackground .contactContainer p{
+        font-size: 30px;
+    }
+
+    /*Format social media icons*/
+    .videoBackground .contactContainer i{
+        color: white;
+        font-size: 40px;
+        margin-right: 15px;
+        margin-top: 50px;
+    }
+
+
+}
+
+
+/*Create media query for smaller screens*/
+@media screen and (max-width: 600px){
+
+    /*Format header*/
+    header{
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        background-color: white;
+        width: 100%;
+        z-index: 999;
+    }
+
+    nav ul.active {
+       display: flex; /* Show when active */
+
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+        cursor: pointer;
+    }
+
+
+    /*Format testimonial container*/
+    .testimonials h2{
+        font-size: 40px;
+    }   
+
+    .testimonials .testContainer{
+        font-size: 12px;
+    }
+
+    .testimonials .testContainer .testItem hr{
+        width: 40%;
+    }
+
+    .testimonials .testContainer .testItem .subTitleFormat{
+        font-size: 25px;
+    }
+
+    /*Format special offers*/
+    .offersFormat h2{
+        font-size: 40px;
+    }
+
+    /*Format special offers imgs*/
+    .offersFormat .offerContainer .imgContainer img{
+        width: 90px;
+        height: 70px;
+    }
+
+    .offersFormat .offerContainer .imgText h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .offersFormat .offerContainer .imgText p{
+        font-size: 15px;
+    }
+
+    /*Format about section*/
+    .aboutFormat h2{
+        font-size: 20px;
+    }
+
+    .aboutFormat .imgGridContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .aboutFormat .imgItem{
+        flex: 0 0 calc(50% - 10px);
+        margin: 5px;
+    }
+
+    .aboutFormat .imgItem:nth-child(3){
+        flex: 0 0 100%;
+    }
+
+    .aboutFormat .imgItem:nth-child(4), .aboutFormat .imgItem:nth-child(5){
+        flex:  0 0 calc(50% - 10px);
+    }
+
+    .aboutFormat p{
+        font-size: 10px;
+    }
+
+   .imgBackground{
+        height: 60vh;
+   }
+
+   .imgBackground .itemContainer{
+        height: 450px;
+        width: 100%;
+        max-width: 600px;
+   }
+
+   .imgBackground .itemContainer .innerContainerBorder{
+        height: 400px;
+        width: 100%;
+        height: 95%;
+   }
+
+   .imgBackground .itemContainer .innerContainerBorder h2{
+        font-size: 65px;
+   }
+
+   .imgBackground .itemContainer .innerContainerBorder h3{
+        font-size: 20px;
+   }
+
+   .imgBackground .itemContainer .innerContainerBorder h4{
+        font-size: 20px;
+   }
+
+   .imgBackground .itemContainer .innerContainerBorder .btnFormat{
+        padding: 10px;
+        font-size: 12px;
+        margin-top: 15px;
+   }
+
+   .imgBackground .itemContainer .innerContainerBorder .hrContainer .whiteHr{
+        margin: 0 20px;
+   }
+
+   /*Format villas section*/
+   .villasFormat h2{
+    font-size: 25px;
+   }
+
+   /*Format imgs*/
+   .villasFormat .villaTypeContainer .villaItem img{
+        width: 150px;
+        height: 200px;
+   }
+
+   .villasFormat .villaTypeContainer .villaItem h3{
+        font-size: 20px;
+   }
+
+   .villasFormat .villaTypeContainer .villaItem h4{
+        font-size: 15px;
+   }
+
+   .villasFormat .villaTypeContainer .villaItem p{
+        font-size: 12px;
+   }
+
+   .villasFormat .photoContainer img{
+        width: 250px;
+        height: 300px;
+   }
+
+   /*Format videobackground text*/
+   .videoBackground{
+        height: 50vh;
+   }
+   .videoBackground .videoTitle h3{
+        font-size: 30px;
+   }
+
+   .videoBackground .videoTitle h2{
+        font-size: 40px;
+   }
+
+   .videoBackground .contactContainer{
+        position: absolute;
+        top: 65%;
+        left: 30%; 
+        transform: translate(-50%, -50%);
+   }
+
+   .videoBackground .contactContainer p{
+        font-size: 15px;
+   }
+
+   .videoBackground .contactContainer i{
+    color: white;
+    font-size: 30px;
+   }
+
+
+   
+}
