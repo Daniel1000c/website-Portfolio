@@ -52,6 +52,11 @@
 
 /*Font Family Formatting*/
 @font-face {
+    font-family: 'karma-bold';
+    src: url(../fonts/karma-light.ttf);
+}
+
+@font-face {
     font-family: 'edwardianScript';
     src: url(../fonts/edwardian-script-tt-bold.ttf);
 }
@@ -80,7 +85,7 @@ header{
     position: sticky;/*Have nav bar stick to top of page*/
     top: 0;
     z-index: 1000;/*Have nav bar appear over elements*/
-    background-color: white;
+    background-color: #fff9ec;
 }
 
 header nav{
@@ -266,12 +271,13 @@ header nav ul li a:hover{
 
 /*--About section Formatting--*/
 .aboutFormat{
-    background-color: purple;
+    background-color: #652b63;
     padding: 50px;
 }
 
 .aboutFormat h2{
     color: white;
+    font-family: 'karma-bold', sans-serif;
     font-weight: lighter;
     font-size: 50px;
 }
@@ -315,12 +321,13 @@ header nav ul li a:hover{
 /*--Offer section Formatting--*/
 .offersFormat{
     padding: 40px;
+    background-color: #fff9ec;
 }
 
 .offersFormat h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
-    color: darkmagenta;
+    color: #6a3266;
     font-size: 50px;
 }
 
@@ -348,20 +355,20 @@ header nav ul li a:hover{
     margin-top:25px;
 }
 
-.offerContainer .imgText h3{
+.offerContainer .imgText .imgTextItem h3{
     text-align: center;
     font-family: sans-serif;
-    color: purple;
+    color: #672d62;
     font-weight: bolder;
     margin-top: 25px;
     font-size: 25px;
 }
 
-.offerContainer .imgText p{
+.offerContainer .imgText .imgTextItem p{
     text-align: center;
-    max-width: 280px;
+    max-width: 350px;
     font-family: sans-serif;
-    color: darkmagenta;
+    color: #a4819c;
     margin-top: 10px;
     font-size: 15px;
 }
@@ -374,7 +381,7 @@ header nav ul li a:hover{
 .villasFormat h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
-    color: darkmagenta;
+    color: #6a3266;
     font-size: 50px;
     margin-bottom: 30px;
 }
@@ -403,21 +410,21 @@ header nav ul li a:hover{
 }
 .villasFormat .villaTypeContainer .villaItem h3{
     font-family: sans-serif;
-    color: darkmagenta;
+    color: #6a3266;
     font-weight: bolder;
     font-size: 30px;
 }
 
 .villasFormat .villaTypeContainer .villaItem h4{
     font-family: sans-serif;
-    color: darkmagenta;
+    color: #6a3266;
     font-weight: bolder;
     font-size: 20px;
 }
 
 .villasFormat .villaTypeContainer .villaItem p{
     text-align: center;
-    color: darkmagenta;
+    color: #ac8ba3;
     margin-bottom: 25px;
     margin-top: 5px;
     font-family: sans-serif;
@@ -441,7 +448,7 @@ header nav ul li a:hover{
 }
 
 .villasFormat .villasPricing .pricingContainer p{
-    color: darkmagenta;
+    color: #b5828e;
     font-family: sans-serif;
     text-align: center;
     margin-bottom: 30px;
@@ -487,7 +494,7 @@ header nav ul li a:hover{
 
 /*--Testimonials section Formatting--*/
 .testimonials{
-    background-color: purple;
+    background-color: #652b63;
     padding: 50px;
 }
 
@@ -699,8 +706,11 @@ footer .popupContainer .textLink{
     
     /*Format offers section*/
     
-    
     /*Format villa container*/
+    .villasFormat{
+        background-color: #fff9ec;
+    }
+    
     .villasFormat .villaTypeContainer{
         flex-direction: row;
     }
@@ -751,15 +761,14 @@ footer .popupContainer .textLink{
         padding: 40px;
     }
 
-
-    .offersFormat .offerContainer .imgContainer img{
+    .offersFormat .offerContainer .imgText .imgTextItem{
         
-        text-align: center;
+      margin: 50px;
     }
 
-    .offersFormat .offerContainer .imgText .imgTextItem{
-        margin-right: 50px;
-        text-align: center;
+    .offersFormat .offerContainer .imgText .imgTextItem img{
+        width:100%;
+        height: 250px;
     }
 
     .offersFormat .offerContainer .imgText .imgTextItem h3{
@@ -773,6 +782,25 @@ footer .popupContainer .textLink{
 
     
     /*Format about format imgs*/
+
+    .aboutFormat{
+        padding: 100px;
+    }
+
+    .aboutFormat .aboutText{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .aboutFormat .aboutText p{
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .aboutFormat .imgGridContainer{
+        margin-bottom: 15px;
+    }
 
     .aboutFormat .imgGridContainer .imgItem{
         flex-basis: calc(10% - 10px); /* Five images in a row */
@@ -848,200 +876,4 @@ footer .popupContainer .textLink{
     }
 
 
-}
-
-
-/*Create media query for smaller screens*/
-@media screen and (max-width: 600px){
-
-
-
-   
-    /*Format header to hamburger*/
-
-    header {
-        padding: 15px;
-    }
-
-    header nav ul{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        right: 0;
-        background-color: white;
-        width: 100%;
-        box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-    }
-
-    header nav ul.active{
-        display: flex;
-    }
-
-    .hamburger{
-        display: block;
-        cursor: pointer;
-    }
-
-    /*Format testimonial container*/
-    .testimonials h2{
-        font-size: 40px;
-    }   
-
-    .testimonials .testContainer{
-        font-size: 12px;
-    }
-
-    .testimonials .testContainer .testItem hr{
-        width: 40%;
-    }
-
-    .testimonials .testContainer .testItem .subTitleFormat{
-        font-size: 25px;
-    }
-
-    /*Format special offers*/
-    .offersFormat h2{
-        font-size: 40px;
-    }
-
-    /*Format special offers imgs*/
-    .offersFormat .offerContainer .imgContainer img{
-        width: 90px;
-        height: 70px;
-    }
-    
-    .offersFormat .offerContainer .imgText h3{
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    .offersFormat .offerContainer .imgText p{
-        font-size: 15px;
-    }
-
-    /*Format about section*/
-    .aboutFormat h2{
-        font-size: 20px;
-    }
-
-    .aboutFormat .imgGridContainer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 50px;
-    }
-
-    .aboutFormat .imgItem{
-        flex: 0 0 calc(50% - 10px);
-        margin: 5px;
-    }
-
-    .aboutFormat .imgItem:nth-child(3){
-        flex: 0 0 100%;
-    }
-
-    .aboutFormat .imgItem:nth-child(4), .aboutFormat .imgItem:nth-child(5){
-        flex:  0 0 calc(50% - 10px);
-    }
-
-    .aboutFormat p{
-        font-size: 10px;
-    }
-
-   .imgBackground{
-        height: 60vh;
-   }
-
-   .imgBackground .itemContainer{
-        height: 450px;
-        width: 100%;
-        max-width: 600px;
-   }
-
-   .imgBackground .itemContainer .innerContainerBorder{
-        height: 400px;
-        width: 100%;
-        height: 95%;
-   }
-
-   .imgBackground .itemContainer .innerContainerBorder h2{
-        font-size: 65px;
-   }
-
-   .imgBackground .itemContainer .innerContainerBorder h3{
-        font-size: 20px;
-   }
-
-   .imgBackground .itemContainer .innerContainerBorder h4{
-        font-size: 20px;
-   }
-
-   .imgBackground .itemContainer .innerContainerBorder .btnFormat{
-        padding: 10px;
-        font-size: 12px;
-        margin-top: 15px;
-   }
-
-   .imgBackground .itemContainer .innerContainerBorder .hrContainer .whiteHr{
-        margin: 0 20px;
-   }
-
-   /*Format villas section*/
-   .villasFormat h2{
-    font-size: 25px;
-   }
-
-   /*Format imgs*/
-   .villasFormat .villaTypeContainer .villaItem img{
-        width: 150px;
-        height: 200px;
-   }
-
-   .villasFormat .villaTypeContainer .villaItem h3{
-        font-size: 20px;
-   }
-
-   .villasFormat .villaTypeContainer .villaItem h4{
-        font-size: 15px;
-   }
-
-   .villasFormat .villaTypeContainer .villaItem p{
-        font-size: 12px;
-   }
-
-   .villasFormat .photoContainer img{
-        width: 250px;
-        height: 300px;
-   }
-
-   /*Format videobackground text*/
-   .videoBackground{
-        height: 50vh;
-   }
-   .videoBackground .videoTitle h3{
-        font-size: 30px;
-   }
-
-   .videoBackground .videoTitle h2{
-        font-size: 40px;
-   }
-
-   .videoBackground .contactContainer{
-        position: absolute;
-        top: 65%;
-        left: 30%; 
-        transform: translate(-50%, -50%);
-   }
-
-   .videoBackground .contactContainer p{
-        font-size: 15px;
-   }
-
-   .videoBackground .contactContainer i{
-    color: white;
-    font-size: 30px;
-   }
-
-
-   
 }
