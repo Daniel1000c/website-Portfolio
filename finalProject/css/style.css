@@ -8,18 +8,6 @@
 
 
 /*Keyframe Formatting*/
-@keyframes colorPulse{
-    0%{
-        background-color: #008080;
-    }
-    50%{
-        background-color: #FF7F50;
-    }
-    100% {
-        background-color: #008080; 
-    }
-}
-
 @keyframes appear{
     0%{
         opacity: 0;
@@ -39,14 +27,18 @@
 }
 
 @keyframes revealText{
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes growHr{
     0%{
         width: 0;
-        opacity: 0;
-       
     }
     100%{
-        width: 100%;
-        opacity: 1;
+        width: 50%;
     }
 }
 
@@ -187,10 +179,20 @@ header nav ul li a:hover{
 }
 
 .contactContainer .contactTextContainer{
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
+/*Format twitter icon*/
+.bxl-twitter{
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
+.bxl-twitter path{
+    fill: transparent;
+}
 
 
 /*Format background image*/
@@ -225,7 +227,6 @@ header nav ul li a:hover{
     
 }
 
-
 .imgBackground .itemContainer .innerContainerBorder h2{
     color: white;
     font-size: 145px;
@@ -241,6 +242,7 @@ header nav ul li a:hover{
     color: white;
     font-size: 30px;
     font-weight: lighter;
+    animation: appear 1s ease;/*Create appear animation*/
 }
 
 /*Format button*/
@@ -253,8 +255,9 @@ header nav ul li a:hover{
     text-align: center;
     padding: 15px;
     width: 250px;
-    font-size: 15px;
-    margin-top: 25px;
+    font-size: 17px;
+    margin-top: 55px;
+    animation: appear 1s ease;/*Create appear animation*/
 }
 
 /*Format hr tags around h3 tag*/
@@ -264,13 +267,23 @@ header nav ul li a:hover{
    text-align: center;
 }
 
-.imgBackground .itemContainer .innerContainerBorder .hrContainer .whiteHr{
+.imgBackground .itemContainer .innerContainerBorder .hrContainer .whiteHr1{
+    flex: 1;
+    background-color: white;
+    height: 2px;
+    margin: 0 30px;
+    
+    width: 0;
+    border: none;
+    animation: grow 1s ease forwards;
+}
+
+.imgBackground .itemContainer .innerContainerBorder .hrContainer .whiteHr2{
     flex: 1;
     background-color: white;
     height: 2px;
     margin: 0 30px;
     width: 0;
-    transform-origin: left;
     border: none;
     animation: grow 1s ease forwards;
 }
@@ -338,6 +351,7 @@ header nav ul li a:hover{
 }
 
 
+
 .offerContainer{
     display: flex;
     justify-content: center;
@@ -377,6 +391,7 @@ header nav ul li a:hover{
     color: #a4819c;
     margin-top: 10px;
     font-size: 15px;
+    line-height: 1.5;
 }
 
 .offerContainer .imgText .imgTextItem img{
@@ -386,7 +401,13 @@ header nav ul li a:hover{
 
 /*--Villas section Formatting--*/
 .villasFormat{
-    background-color: #fff9ec;
+    background: linear-gradient(
+        to bottom,
+        #fff9ec 0%,
+        #fff9ec 67.35%,
+        #9A7FAE 67.35%,
+        #9A7FAE 100%
+    );
     padding: 50px;
 }
 
@@ -473,7 +494,7 @@ header nav ul li a:hover{
 
 /*Format photo container to be at center of page*/
 .villasFormat .photoContainer{
-    background-color: #9A7FAE; /*Set to pastel purple*/
+   
     display: flex;
     justify-self: center;
     align-items: center;
@@ -573,150 +594,13 @@ footer{
     background-color: black;
     z-index: 1000;
     color: white;
-    padding: 10px;
+    padding: 19px;
 }
 
-footer p{
-    font-family: sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-/*Format footer link*/
-footer a{
-    text-decoration: none;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 5px;
-    border-radius: 8px;
-    font-family: sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    
-    position: relative;
-    overflow: hidden;
-}
-
-footer .canvaLink::before{
-    content: '';
-    background: linear-gradient(to right, #008080, #FF7F50);
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s ease;/*Create hover transition*/
-    z-index: -1;
-    border-radius: 8px;
-    animation: colorPulse 1s  infinite;/*Create infinite color pulse loop*/
-}
-
-footer  .canvaLink:hover::before{
-    width: 100%;
-    
-}
-
-/*Format footer span element*/
-footer a span{
-    font-family: 'dancingScript', sans-serif;
-    font-size: 13px;
-    position: relative;
-    z-index: 1;
-}
-
-/*Format popup message*/
-
-#termsLink{
-    transition: 0.5s ease;
-    padding: 0;
-}
-
-#termsLink:hover{
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 0;
-}
-
-.popupContainer{
-    display: none;
-    position: fixed; /* Use fixed positioning to overlay on the viewport */
-    top: 83.5%; /* Center vertically */
-    left: 20%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position to truly center */
-    background-color: white;
-    border: none;
-    padding: 30px;
-    z-index: 10;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 350px;
-    height: 250px;
-    border-radius: 8px;
-}
-
-/*Format heading*/
-.popupContainer h3{
-    margin: 0 0 10px;
-    color: black;
-    font-family: sans-serif;
-    font-size: 25px;
-}
-
-.popupContainer p{
-    margin: 0 0 10px;
-    font-family: sans-serif;
-    color:darkgray;
-    font-weight: lighter;
-    font-size: 12px;
-    line-height: 1.5;
-}
-
-#closePopUp{
-    margin-top: 10px;
-    color: black;
-    border: none;
-    background-color: transparent;
-    padding: 15px;
-    border-radius: 8px;
-    transition: 0.5s ease;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-right: 8px;
-}
-
-#closePopUp:hover{
-    background-color: rgba(211, 211, 211, 0.3);
-
-}
-
-footer .popupContainer a{
-    
-    color: black;
-    font-family: sans-serif;
-    background-color: rgba(211, 211, 211, 0.3);
-    padding: 15px;
-    transition: 0.5s ease;
-}
-
-footer .popupContainer a:hover{
-    background-color: rgba(211, 211, 211, 0.8);
-}
-
-footer .popupContainer .textLink{
-    background-color: transparent;
-    padding: 0;
-    color: darkgray;
-    text-decoration: underline;
-}
-
-.btnContainer{
-    text-align: right;
-}
 
 
 /*Media Queries*/
 @media screen and (min-width:1100px){
-
-    
     
     /*Format offers section*/
     
@@ -759,6 +643,7 @@ footer .popupContainer .textLink{
     /*Format hr*/
     .villasFormat .villasPricing .pricingContainer hr{
         width: 50%;
+        animation: growHr 1s ease;
     }
 
     .villasFormat .villasPricing .pricingContainer p{
@@ -894,5 +779,6 @@ footer .popupContainer .textLink{
         margin-top: 50px;
     }
 
+    
 
 }

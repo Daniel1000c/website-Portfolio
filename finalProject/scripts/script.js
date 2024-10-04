@@ -69,22 +69,6 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 
 
-//Format hamburger menu
-document.addEventListener('DOMContentLoaded',function(){
-    const hamburger = document.getElementById('hamburger');
-    const navList = document.querySelector('header nav ul');
 
-    //Toggle the active class
-    hamburger.addEventListener('click',function(){
-        navList.classList.toggle('active');
-    });
-
-    //close menu
-    window.addEventListener('click',function(event){
-        if(!hamburger.contains(event.target) && !navList.contains(event.target)){
-            navList.classList.remove('active');
-        }
-    })
-});
 
 
