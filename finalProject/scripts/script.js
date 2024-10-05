@@ -44,29 +44,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 //Create pop up message
-document.addEventListener('DOMContentLoaded',function(){
-    const termsLink = document.getElementById('termsLink');
-    const popUp = document.getElementById('popUp');
-    const closePopUp = document.getElementById('closePopUp');
-
-    //show popup when user clicks on link
-    termsLink.addEventListener('click',function(){
-        popUp.style.display = 'block';
-    });
+const popUp = document.querySelector('.popUpMsg');
+const terms = document.querySelector('.termsFormat');
 
 
-    //close popup when user clicks on close button
-    closePopUp.addEventListener('click',function(){
-        popUp.style.display = 'none';
-    });
-
-    //Close popup if user click out of box
-    window.addEventListener('click',function(event){
-        if(event.target == popUp){
-            popUp.style.display = 'none';
-        }
-    });
+//show popup message
+terms.addEventListener('click', function(){
+   popUp.classList.add('show'); 
 });
+
+//Close popup message
+document.getElementById('closePopUp').addEventListener('click', function(){
+    popUp.classList.remove('show');
+})
+
+//Close popup message when user clicks outside of it
+document.addEventListener('click', function(event){
+    if(!popUp.contains(event.target) && !terms.contains(event.target)){ 
+        popUp.classList.remove('show');
+    }
+});
+
 
 
 

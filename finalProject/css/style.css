@@ -27,10 +27,14 @@
 }
 
 @keyframes revealText{
-    to{
-        opacity: 1;
-        width: 100%;
-    }
+   0%{
+    opacity: 0;
+    width: 0;
+   }
+   100%{
+       opacity: 1;
+       width: 100%;
+   }
 }
 
 @keyframes growHr{
@@ -39,6 +43,18 @@
     }
     100%{
         width: 50%;
+    }
+}
+
+@keyframes colorPulse{
+    0%{
+        background-color: #4A90E2;
+    }
+    50%{
+        background-color: #50E3C2;
+    }
+    100%{
+        background-color: #4A90E2;
     }
 }
 
@@ -166,9 +182,12 @@ header nav ul li a:hover{
 
 /*Format contact info container*/
 .contactContainer{
-    display: block;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 20px;
+    margin-top: 50px;
+    flex-direction: column;
 }
 
 .contactContainer p{
@@ -178,20 +197,36 @@ header nav ul li a:hover{
     font-size: 25px;
 }
 
-.contactContainer .contactTextContainer{
-    margin-top: 50px;
-    margin-bottom: 20px;
+
+.contactContainer .iconContainer{
+   margin-top: 100px;
+   margin-right: 20px;
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   margin-left: 145px;
 }
+
+/*Format logo*/
+.contactContainer .iconContainer .logoFormat{
+    font-family: 'edwardianScript', sans-serif;
+    text-align: center;
+    margin-left: 200%;
+    font-size: 65px;
+}
+
 
 /*Format twitter icon*/
-.bxl-twitter{
-    background-color: white;
-    border-radius: 50%;
-    overflow: hidden;
+.contactContainer .twitterIcon{
+    width: 33px;
 }
 
-.bxl-twitter path{
-    fill: transparent;
+.contactContainer .instaIcon{
+    width: 33px;
+}
+
+.contactContainer .fbIcon{
+    width: 33px;
 }
 
 
@@ -477,7 +512,10 @@ header nav ul li a:hover{
     width: 18%;
     margin-top: 50px;
     margin-bottom: 15px;
+    animation: grow 1s ease;
+    transform-origin: left;
 }
+
 
 .villasFormat .villasPricing .pricingContainer p{
     color: #b5828e;
@@ -539,8 +577,6 @@ header nav ul li a:hover{
     word-wrap: break-word;
     overflow: hidden;
     white-space: nowrap;
-    width: 0;
-    animation: revealText 1s forwards;/*reveal text animation*/
 }
 
 .testContainer{
@@ -594,10 +630,124 @@ footer{
     background-color: black;
     z-index: 1000;
     color: white;
-    padding: 19px;
+    padding: 10px;
 }
 
+.popUpContainer{
+    position: relative;
+}
 
+/*Format link for canva*/
+.linkFormat a{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.5s ease;/*Create a smooth transition*/
+}
+
+.linkFormat a span{
+    font-family: 'dancingScript', sans-serif;
+    font-size: 13px;
+}
+
+.linkFormat a:hover{  
+    /*Create color pulse animation*/
+    animation: colorPulse 5s infinite;
+}
+
+/*Format popup message*/
+.popUpContainer .termsFormat{
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.5s ease;/*Create smooth transition hover*/
+}
+
+.popUpContainer .termsFormat:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.popUpMsg{
+    padding: 15px;
+    background-color: white;
+    width: 300px;
+    border-radius: 8px;
+    visibility: hidden;
+    z-index: 1000;
+    opacity: 0;
+    position: fixed;
+    left: 50%; 
+    bottom: 100%; 
+    transform: translate(-20%, 5px); 
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    position: absolute;
+}
+
+.popUpMsg.show{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.popUpMsg h3{
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    color: black;
+}
+
+.popUpMsg p{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: lightgray;
+    margin-bottom: 10px;
+}
+
+.popUpMsg a{
+    color: lightgray;
+    transition: 0.5s ease;/*Create smooth transition hover*/
+}
+
+.popUpMsg a:hover{
+    color: purple;
+}
+
+.popUpMsg .btnContainer{
+    text-align: right;
+}
+
+.popUpMsg .btnContainer button{
+    padding: 15px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    border: none;
+    background-color: transparent;
+    transition: 0.5s ease;
+    font-weight: bold;
+}
+
+.popUpMsg .btnContainer button:hover{
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+.popUpMsg .btnContainer .reportFormat{
+    background-color: rgba(211, 211, 211, 0.5);
+    font-family: sans-serif;
+    padding: 13px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.popUpMsg .btnContainer .reportFormat:hover{
+    background-color: rgba(211, 211, 211, 1);
+}
 
 /*Media Queries*/
 @media screen and (min-width:1100px){
