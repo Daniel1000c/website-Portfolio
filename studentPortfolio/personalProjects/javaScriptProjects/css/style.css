@@ -4,3 +4,59 @@
     margin: 0;
     box-sizing: border-box;
 }
+/*End of general formatting*/
+
+/*Keyframe Formatting*/
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*End of keyframe formatting*/
+
+/*Format body*/
+body{
+    background-image: url(../images/lavaLampBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/*Format header*/
+header{
+    padding: 15px;
+}
+
+header h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    animation: appear 1s ease;/*Create appear animation*/
+}
+/*End of header formatting*/
+
+/*Table formatting*/
+.tableContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+
+/*Format footer*/
+footer{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    padding: 15px;
+    font-size: 18px;
+    font-style: italic;
+}
+/*End of footer formatting*/
