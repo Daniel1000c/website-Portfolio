@@ -108,6 +108,38 @@ header nav .bx-menu:hover {
     cursor: pointer;
 }
 
+/*Format imgLink container*/
+.imgLinkContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+    gap: 20px
+}
+
+/*Format imgs*/
+.imgLinkContainer .imgLink img{
+    width: 250px;
+    margin-bottom: 25px;
+}
+
+.imgLinkContainer .imgLink a {
+    text-decoration: none;
+    font-size: bolder;
+    font-family: sans-serif;
+    color: lightskyblue;
+    font-size: 30px;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.imgLinkContainer .imgLink a:hover {
+    color: rgb(70, 130, 180);
+    cursor: pointer;
+}
+
+/*Format img links*/
+.imgLinkContainer 
+/*End of section formatting*/
 
 /*Footer formatting*/
 footer {
@@ -149,7 +181,7 @@ footer {
 }
 
 .footerLogoContainer img {
-    width: 300px;
+    width: 200px;
 }
 
 .footerLogoContainer img:hover {
@@ -164,5 +196,55 @@ footer p {
 
 footer p a{
     color: lightgray;
+}
+
+/*Format quick links*/
+.qckLinkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    gap: 200px;
+}
+
+.qckLinkContainer .qckLinkItem {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.qckLinkContainer .qckLinkItem h3 {
+    font-family: sans-serif;
+    color: lightskyblue;
+    font-size: 22px;
+}
+
+.qckLinkContainer .qckLinkItem p {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.qckLinkContainer .qckLinkItem a {
+    text-decoration:  none;
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+/*Create item hover*/
+.qckLinkContainer .qckLinkItem a:hover {
+    color: lightskyblue;
+}
+
+.qckLinkContainer .qckLinkItem a, .qckLinkContainer .qckLinkItem p {
+    margin: 10px 0;
 }
 /*End of footer formatting*/
