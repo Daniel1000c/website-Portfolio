@@ -331,6 +331,71 @@ header nav .bx-menu:hover {
     cursor: pointer;
     background-color: rgb(70, 130, 180);
 }
+
+/*Format about us img container*/
+.introImg {
+    background-image: url(../images/aboutUsCat.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/*Format about img heading*/
+.introImg h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+/*Format video section*/
+.videoContainer {
+    padding: 25px;
+    background-color: #6B7D7D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoContainer iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Format donate section*/
+.donateContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/donateBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 15vh;
+}
+
+/*Format donate button*/
+.donateContainer a {
+    text-decoration: none;
+    background-color: lightskyblue;
+    padding: 25px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    border: 1px solid black;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.donateContainer a:hover {
+    background-color: rgb(70, 130, 180);
+}
 /*End of section formatting*/
 
 /*Footer formatting*/
