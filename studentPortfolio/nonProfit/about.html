@@ -22,7 +22,41 @@
             
         </header>
         <main>
-            
+            <!--Create news letter-->
+            <section class="newsContainer">
+                <h2>Broward Rescue Newsletter</h2>
+
+                <!--Insert newsletter tagline-->
+                <p>Have you met our pups, kitties, and playful pets? Don't miss out on the latest adoptions news and events.
+                    Stay tuned on animal rescue update, heartfelt stories, and upcoming organization events. Sign up 
+                    now to get all the latest news on our furry friends straight to your inbox.
+                </p>
+                <!--Create newsletter form-->
+                <form action="https://professorcooke.org/forms/processform.php">
+                    <div class="inputContainer">
+
+                        <div class="formField">
+                            <!--Prompt for first name-->
+                            <input type="text" name="firstName" id="firstName" placeholder="John...">
+                            <label for="firstName">FirstName:</label>
+                        </div>
+
+                        <div class="formField">
+                            <!--Prompt for last name-->
+                            <input type="text" name="lastName" id="lastName" placeholder="Doe..."> 
+                            <label for="lastName">LastName:</label>
+                        </div>
+                    </div>
+
+                    <div class="formField fullWidth">
+                        <input type="email" name="email" id="email" placeholder="Email Address...">
+                    </div>
+                    
+
+                    <!--Create submit button-->
+                    <input type="submit" value="Subscribe">
+                </form>
+            </section>   
         </main>
         <footer>
 

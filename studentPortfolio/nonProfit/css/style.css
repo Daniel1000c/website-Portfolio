@@ -211,6 +211,126 @@ header nav .bx-menu:hover {
     border: 1px solid lightskyblue;
 }
 
+/*Format news letter section*/
+.newsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px;
+    background-color: lightgray;
+    padding: 25px;
+}
+
+.newsContainer h2 {
+    font-family: sans-serif;
+    font-size: 45px;
+    color: white;
+}
+
+/*Format newsletter p tag*/
+.newsContainer p {
+    line-height: 1.5;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.newsContainer form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*Format input fields*/
+.newsContainer form .inputContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    margin-top: 5px;
+}
+
+.newsContainer form .inputContainer .formField {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Format labels*/
+.newsContainer form .inputContainer .formField label {
+    margin-top: 5px;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/*Format inputs*/
+.newsContainer form .inputContainer .formField input {
+    padding: 25px;
+    font-size: 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+/*Format input placeholders*/
+.newsContainer form .inputContainer .formField input::placeholder{
+    opacity: 0.5;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+/*Format input focus*/
+.newsContainer form .inputContainer .formField input:focus {
+    outline: none;
+}
+
+/*Format email input*/
+.fullWidth {
+    width: 100%;
+}
+
+.fullWidth input {
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 25px;
+}
+
+.fullWidth input::placeholder {
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.fullWidth input:focus {
+    outline: none;
+}
+
+
+/*Format button*/
+.newsContainer form input[type="submit"] {
+    padding: 25px;
+    display: inline-block;
+    width: 150px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: lightskyblue;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+    margin: 0 auto;
+}
+
+.newsContainer form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(70, 130, 180);
+}
 /*End of section formatting*/
 
 /*Footer formatting*/
