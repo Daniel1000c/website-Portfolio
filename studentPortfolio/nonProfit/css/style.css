@@ -6,6 +6,25 @@
 }
 /*End of general formatting*/
 
+/*Keyframe formatting*/
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /*Format header*/
 header {
     padding: 15px;
@@ -674,6 +693,126 @@ header nav .bx-menu:hover {
     color: lightskyblue;
     background-color: transparent;
 }
+
+/*Format programs header container*/
+.programsHeader {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 35px;
+}
+
+/*Format header titles*/
+.programsHeader h2 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: lightskyblue;
+    margin-bottom: 15px;
+    animation: slideLeft 1s ease;/*Create slide from left animation*/
+}
+
+.programsHeader h3 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: darkslategray;
+    animation: slideLeft 1.4s ease;/*Create slide from left animation*/
+}
+
+.programsHeader p{
+    margin-top: 20px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: 20px;
+    animation: slideLeft 2s ease;/*Create slideleft animation*/
+}
+
+/*Format program header img*/
+.programsHeader img {
+    margin-top: 30px;
+    border-radius: 50%;
+    animation: appear 2.5s ease;/*Create appear animation*/
+}
+
+/*Format program card container*/
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px;
+    background-color: lightskyblue;
+    padding: 25px;
+}
+
+.cardContainer h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: darkslategray;
+    font-weight: bolder;
+    border-bottom: 15px dotted darkslategray;
+}
+
+/*Format card grid*/
+.cardContainer .cardGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/*Format images*/
+.cardContainer .cardGrid .card img {
+    width: 400px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/*Format cards*/
+.cardContainer .cardGrid .card {
+    background-color: white;
+    border-radius: 8px;
+    transition: 0.5s ease;/*Create smooth scale hover animation*/
+}
+
+.cardContainer .cardGrid .card h4 {
+    font-family: sans-serif;
+    margin-top: 5px;
+    padding-left: 5px;
+    font-size: 25px;
+    color: darkslategray;
+}
+
+.cardContainer .cardGrid .card p {
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    color: lightskyblue;
+    font-weight: bolder;
+}
+
+.cardContainer .cardGrid .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/*Format impact container*/
+.impactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightskyblue;
+    padding: 25px;
+}
+
+.impactContainer h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
 
 /*End of section formatting*/
 
