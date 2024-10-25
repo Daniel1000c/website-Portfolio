@@ -537,6 +537,144 @@ header nav .bx-menu:hover {
     align-items: center;
     padding: 25px;
 }
+
+/*Format contact container*/
+
+/*Format contact header*/
+.contactHeader {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url(../images/contactHeader.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 20vh;
+}
+
+.contactHeader h2 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+.contactInfoContainer {
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+/*Formt contact info text items*/
+.contactInfoContainer .contactItemText h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.contactInfoContainer .contactItemText h2 span {
+    color: lightskyblue;
+}
+
+/*Format contact p tag*/
+.contactInfoContainer .contactItemText p {
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/*Format contact information heading*/
+.contactInfoContainer .contactItemText .contactInformation h4 {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contactInfoContainer .contactItemText .contactInformation p {
+    font-size: 15px;
+}
+/*Format contact information link*/
+.contactInfoContainer .contactItemText .contactInformation a {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: lightskyblue;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.contactInfoContainer .contactItemText .contactInformation a:hover {
+    color: rgb(70, 130, 180);
+    text-decoration: underline;
+}
+
+/*Format contact form section*/
+.contactForm {
+    margin-top: 25px;
+}
+
+/*Format contact form header*/
+.contactForm h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.contactForm h2 span {
+    color: lightskyblue;
+}
+
+/*Format contact form*/
+.contactInfoContainer .contactForm .contactFormFormat label {
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.contactInfoContainer .contactForm .contactFormFormat input[type="text"],
+.contactInfoContainer .contactForm .contactFormFormat input[type="email"]{
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid lightskyblue;
+    border-radius: 8px;
+    display: inline-block;
+    width: 460px;
+    margin-top: 8px;
+}
+
+.contactInfoContainer .contactForm .contactFormFormat input::placeholder {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/*Format textarea*/
+.contactInfoContainer .contactForm .contactFormFormat textarea {
+    border-radius: 8px;
+    border: 1px solid lightskyblue;
+    margin-bottom: 25px;
+    margin-top: 8px;
+}
+
+/*Format submit button*/
+.contactInfoContainer .contactForm .contactFormFormat input[type="submit"] {
+    border: none;
+    padding: 22px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    background-color: lightskyblue;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.contactInfoContainer .contactForm .contactFormFormat input[type="submit"]:hover {
+    border: 1px solid lightskyblue;
+    color: lightskyblue;
+    background-color: transparent;
+}
+
 /*End of section formatting*/
 
 /*Footer formatting*/

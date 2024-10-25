@@ -22,12 +22,65 @@
             
         </header>
         <main>
+
+            <!--Create contact us section container-->
+            <section class="contactHeader">
+                <h2>Contact Us</h2>
+            </section>
             
             <!--Create google map section-->
             <div class="googleMapContainer">
                 <!--Create google map-->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14337.512123866181!2d-80.32058807696745!3d26.05389913622965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a7ae27b7bab7%3A0x67981bd755f15062!2s12172%20SW%2052nd%20Ct%2C%20Cooper%20City%2C%20FL%2033330!5e0!3m2!1sen!2sus!4v1729825459041!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
+            <!--Create contact us section container-->
+            <section class="contactInfoContainer">
+                <div class="contactItemText">
+                    <h2>About <span>Broward Rescue</span></h2>
+
+                    <p>
+                        Get in Touch with Broward Rescue! We are happy to answer your questions, assist with pet adoptions, and provide any customer support you need.
+                        Whether looking to inquire about adopting a pet, volunteer in one of our facilities or just simply learn more about our mission, we are just one message away.
+                        Reach out now, let's work together to give these pets a forever home they so rightfully deserve.
+                    </p>
+
+                    <!--Create company contact info-->
+                    <div class="contactInformation">
+                        <h4>&#x1F3E0;Broward Rescue Inc.</h4>
+                        <p>12172 SW 52nd CT <br> Cooper City, FL 33330</p>   
+                        <p>305.527.0765</p>
+
+                        <h4>&#x1F30D;Website</h4>
+                        <a href="index.html">www.browardRescue.com</a>
+                    </div>
+                    
+                </div>
+                <div class="contactForm">
+                    <h2>Send <span>Us a Message</span></h2>
+                    <form action="https://professorcooke.org/forms/processform.php" class="contactFormFormat">
+                        <!--Prompt user for full name-->
+                        <label for="fullName">Name</label><br>
+                        <input type="text" name="fullName" id="fullName" placeholder="John Doe..." required><br>
+
+                        <!--Prompt user for email address-->
+                        <label for="emailAddress">Email</label><br>
+                        <input type="email" name="emailAddress" id="emailAddress" placeholder="user@example.com..." required><br>
+
+                        <!--Prompt user for message subject-->
+                        <label for="subject">Subject</label><br>
+                        <input type="text" name="subject" id="subject" placeholder="Pet Appointment..." required><br>
+
+                        <!--Prompt user for a message-->
+                        <label for="message">Message</label><br>
+                        <textarea name="message" id="message" name="message" cols="60" rows="10" required></textarea><br>
+
+                        <!--Create submit button-->
+                        <input type="submit" value="Send Message">
+
+                    </form>
+                </div>
+            </section>
 
             <!--Create news letter-->
             <section class="newsContainer">
