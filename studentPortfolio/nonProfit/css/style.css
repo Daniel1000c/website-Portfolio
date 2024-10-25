@@ -359,6 +359,7 @@ header nav .bx-menu:hover {
     align-items: center;
     flex-direction: row;
     gap: 50px;
+    align-items: flex-start;
 }
 
 /*Format mission heading*/
@@ -367,11 +368,30 @@ header nav .bx-menu:hover {
     font-family: sans-serif;
     font-weight: bolder;
     font-size: 55px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     text-decoration: underline;
 }
 
+.missionStatement .missionItemText p {
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: darkslategray;
+    margin-bottom: 25px;
+}
+
+/*Format first letter of first p tag to be big and bold*/
+.missionStatement .missionItemText .dropCap:first-letter {
+    font-size: 3em;
+    line-height: 0;
+}
+
 /*Format mission quicklinks header*/
+.missionStatement .quickLinks {
+    margin-top: 25px;
+    align-self: flex-start;
+}
+
 .missionStatement .quickLinks h4 {
     font-family: sans-serif;
     font-weight: bolder;
@@ -505,6 +525,17 @@ header nav .bx-menu:hover {
 
 .donateContainer a:hover {
     background-color: rgb(70, 130, 180);
+}
+
+/*Google maps section formatting*/
+.googleMapContainer {
+    background-image: url(../images/vecteezy_cat-paw-seamless-pattern-animal-footstep-vector-pattern-on_34132301.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
 /*End of section formatting*/
 
