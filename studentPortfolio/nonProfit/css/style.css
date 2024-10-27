@@ -80,6 +80,60 @@ header nav .bx-menu:hover {
 /*End of header formatting*/
 
 /*Section Formatting*/
+
+/*Create flyer slide container*/
+.flyerContainer {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.flyerSlider {
+    width: 100%;
+    position: relative;
+}
+
+/*Format slider icons*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    z-index: 10;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Format slide imgs*/
+.flyerContainer .flyerSlider .flyer {
+    display: none;
+    width: 100%;
+}
+
+/*Show first slide image by default*/
+.flyerContainer .flyerSlider .flyer:first-child {
+    display: block;
+}
+
+
 .aboutContainer {
     display: flex;
     justify-content: center;
@@ -356,7 +410,8 @@ header nav .bx-menu:hover {
     background-image: url(../images/aboutUsCat.jpg);
     background-position: center;
     background-size: cover;
-    height: 30vh;
+    background-attachment: fixed;
+    height: 23vh;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -824,12 +879,33 @@ header nav .bx-menu:hover {
     align-items: flex-start;
 }
 
+/*Format donation header section img*/
+.donationHeader {
+    background-image: url(../images/dogDonations.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 20vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.donationHeader h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-left: 100px;
+}
+
 /*Format donationItemText headers*/
 .donationContainer .donateTextItem h2 {
     font-family: sans-serif;
     font-size: 50px;
     margin-bottom: 30px;
     color: darkslategray;
+    border-bottom: 5px dotted darkslategray;
+    width: 420px;
 }
 
 .donationContainer .donateTextItem h3 {
