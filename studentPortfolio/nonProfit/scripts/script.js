@@ -29,5 +29,15 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.prev').addEventListener('click', prevSlide);
 
     //Show the first flyer by default
-    showSlide(currentFlyer)
+    showSlide(currentFlyer);
+
+    
 });
+//Create open menu function
+function openMenu() {
+    const menuNav = document.querySelector('header nav');
+
+    menuNav.classList.toggle('active');
+}
+
+

@@ -55,7 +55,53 @@
                 </div>
 
                 <div class="donateFormContainer">
+                    <!--Create donation form-->
+                    <form action="https://professorcooke.org/forms/processform.php" method="post">
+                        <h2>Choose Your Gift</h2>
+                        <div class="radioBtns">
+                            <!--Prompt user for gift choices-->
+                            <input type="radio" id="donateTen" name="dollarAmount" value="10">
+                            <label for="donateTen">$10</label>
+                            <input type="radio" id="donateTwentyFive" name="dollarAmount" value="25">
+                            <label for="donateTwentyFive">$25</label>
+                            <input type="radio" id="donateFifty" name="dollarAmount" value="50">
+                            <label for="donateFifty">$50</label>
+                            <input type="radio" id="donateHundred" name="dollarAmount" value="100">
+                            <label for="donateHundred">$100</label>
+                        </div>
 
+                        <!--Create donation frequency options-->
+                        <label for="donorFrequency">Donation Frequency</label><br>
+                        <select name="donorFrequency" id="donorFrequency">
+                            <option value="oneTime">Single</option>
+                            <option value="monthly">Monthly</option>
+                        </select><br>
+
+                        <!--Prompt user for information-->
+                        <label for="donorName">Full Name</label><br>
+                        <input type="text" id="donorName" name="donorName" placeholder="John Doe" required><br>
+                        <label for="donorEmail">Email</label><br>
+                        <input type="email" id="donorEmail" name="donorEmail" placeholder="user@example.com..." required><br>
+                        <label for="donorPhone">Phone Number</label><br>
+                        <input type="tel" id="donorPhone" name="donorPhone" placeholder="123-456-7890"><br>
+
+                        <!--Prompt user for payment information-->
+                        <label for="donorCard">Credit Card</label>
+                        <input type="text" id="donorCard" name="donorCard" required>
+
+                        <label for="expDate">Expiration Date</label>
+                        <input type="month" id="expDate" name="expDate" required><br>
+
+                        <label for="cvv">CVV</label><br>
+                        <input type="text" id="cvv" name="cvv" required>
+
+                        <!--Create text area input-->
+                        <label for="donorMessage">Comments</label>
+                        <textarea name="donorMessage" id="donorMessage" cols="30" rows="10" placeholder="Message..."></textarea>
+
+                        <!--Create submit button-->
+                        <input type="submit" value="Send Gift">
+                    </form>
                 </div>
             </div>
             <!--Create news letter-->

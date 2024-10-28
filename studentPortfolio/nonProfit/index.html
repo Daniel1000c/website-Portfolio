@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/x-icon" href="favicon/favicon.ico"><!--link to favicon for web tab-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--Link to box icons external stylesheet-->
+        <script src="scripts/script.js"></script>
     </head>
     <body>
         <header>
@@ -17,7 +18,17 @@
                 <a href="donate.html">Donate</a>
 
                 <!--Create hamburger menu icon-->
-                <i class='bx bx-menu'></i>    
+                <div class="hamburgerMenu">
+                    <i class='bx bx-menu' onclick="openMenu()"></i>
+                </div>
+                
+                <!--Create links-->
+                <ul class="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="programs.html">Programs/Services</a></li>
+                </ul>
             </nav>
             
         </header>
@@ -93,6 +104,7 @@
             <div class="flyerContainer">
                 <!--Create prev button-->
                 <button class="prev">&lt;</button>
+
                 <div class="flyerSlider">
                     <img src="images/dogWalkFlyer.png" alt="Dog Walking Services" class="flyer">
                     <img src="images/adoptionFlyer.png" alt="Pet Adoptions" class="flyer">
@@ -101,6 +113,7 @@
                     <img src="images/petCareFlyer.png" alt="Broward Rescue Pet Care" class="flyer">
                     <img src="images/cartoonPetFlyer.png" alt="Broward Rescue Animal Care" class="flyer">
                 </div>
+
                 <!--Create next slide-->
                 <button class="next">&gt;</button>
             </div>
@@ -182,7 +195,7 @@
                     <a href="contact.html">Contact Us</a>
                 </div>
             </div>
-            <p>&copy; 2024 Broward Rescue | <a href="#">Privacy Policy</a></p>
+            <p>&copy; 2024 Broward Rescue | <a href="privacy.html">Privacy Policy</a></p>
         </footer>
     </body>
 </html>
