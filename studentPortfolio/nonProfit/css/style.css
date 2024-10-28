@@ -551,6 +551,7 @@ header nav.active .navLinks {
 .videoContainer iframe {
     max-width: 100%;
     max-height: 100%;
+    border: none;
 }
 /*Format testimonial container*/
 .testimonials { 

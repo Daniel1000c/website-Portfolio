@@ -14,10 +14,10 @@
             <img src="images/browardRescueFixedSpelling.png" alt="Broward Rescue" usemap="#imageMap">
 
             <map name="imageMap">
-                <area target="" alt="Rescue" title="Broward Rescue" href="index.html" coords="0,1,500,498" shape="rect">
+                <area target="_self" alt="Rescue" title="Broward Rescue" href="index.html" coords="0,1,500,498" shape="rect">
             </map>
             
-            <nav>
+            <nav aria-label="Web Page Navigation">
                 <!--Create donation link-->
                 <a href="donate.html">Donate</a>
 
@@ -66,7 +66,7 @@
             </div>
 
             <!--Create Mission Statement/vision, call to action and programs section section-->
-            <Section class="overContainer">
+            <section class="overContainer" aria-label="Overview Section"><!--Create aria tags-->
                 <div class="overviewItem">
                     <h2>It's All About Them</h2>
                     <h4>Fostering Families and Communities</h4>
@@ -102,12 +102,12 @@
                         <a href="https://humanebroward.com/all-pets/?type=Rabbit&pg=1" target="_blank">Adopt</a>
                     </div>
                 </div>
-            </Section>
+            </section>
 
             <!--Create img slider flyer container-->
             <div class="flyerContainer">
                 <!--Create prev button-->
-                <button class="prev">&lt;</button>
+                <button class="prev" aria-label="Previous Flyer">&lt;</button>
 
                 <div class="flyerSlider">
                     <img src="images/dogWalkFlyer.png" alt="Dog Walking Services" class="flyer">
@@ -119,7 +119,7 @@
                 </div>
 
                 <!--Create next slide-->
-                <button class="next">&gt;</button>
+                <button class="next" aria-label="Next Flyer">&gt;</button>
             </div>
 
             <!--Create donate section-->
@@ -142,19 +142,19 @@
 
                         <div class="formField">
                             <!--Prompt for first name-->
-                            <input type="text" name="firstName" id="firstName" placeholder="John...">
+                            <input type="text" name="firstName" id="firstName" placeholder="John..." aria-label="First Name">
                             <label for="firstName">FirstName:</label>
                         </div>
 
                         <div class="formField">
                             <!--Prompt for last name-->
-                            <input type="text" name="lastName" id="lastName" placeholder="Doe..."> 
+                            <input type="text" name="lastName" id="lastName" placeholder="Doe..." aria-label="Last Name"> 
                             <label for="lastName">LastName:</label>
                         </div>
                     </div>
 
                     <div class="formField fullWidth">
-                        <input type="email" name="email" id="email" placeholder="Email Address...">
+                        <input type="email" name="email" id="email" placeholder="Email Address..." aria-label="Email Address">
                     </div>
                     
 
@@ -165,20 +165,20 @@
 
             
         </main>
-        <footer>
+        <footer aria-label="Broward Rescue Footer">
 
             <!--Create logo container-->
             <div class="footerLogoContainer">
-                <img src="images/browardRescueFixedSpelling.png" alt="Broward Rescue" usemap="imageMap">
+                <img src="images/browardRescueFixedSpelling.png" alt="Broward Rescue">
                 
 
                 <!--Create social media icons-->
                 <div class="socialMediaContainer">
-                    <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-                   <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank"><i class='bx bxl-github'></i></a> 
-                    <a href="https://www.youtube.com" target="_blank"><i class='bx bxl-youtube'></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank" aria-label="Github"><i class='bx bxl-github'></i></a> 
+                    <a href="https://www.youtube.com" target="_blank" aria-label="Youtube"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
                 </div>
             </div>
 

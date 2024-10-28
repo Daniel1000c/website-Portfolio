@@ -15,7 +15,7 @@
             <img src="images/browardRescueFixedSpelling.png" alt="Broward Rescue" usemap="#imageMap">
 
             <map name="imageMap">
-                <area target="" alt="Rescue" title="Broward Rescue" href="index.html" coords="0,1,500,498" shape="rect">
+                <area target="_self" alt="Rescue" title="Broward Rescue" href="index.html" coords="0,1,500,498" shape="rect">
             </map>
             
             <nav>
@@ -39,8 +39,8 @@
         </header>
         <main>
             <!--Create programs intro container-->
-            <section class="programsHeader">
-                <h2>Welcome to our Rescue Programs!</h2>
+            <section class="programsHeader" aria-labelledby="programsHeader">
+                <h2 id="programsHeader">Welcome to our Rescue Programs!</h2>
                 <h3>Haven for Pets</h3>
 
                 <!--Create programs intro statement-->
@@ -59,37 +59,37 @@
                 <h2>Our Programs</h2>
 
                 <div class="cardGrid">
-                    <div class="card">
+                    <div class="card" role="article" aria-labelledby="shelterTourTitle" aria-describedby="shelterTourDescription">
                         <img src="images/shelterTour.jpg" alt="Shelter Tour">
-                        <h4>&#128062;Shelter Tour</h4>
-                        <p>Broward Rescue offers at facility shelter tours for various school groups and other neighborhood community groups. Tour groups are engaged in an active process of rescuing and rehoming pets.</p>
+                        <h4 id="shelterTourTitle">&#128062;Shelter Tour</h4>
+                        <p id="shelterTourDescription">Broward Rescue offers at facility shelter tours for various school groups and other neighborhood community groups. Tour groups are engaged in an active process of rescuing and rehoming pets.</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" role="article" aria-labelledby="clinicTourTitle" aria-describedby="clinicTourDescription">
                         <img src="images/clinicTours.jpg" alt="Clinic Tour">
-                        <h4>&#128062;ClinicTour</h4>
-                        <p>Broward Rescue offers at facility clinic tours for groups that will be engaged with the process of rescuing and rehoming pets.</p>
+                        <h4 id="clinicTourTitle">&#128062;ClinicTour</h4>
+                        <p id="clinicTourDescription">Broward Rescue offers at facility clinic tours for groups that will be engaged with the process of rescuing and rehoming pets.</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" role="article" aria-labelledby="youthProgramsTitle" aria-describedby="youthProgramsDescription">
                         <img src="images/youthPets.jpg" alt="youth Programs">
-                        <h4>&#128062;Youth Programs</h4>
-                        <p>When school is out, Come to down to Broward rescue and give your love and attention to our lovely pet friends.</p>
+                        <h4 id="youthProgramsTitle">&#128062;Youth Programs</h4>
+                        <p id="youthProgramsDescription">When school is out, Come to down to Broward rescue and give your love and attention to our lovely pet friends.</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" role="article" aria-labelledby="petCampTitle" aria-describedby="petCampDescription">
                         <img src="images/petCamp.jpg" alt="Pet Camp Day">
-                        <h4>&#128062;Pet Camp Day</h4>
-                        <p>Teens and adults will learn about various positive dog training techniques, working task in the Broward Rescue Shelter and a very small amount of animal clinic care. The participants will spend a good amount of time interacting with large dogs, cats, and various other small animals.</p>
+                        <h4 id="petCampTitle">&#128062;Pet Camp Day</h4>
+                        <p id="petCampDescription">Teens and adults will learn about various positive dog training techniques, working task in the Broward Rescue Shelter and a very small amount of animal clinic care. The participants will spend a good amount of time interacting with large dogs, cats, and various other small animals.</p>
                     </div>
                 </div>
             </section>
 
             <!--Create impact reports section-->
-            <section class="impactContainer">
-                <h2>Broward Rescue Stats</h2>
+            <section class="impactContainer" aria-labelledby="rescueStats">
+                <h2 id="rescueStats">Broward Rescue Stats</h2>
 
-                <img src="images/browardRescuePieChart.png" alt="Animals Saved">
+                <img src="images/browardRescuePieChart.png" alt="Animals Saved" aria-label="Animals Saved Broward Rescue">
             </section>
 
             <!--Create donate section-->
@@ -98,8 +98,8 @@
             </div>
 
           <!--Create news letter-->
-          <section class="newsContainer">
-                <h2>Broward Rescue Newsletter</h2>
+          <section class="newsContainer" aria-labelledby="newsletter-heading">
+                <h2 id="newsletter-heading">Broward Rescue Newsletter</h2>
 
                 <!--Insert newsletter tagline-->
                 <p>Have you met our pups, kitties, and playful pets? Don't miss out on the latest adoptions news and events.
@@ -107,24 +107,24 @@
                     now to get all the latest news on our furry friends straight to your inbox.
                 </p>
                 <!--Create newsletter form-->
-                <form action="https://professorcooke.org/forms/processform.php">
+                <form action="https://professorcooke.org/forms/processform.php" aria-label="News letter form">
                     <div class="inputContainer">
 
                         <div class="formField">
                             <!--Prompt for first name-->
-                            <input type="text" name="firstName" id="firstName" placeholder="John...">
+                            <input type="text" name="firstName" id="firstName" placeholder="John..." aria-label="First Name">
                             <label for="firstName">FirstName:</label>
                         </div>
 
                         <div class="formField">
                             <!--Prompt for last name-->
-                            <input type="text" name="lastName" id="lastName" placeholder="Doe..."> 
+                            <input type="text" name="lastName" id="lastName" placeholder="Doe..." aria-label="Last Name"> 
                             <label for="lastName">LastName:</label>
                         </div>
                     </div>
 
                     <div class="formField fullWidth">
-                        <input type="email" name="email" id="email" placeholder="Email Address...">
+                        <input type="email" name="email" id="email" placeholder="Email Address..." aria-label="Email">
                     </div>
                     
 
@@ -142,16 +142,16 @@
                 <!--Create social media icons-->
                 <div class="socialMediaContainer">
                     <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-                   <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank"><i class='bx bxl-github'></i></a> 
+                    <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank"><i class='bx bxl-github'></i></a> 
                     <a href="https://www.youtube.com" target="_blank"><i class='bx bxl-youtube'></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
                     <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
                 </div>
             </div>
 
             <div class="qckLinkContainer">
                 <!--Create quick link items-->
-                <div class="qckLinkItem">
+                <div class="qckLinkItem" role="region" aria-label="Contact Information">
                     <h3>Contact Us</h3>
 
                     <p>305.527.0765</p>
@@ -161,13 +161,13 @@
                 <div class="qckLinkItem">
                     <h3>Quicklinks</h3>
 
-                    <a href="about.html">About Us</a>
-                    <a href="programs.html">Programs/Services</a>
-                    <a href="donate.html">Donate</a>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="about.html" aria-label="About Us">About Us</a>
+                    <a href="programs.html" aria-label="Programs and Services">Programs/Services</a>
+                    <a href="donate.html" aria-label="Donate to Broward Rescue">Donate</a>
+                    <a href="contact.html" aria-label="Contact Us">Contact Us</a>
                 </div>
             </div>
-            <p>&copy; 2024 Broward Rescue | <a href="privacy.html">Privacy Policy</a></p>
+            <p>&copy; 2024 Broward Rescue | <a href="privacy.html" aria-label="Privacy Policy">Privacy Policy</a></p>
         </footer>
     </body>
 </html>

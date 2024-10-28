@@ -14,20 +14,20 @@
             <img src="images/browardRescueFixedSpelling.png" alt="Broward Rescue" usemap="#imageMap">
 
             <map name="imageMap">
-                <area target="" alt="Rescue" title="Broward Rescue" href="index.html" coords="0,1,500,498" shape="rect">
+                <area target="_self" alt="Rescue" title="Broward Rescue" href="index.html" coords="0,1,500,498" shape="rect">
             </map>
             
-            <nav>
+            <nav aria-label="Web Page Navigation">
                 <!--Create donation link-->
                 <a href="donate.html">Donate</a>
 
                 <!--Create hamburger menu icon-->
                 <div class="hamburgerMenu">
-                    <i class='bx bx-menu' onclick="openMenu()"></i>
+                    <i class='bx bx-menu' onclick="openMenu()" aria-expanded="false" role="button"></i>
                 </div>
                 
                 <!--Create links-->
-                <ul class="navLinks">
+                <ul class="navLinks" id="navLinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -38,8 +38,8 @@
         </header>
         <main>
             <!--Create donation header section-->
-            <section class="donationHeader">
-                <h2>Donate</h2>
+            <section class="donationHeader" aria-labelledby="donationHeader">
+                <h2 id="donationHeader">Donate</h2>
             </section>
 
             <!--Create donation section-->
@@ -70,7 +70,7 @@
 
                 <div class="donateFormContainer">
                     <!--Create donation form-->
-                    <form action="https://professorcooke.org/forms/processform.php" method="post">
+                    <form action="https://professorcooke.org/forms/processform.php" method="post" aria-label="donation form">
                         <h2>Choose Your Gift</h2>
                         <div class="radioBtns">
                             <!--Prompt user for gift choices-->
@@ -93,21 +93,21 @@
 
                         <!--Prompt user for information-->
                         <label for="donorName">Full Name</label><br>
-                        <input type="text" id="donorName" name="donorName" placeholder="John Doe" required><br>
+                        <input type="text" id="donorName" name="donorName" placeholder="John Doe" required aria-required="true"><br>
                         <label for="donorEmail">Email</label><br>
-                        <input type="email" id="donorEmail" name="donorEmail" placeholder="user@example.com..." required><br>
+                        <input type="email" id="donorEmail" name="donorEmail" placeholder="user@example.com..." required aria-required="true"><br>
                         <label for="donorPhone">Phone Number</label><br>
                         <input type="tel" id="donorPhone" name="donorPhone" placeholder="123-456-7890"><br>
 
                         <!--Prompt user for payment information-->
                         <label for="donorCard">Credit Card</label>
-                        <input type="text" id="donorCard" name="donorCard" required>
+                        <input type="text" id="donorCard" name="donorCard" required aria-required="true">
 
                         <label for="expDate">Expiration Date</label>
-                        <input type="month" id="expDate" name="expDate" required><br>
+                        <input type="month" id="expDate" name="expDate" required aria-required="true"><br>
 
                         <label for="cvv">CVV</label><br>
-                        <input type="text" id="cvv" name="cvv" required>
+                        <input type="text" id="cvv" name="cvv" required aria-required="true">
 
                         <!--Create text area input-->
                         <label for="donorMessage">Comments</label>
@@ -119,8 +119,8 @@
                 </div>
             </div>
             <!--Create news letter-->
-            <section class="newsContainer">
-                <h2>Broward Rescue Newsletter</h2>
+            <section class="newsContainer" aria-labelledby="newsletter-heading">
+                <h2 id="newsletter-heading">Broward Rescue Newsletter</h2>
 
                 <!--Insert newsletter tagline-->
                 <p>Have you met our pups, kitties, and playful pets? Don't miss out on the latest adoptions news and events.
@@ -133,19 +133,19 @@
 
                         <div class="formField">
                             <!--Prompt for first name-->
-                            <input type="text" name="firstName" id="firstName" placeholder="John...">
+                            <input type="text" name="firstName" id="firstName" placeholder="John..." aria-label="First Name">
                             <label for="firstName">FirstName:</label>
                         </div>
 
                         <div class="formField">
                             <!--Prompt for last name-->
-                            <input type="text" name="lastName" id="lastName" placeholder="Doe..."> 
+                            <input type="text" name="lastName" id="lastName" placeholder="Doe..." aria-label="Last Name"> 
                             <label for="lastName">LastName:</label>
                         </div>
                     </div>
 
                     <div class="formField fullWidth">
-                        <input type="email" name="email" id="email" placeholder="Email Address...">
+                        <input type="email" name="email" id="email" placeholder="Email Address..." aria-label="Email">
                     </div>
                     
 
@@ -162,11 +162,11 @@
 
                 <!--Create social media icons-->
                 <div class="socialMediaContainer">
-                    <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-                   <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank"><i class='bx bxl-github'></i></a> 
-                    <a href="https://www.youtube.com" target="_blank"><i class='bx bxl-youtube'></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+                   <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank" aria-label="Github"><i class='bx bxl-github'></i></a> 
+                    <a href="https://www.youtube.com" target="_blank" aria-label="Youtube"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
                 </div>
             </div>
 

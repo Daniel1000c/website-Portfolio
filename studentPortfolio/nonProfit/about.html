@@ -14,16 +14,16 @@
             <img src="images/browardRescueFixedSpelling.png" alt="Broward Rescue" usemap="#imageMap">
 
             <map name="imageMap">
-                <area target="" alt="Rescue" title="Broward Rescue" href="index.html" coords="0,1,500,498" shape="rect">
+                <area target="_self" alt="Rescue" title="Broward Rescue" href="index.html" coords="0,1,500,498" shape="rect">
             </map>
             
-            <nav>
+            <nav aria-label="Web Page Navigation">
                 <!--Create donation link-->
-                <a href="donate.html">Donate</a>
+                <a href="donate.html" aria-label="Donate to Broward Rescue">Donate</a>
 
                <!--Create hamburger menu icon-->
                <div class="hamburgerMenu">
-                <i class='bx bx-menu' onclick="openMenu()"></i>
+                <i class='bx bx-menu' onclick="openMenu()" aria-expanded="false" role="button" aria-label="Open Menu"></i>
                </div>
             
                 <!--Create links-->
@@ -37,15 +37,15 @@
         </header>
         <main>
             <!--Create about us tagline img-->
-            <section class="introImg">
-                <h2>About Us</h2>
+            <section class="introImg" aria-labelledby="About-Heading">
+                <h2 id="About-Heading">About Us</h2>
             </section>
 
 
             <!--Create mission Statement Container-->
-            <section class="missionStatement">
+            <section class="missionStatement" aria-labelledby="Mission-Heading">
                 <div class="missionItemText">
-                    <h2>Our Mission</h2>
+                    <h2 id="Mission-Heading">Our Mission</h2>
 
                     <!--Insert mission statement-->
                     <p class="dropCap">
@@ -76,11 +76,11 @@
                         Join Broward Rescue to make a difference, and together we can help our animals find a forever home!
                     </p>
                 </div>
-                <div class="quickLinks">
-                    <h4>Quick Links</h4>
+                <div class="quickLinks" aria-labelledby="Quick-Links">
+                    <h4 id="Quick-Links">Quick Links</h4>
 
                     <!--Insert quick links-->
-                    <nav class="missionQckLink">
+                    <nav class="missionQckLink" aria-label="Broward Rescue Quick Links">
                         <ul>
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="programs.html">Programs/Services</a></li>
@@ -92,8 +92,8 @@
             </section>
 
             <!--Insert broward rescue vide section-->
-            <div class="videoContainer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2LSLcoR8WJQ?si=adipe-VybSLFzE03&mute=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="videoContainer" role="region">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2LSLcoR8WJQ?si=adipe-VybSLFzE03&mute=1 " title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
             <!--Create testimonials Section-->
@@ -113,12 +113,12 @@
 
             <!--Create donate section-->
             <div class="donateContainer">
-                <a href="donate.html">Donate</a>
+                <a href="donate.html" aria-label="Donate to Broward Rescue">Donate</a>
             </div>
 
             <!--Create news letter-->
-            <section class="newsContainer">
-                <h2>Broward Rescue Newsletter</h2>
+            <section class="newsContainer" aria-labelledby="newsletter-heading">
+                <h2 id="newsletter-heading">Broward Rescue Newsletter</h2>
 
                 <!--Insert newsletter tagline-->
                 <p>Have you met our pups, kitties, and playful pets? Don't miss out on the latest adoptions news and events.
@@ -161,7 +161,7 @@
                 <!--Create social media icons-->
                 <div class="socialMediaContainer">
                     <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-                   <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank"><i class='bx bxl-github'></i></a> 
+                    <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank"><i class='bx bxl-github'></i></a> 
                     <a href="https://www.youtube.com" target="_blank"><i class='bx bxl-youtube'></i></a>
                     <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
                     <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
@@ -175,18 +175,18 @@
 
                     <p>305.527.0765</p>
                     <p>12172 SW 52nd CT <br> Cooper City, FL 33330</p>
-                    <p><a href="mailto:velezdaniel516@gmail">Email Us</a></p>
+                    <p><a href="mailto:velezdaniel516@gmail" aria-label="Email Broward Rescue">Email Us</a></p>
                 </div>
                 <div class="qckLinkItem">
-                    <h3>Quicklinks</h3>
+                    <h3 id="footer-quick-links">Quicklinks</h3>
 
-                    <a href="about.html">About Us</a>
-                    <a href="programs.html">Programs/Services</a>
-                    <a href="donate.html">Donate</a>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="about.html" aria-label="About Us">About Us</a>
+                    <a href="programs.html" aria-label="Our Programs and Services">Programs/Services</a>
+                    <a href="donate.html" aria-label="Donate to Broward Rescue">Donate</a>
+                    <a href="contact.html" aria-label="Contact Us">Contact Us</a>
                 </div>
             </div>
-            <p>&copy; 2024 Broward Rescue | <a href="privacy.html">Privacy Policy</a></p>
+            <p>&copy; 2024 Broward Rescue | <a href="privacy.html" aria-label="privacy policy">Privacy Policy</a></p>
         </footer>
     </body>
 </html>
