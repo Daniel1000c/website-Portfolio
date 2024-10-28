@@ -35,9 +35,19 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 //Create open menu function
 function openMenu() {
-    const menuNav = document.querySelector('header nav');
+    const menuNav = document.querySelector("header nav");
+    menuNav.classList.toggle("active");
 
-    menuNav.classList.toggle('active');
+    //Add click event listener that closes menu when click outside of menu
+    document.addEventListener("click", function handleClickOutside(event) {
+        //Check is user clicks outside of menu
+        if (!menuNav.contains(event.target) && !event.target.closest('.bx-menu')) {
+            menuNav.classList.remove("active");
+
+            //Remove event listener to avoid multiple triggers
+            document.removeEventListener("click", handleClickOutside);
+        }
+    })
 }
 
 

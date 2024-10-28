@@ -78,19 +78,42 @@ header nav .bx-menu:hover {
 }
 
 nav .navLinks {
-    display: none;
+    display: flex;
     flex-direction: column;
-    position: absolute;
-    background-color: rgba(135, 206, 250, 0.8);
-    top: 100%;
+    position: fixed;
+    background-color: rgba(135, 206, 250, 0.9);
+    top: 0;
     right: 0;
-    padding: 10px;
+    height: 100vh;
+    padding-top: 15px;
     z-index: 1000;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+nav .navLinks li {
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+nav .navLinks li a {
+   background-color: transparent; 
+   color: white;
+   font-size: 40px;
+   border-radius: 8px;
+   transition: 0.5s ease;/*Add smooth transition hover*/
+   text-align: left;
+}
+
+nav .navLinks li a:hover {
+    color: rgb(70, 130, 180);
 }
 
 /*Show links when hamburger menu icon is clicked*/
 header nav.active .navLinks {
-    display: flex;
+   transform: translateX(0);
+   opacity: 1;
 }
 
 
