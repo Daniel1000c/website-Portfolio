@@ -81,7 +81,7 @@ nav .navLinks {
     display: flex;
     flex-direction: column;
     position: fixed;
-    background-color: rgba(135, 206, 250, 0.9);
+    background-color: rgb(135, 206, 250);
     top: 0;
     right: 0;
     height: 100vh;
@@ -1297,3 +1297,232 @@ footer p a{
     margin: 10px 0;
 }
 /*End of footer formatting*/
+
+
+/*Media Queries*/
+
+/*Create media query for mobile*/
+@media screen and (max-width: 768px) {
+    /*General media query elements*/
+    /*format footer quick links to be column*/
+    .qckLinkContainer {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .qckLinkContainer .qckLinkItem p {
+        font-size: 16px;
+    }
+
+    /*Format newsletter section*/
+    .newsContainer h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .newsContainer p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    /*Format input fields*/
+    .newsContainer form .inputContainer .formField input[type="text"] {
+        width: 160px;
+        padding: 10px;
+    }
+
+    .fullWidth input {
+        padding: 15px;
+    } 
+
+    /*Format nav background*/
+    nav .navLinks li a {
+        font-size: 25px;
+    }
+    header nav.active .navLinks {
+        transform: translateX(15%);
+        opacity: 1;
+     }
+
+     /*Format donate button*/
+     header nav a {
+        font-size: 20px;
+        padding: 15px;
+     }
+    /*Index page media query*/
+    /*Format header img container*/
+    .aboutContainer {
+        height: 30vh;
+    }
+
+    .aboutContainer h2 {
+        font-size: 28px;
+    }
+
+    .aboutContainer p {
+        font-size: 15px;
+        width: 300px;
+    }
+    /*Format overview conatiner text*/
+    .overContainer .overviewItem p {
+        font-size: 16px;
+        width: 400px;
+        line-height: 2;
+    }
+
+    /*Format img subheader links*/
+    .imgLinkContainer {
+        flex-direction: column;
+    }
+
+    /*Format img link text*/
+    .imgLinkContainer .imgLink {
+        margin-bottom: 25px;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        display: flex;
+        
+    }
+
+    .imgLinkContainer .imgLink a {
+        font-size: 22px;
+    }
+
+    /*Format adoption links*/
+    .overContainer .overviewItem .overImgLink img {
+        width: 400px;
+    }
+
+    .overContainer .overviewItem .overImgLink p{
+        font-size: 18px;
+        width: 400px;
+    }
+
+    /*About us media query*/
+    /*Format intro img text*/
+    .introImg h2 {
+        margin: 25px;
+    }
+    /*Format testimonial*/
+    .testimonials h4 {
+        font-size: 35px;
+    }
+
+    .testimonials h5 {
+        font-size: 17px;
+    }
+
+    .testimonials blockquote {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    /*Format quote brackets*/
+    .testimonials blockquote::after {
+       
+        right: -10px;
+        bottom: -40px;
+    }
+
+    /*Format mission statement*/
+    .missionStatement {
+        flex-direction: column-reverse;
+    }
+
+    .missionStatement .missionItemText h2 {
+        font-size: 40px;
+    }
+
+    .missionStatement .missionItemText p {
+        font-size: 20px;
+        width: 400px;
+    }
+    
+    /*Donate media query*/
+    /*Format donation header title*/
+    .donationHeader h2 {
+        margin: 25px;
+    }
+    /*Format donation container to be column*/
+    .donationContainer {
+        flex-direction: column;
+    }
+
+    /*Format donation text*/
+    .donationContainer .donateTextItem h2 {
+        font-size: 40px;
+        width: 340px;
+    }
+
+
+    /*Contact us media query*/
+    /*Format contact header*/
+    .contactHeader h2 {
+        margin: 25px;
+    }
+
+    /*Format contact form inputs*/
+    input[type="text"] {
+        width: 200px;
+    }
+
+    .contactInfoContainer .contactForm .contactFormFormat input[type="text"],
+    .contactInfoContainer .contactForm .contactFormFormat input[type="email"],
+    .contactInfoContainer .contactForm .contactFormFormat textarea {
+        width: 300px;
+    }
+
+    /*Programs media query*/
+    .programsHeader h2 {
+        font-size: 40px;
+    }
+
+    .programsHeader p {
+        font-size: 18px;
+    }
+
+    /*Format grid containers*/
+   .cardContainer .cardGrid {
+        grid-template-columns: 1fr;
+   }
+
+   /*Format card images*/
+   .cardContainer .cardGrid .card {
+        width: 300px;
+   }
+   .cardContainer .cardGrid .card img {
+        width: 300px;
+   }
+
+   /*Format card text*/
+   .cardContainer .cardGrid .card h4 {
+    text-align: center;
+   }
+   .cardContainer .cardGrid .card p {
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+   }
+
+   /*Format stats img size*/
+   .impactContainer img {
+    width: 450px;
+   }
+
+   /*Privacy policy media query*/
+   /*Format privacy policy text*/
+   .privacyPolicyContainer p{
+        margin: 15px;
+   }
+
+   .privacyPolicyContainer h2 {
+        font-size: 35px;
+        text-align: center;
+   }
+
+   .privacyPolicyContainer h3 {
+        text-align: center;
+   }
+    
+}
