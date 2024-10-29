@@ -81,13 +81,15 @@ nav .navLinks {
     display: flex;
     flex-direction: column;
     position: fixed;
-    background-color: rgb(135, 206, 250);
     top: 0;
     right: 0;
     height: 100vh;
     padding-top: 15px;
     z-index: 1000;
     transform: translateX(100%);
+    background-image: url(../images/animalPrint.png);
+    background-size: cover;
+    background-position: center;
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
@@ -99,7 +101,8 @@ nav .navLinks li {
 
 nav .navLinks li a {
    background-color: transparent; 
-   color: white;
+   color: limegreen;
+   font-weight: bolder;
    font-size: 40px;
    border-radius: 8px;
    transition: 0.5s ease;/*Add smooth transition hover*/
@@ -539,6 +542,43 @@ header nav.active .navLinks {
     color: rgb(70, 130, 180);
 }
 
+/*Format member section*/
+.membersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px;
+    background-color: darkgreen;
+}
+
+/*Format header*/
+.membersContainer h2 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: lightskyblue;
+}
+
+.membersContainer img {
+    margin: auto;
+    width: 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.membersContainer .memberCardContainer .memberCards {
+    background-color: lightskyblue;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.membersContainer .memberCardContainer .memberCards h3 {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
 /*Format video section*/
 .videoContainer {
     padding: 25px;
@@ -907,7 +947,7 @@ header nav.active .navLinks {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: lightskyblue;
+    background-color: #3DA35D;
     padding: 25px;
 }
 
@@ -1438,6 +1478,15 @@ footer p a{
         font-size: 20px;
         width: 400px;
     }
+
+    /*Format member container*/
+    .membersContainer img {
+        width: 300px;
+    }
+    
+    .membersContainer .memberCardContainer .memberCards img {
+        width: 300px;
+    }
     
     /*Donate media query*/
     /*Format donation header title*/
@@ -1524,5 +1573,215 @@ footer p a{
    .privacyPolicyContainer h3 {
         text-align: center;
    }
-    
+}
+
+/*Create media query for desktop*/
+@media screen and (min-width: 1000px) {
+     /*General media query elements*/
+
+     /*Format news letter section*/
+     /*Format news letter text*/
+     .newsContainer p {
+       width: 1000px;
+       font-size: 20px;
+       margin-top: 15px;
+       margin-bottom: 15px;
+     }
+
+     /*Format input fields*/
+     .newsContainer form .inputContainer{
+        width: 215px;
+     }
+
+     /*Format footer*/
+     footer {
+        display: flex;
+        gap: 200px;
+     }
+     /*Format footer quick links*/
+     .qckLinkContainer .qckLinkItem h3 {
+        font-size: 35px;
+     }
+
+     .qckLinkContainer .qckLinkItem a {
+        font-size: 30px;
+     }
+
+     .qckLinkContainer .qckLinkItem p {
+        font-size: 24px;
+     }
+
+     /*Format donate button*/
+     .donateContainer a{
+        font-size: 50px;
+        width: 250px;
+     }
+
+     /*Format hamburger menu*/
+     .hamburgerMenu .bx-menu {
+        font-size: 100px;
+     }
+
+     /*About us media query*/
+     .missionStatement .missionItemText p {
+        font-size: 30px;
+        width: 1500px;
+     }
+
+     /*Format quick links header*/
+     .missionStatement .quickLinks h4 {
+        font-size: 40px;
+     }
+
+     /*Format quick links*/
+     .missionStatement .quickLinks .missionQckLink ul li {
+        padding: 20px;
+     }
+     .missionStatement .quickLinks .missionQckLink ul li a{
+        font-size: 30px;
+     }
+
+     /*Format video section*/
+     .videoContainer iframe {
+        width: 800px;
+        height: 500px;
+     }
+
+     /*Format members container*/
+     .membersContainer .memberCardContainer {
+       display: flex;
+       gap: 50px;
+     }
+
+     /*Contact media query*/
+
+     /*Format contact Text*/
+     .contactInfoContainer .contactItemText p{
+        width: 1500px;
+        font-size: 30px;
+     }
+
+     .contactInfoContainer .contactItemText .contactInformation h4 {
+        font-size: 25px;
+     }
+
+     .contactInfoContainer .contactItemText .contactInformation p {
+        font-size: 20px;
+     }
+
+     .contactInfoContainer .contactItemText .contactInformation a {
+        font-size: 20px;
+     }
+
+     /*Format contact form*/
+     .contactInfoContainer .contactForm .contactFormFormat input[type="text"]{
+        padding: 15px;
+     }
+
+     .contactInfoContainer .contactForm .contactFormFormat input[type="email"]{
+        padding: 15px;
+     }
+
+     /*Programs media query*/
+
+     /*Format programs header section*/
+     .programsHeader p {
+        width: 1700px;
+        font-size: 25px;
+     }
+
+     /*Format programs img*/
+     .programsHeader img {
+        margin: auto;
+        width: 1000px;
+        margin-top: 15px;
+     }
+
+     /*Format program grid items*/
+     .cardContainer .cardGrid .card {
+        width: 700px;
+     }
+
+     /*Format card img*/
+     .cardContainer .cardGrid .card img {
+        width: 700px;
+     }
+
+     .cardContainer .cardGrid .card h4 {
+        font-size: 30px;
+        margin-bottom: 15px;
+     }
+     .cardContainer .cardGrid .card p {
+        padding: 20px;
+        font-size: 20px;
+     }
+
+     /*Privacy policy media query*/
+     /*Format privacy policy text*/
+     .privacyPolicyContainer p {
+        width: 1400px;
+        font-size: 20px;
+     }
+
+     .privacyPolicyContainer ul li {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        width: 1400px;
+        font-size: 20px;
+     }
+
+     /*index media query*/
+     
+
+     /*Format img links*/
+     .imgLinkContainer {
+        margin-bottom: 50px;
+     }
+     .imgLinkContainer .imgLink img {
+        width: 500px;
+     }
+     .imgLinkContainer .imgLink a{
+        font-size: 40px;
+     }
+
+     /*Format adoption container*/
+     .overContainer {
+        display: flex;
+        gap: 50px;
+        align-items: flex-start;
+        position: relative;
+     }
+
+     .overContainer .overviewItem:first-child {
+        position: sticky;
+        max-height: 100vh;
+        overflow: hidden;
+     }
+
+     .overContainer .overviewItem:last-child {
+        width: 40%;
+        overflow-y: visible;
+        max-height: 100vh;
+        overflow-y: scroll;
+        scrollbar-width: none;
+     }
+
+     /*hide scroll bar*/
+     .overContainer .overviewItem:last-child::-webkit-scrollbar {
+        display: none;
+     }
+
+     /*Format overview text*/
+     
+     .overContainer .overviewItem .overImgLink img {
+        width: 800px;
+     }
+
+     .overContainer .overviewItem .overImgLink p {
+        font-size: 18px;
+        width: 700px;
+     }
+     .overContainer .overviewItem p {
+        font-size: 20px;
+     }
 }
