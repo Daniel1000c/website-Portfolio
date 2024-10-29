@@ -1573,6 +1573,34 @@ footer p a{
    .privacyPolicyContainer h3 {
         text-align: center;
    }
+
+   /*Donate media query*/
+   .donationContainer .donateFormContainer form h2 {
+        text-align: center;
+   }
+
+   /*Format form inputs*/
+   .donationContainer .donateFormContainer form input[type="email"] {
+        width: 200px;
+   }
+
+   .donationContainer .donateFormContainer form input[type="text"] {
+        width: 200px;
+    }
+
+    .donationContainer .donateFormContainer form input[type="month"] {
+        width: 200px;
+    }
+
+    .donationContainer .donateFormContainer form input[type="tel"] {
+        width: 200px;
+    }
+
+    /*Format submit button*/
+    .donationContainer .donateFormContainer form input[type="submit"] {
+        padding: 25px;
+        font-size: 25px;
+    }
 }
 
 /*Create media query for desktop*/
