@@ -188,7 +188,7 @@ header nav.active .navLinks {
 .aboutContainer {
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: normal;
     flex-direction: column;
     padding: 65px;
     background-image:
@@ -726,7 +726,7 @@ header nav.active .navLinks {
     margin: 35px;
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: normal;
     flex-direction: column;
 }
 
@@ -842,7 +842,7 @@ header nav.active .navLinks {
 .programsHeader {
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: normal;
     flex-direction: column;
     margin: 35px;
 }
@@ -1300,7 +1300,7 @@ footer p a{
 .qckLinkContainer .qckLinkItem {
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: normal;
     flex-direction: column;
     margin: 0 10px;
 }
@@ -1419,7 +1419,7 @@ footer p a{
     .imgLinkContainer .imgLink {
         margin-bottom: 25px;
         flex-direction: column;
-        align-items: left;
+        align-items: normal;
         justify-content: left;
         display: flex;
         
