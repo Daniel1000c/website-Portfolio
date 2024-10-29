@@ -1797,4 +1797,82 @@ footer p a{
      .overContainer .overviewItem p {
         font-size: 20px;
      }
+
+     /*Donation media query*/
+     .donationContainer {
+        flex-direction: column;
+     }
+
+     /*Format donation text*/
+     .donationContainer .donateTextItem p{
+        width: 1700px;
+        font-size: 25px;
+     }
+
+     .donationContainer .donateFormContainer {
+        margin: auto;
+        width: 800px;
+     }
+
+     .donationContainer .donateFormContainer form {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: center;
+     }
+
+     .donationContainer .donateFormContainer form h2 {
+        text-align: center;
+        font-size: 45px;
+     }
+
+     .donationContainer .donateFormContainer form .radioBtns {
+        margin: auto;
+        margin-bottom: 15px;
+     }
+
+     .donationContainer .donateFormContainer form .radioBtns label {
+        font-size: 30px;
+        font-weight: bold;
+     }
+
+     .donationContainer .donateFormContainer form input[type="email"] {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form input[type="text"] {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form input[type="number"] {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form input[type="tel"] {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form input[type="month"] {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form select {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form textarea {
+        width: 500px;
+     }
+
+
+     .donationContainer .donateFormContainer form label {
+        font-size: 25px;
+     }
+     .donationContainer .donateFormContainer form input[type="submit"] {
+        width: 150px;
+        margin: auto;
+        padding: 25px;
+        font-size: 20px;
+     }
+
 }
