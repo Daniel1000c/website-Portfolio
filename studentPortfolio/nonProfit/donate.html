@@ -70,7 +70,7 @@
 
                 <div class="donateFormContainer">
                     <!--Create donation form-->
-                    <form action="https://professorcooke.org/forms/processform.php" method="post" aria-label="donation form">
+                    <form action="https://professorcooke.org/forms/processform.php" method="post" aria-label="donation form" id="donateForm">
                         <h2>Choose Your Gift</h2>
                         <div class="radioBtns">
                             <!--Prompt user for gift choices-->
@@ -93,21 +93,21 @@
 
                         <!--Prompt user for information-->
                         <label for="donorName">Full Name</label><br>
-                        <input type="text" id="donorName" name="donorName" placeholder="John Doe" required aria-required="true"><br>
+                        <input type="text" id="donorName" name="donorName" placeholder="John Doe" required aria-required="true" pattern="[a-zA-Z\s]+"><br>
                         <label for="donorEmail">Email</label><br>
                         <input type="email" id="donorEmail" name="donorEmail" placeholder="user@example.com..." required aria-required="true"><br>
                         <label for="donorPhone">Phone Number</label><br>
-                        <input type="tel" id="donorPhone" name="donorPhone" placeholder="123-456-7890"><br>
+                        <input type="tel" id="donorPhone" name="donorPhone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}"><br>
 
                         <!--Prompt user for payment information-->
                         <label for="donorCard">Credit Card</label><br>
-                        <input type="text" id="donorCard" name="donorCard" required aria-required="true"><br>
+                        <input type="text" id="donorCard" name="donorCard" required aria-required="true" minlength="13" maxlength="19" pattern="\d{13,19}"><br>
 
                         <label for="expDate">Expiration Date</label><br>
                         <input type="month" id="expDate" name="expDate" required aria-required="true"><br>
 
                         <label for="cvv">CVV</label><br>
-                        <input type="text" id="cvv" name="cvv" required aria-required="true"><br>
+                        <input type="text" id="cvv" name="cvv" required aria-required="true" minlength="3" maxlength="4" pattern="\d{3,4}"><br>
 
                         <!--Create text area input-->
                         <label for="donorMessage">Comments</label>

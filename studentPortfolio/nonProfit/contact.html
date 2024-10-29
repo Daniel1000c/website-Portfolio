@@ -76,7 +76,7 @@
                     <form action="https://professorcooke.org/forms/processform.php" class="contactFormFormat">
                         <!--Prompt user for full name-->
                         <label for="fullName">Name</label><br>
-                        <input type="text" name="fullName" id="fullName" placeholder="John Doe..." required><br>
+                        <input type="text" name="fullName" id="fullName" placeholder="John Doe..." required pattern="[a-zA-Z\s]+"><br>
 
                         <!--Prompt user for email address-->
                         <label for="emailAddress">Email</label><br>
@@ -84,11 +84,11 @@
 
                         <!--Prompt user for message subject-->
                         <label for="subject">Subject</label><br>
-                        <input type="text" name="subject" id="subject" placeholder="Pet Appointment..." required><br>
+                        <input type="text" name="subject" id="subject" placeholder="Pet Appointment..." required minlength="3" maxlength="100"><br>
 
                         <!--Prompt user for a message-->
                         <label for="message">Message</label><br>
-                        <textarea name="message" id="message" cols="60" rows="10" required></textarea><br>
+                        <textarea name="message" id="message" cols="60" rows="10" required minlength="10" maxlength="500"></textarea><br>
 
                         <!--Create submit button-->
                         <input type="submit" value="Send Message">

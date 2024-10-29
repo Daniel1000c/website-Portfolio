@@ -31,6 +31,68 @@ document.addEventListener("DOMContentLoaded", function() {
     //Show the first flyer by default
     showSlide(currentFlyer);
 
+
+
+    //Create form input validation
+    const donateForm = document.getElementById('donateForm');
+    donateForm.addEventListener('submit', validateDonateForm);
+
+    function validateDonateForm(event) {
+
+        //Prevent form submission until validation is complete
+        event.preventDefault();
+
+        let isValid = true;
+
+        //Validate full name
+        const donorName = donateForm.donorName.value;
+
+        if (!/^[a-zA-Z\s]+$/.test(donorName.value)) {
+            alert('Please enter a valid name');
+            isValid = false;
+        }
+
+        //Create donor email vaildation
+        const donorEmail = donateForm.donorEmail.value;
+        if (donorEmail.checkValidity()) {
+            alert('Please enter a valid email');
+            isValid = false;
+        }
+
+        //Phone number validation
+        const donorPhone = donateForm.donorPhone;
+        if (donorPhone.value && !/^\d{3}-\d{3}-\d{4}$/.test(donorPhone.value)) {
+            alert('Please enter a valid phone number');
+            isValid = false;
+        }
+
+        //Card number validation
+        const donorCard = donateForm.donorCard;
+        if (!/^\d{13,19}$/.test(donorCard.value)) {
+            alert('Please enter a valid card number');
+            isValid = false;
+        }
+
+        //Card expiration date validation
+        const expDate = new Date(donateForm.expDate.value);
+        const today = new Date();
+        if (expDate < today) {
+            alert('Please enter a valid expiration date');
+            isValid = false;
+        }
+
+        //CVV validation
+        const cvv = donateForm.cvv;
+        if(!/^\d{3,4}$/.test(cvv.value)) {
+            alert('Please enter a valid CVV');
+            isValid = false;
+        }
+
+        //Validate form if all fields are valid
+        if (isValid) {
+            donateForm.submit();
+        }
+    }
     
 });
 //Create open menu function

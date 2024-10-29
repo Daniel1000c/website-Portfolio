@@ -1594,10 +1594,23 @@ footer p a{
      }
 
      /*Format footer*/
+
+     /*Format footer direction*/
      footer {
         display: flex;
         gap: 200px;
+        margin: auto;
      }
+
+     footer p {
+        margin-top: 500px;
+     }
+
+     /*Format img logo*/
+     .footerLogoContainer img {
+         width: 300px;
+     }
+     
      /*Format footer quick links*/
      .qckLinkContainer .qckLinkItem h3 {
         font-size: 35px;
