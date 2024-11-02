@@ -80,7 +80,8 @@ body {
 }
 
 .profileContainer .creatorContent nav ul li a:hover {
-    scale: 1.1;
+    /*Increase scale of link*/
+    transform: scale(1.1);
     color: aquamarine;
 }
 
