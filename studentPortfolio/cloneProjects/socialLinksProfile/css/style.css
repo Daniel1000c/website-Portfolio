@@ -41,6 +41,25 @@ body {
     width: 400px;
 }
 
+/*Format creator title*/
+.profileContainer .creatorContent h3 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+.profileContainer .creatorContent h4 {
+    font-family: sans-serif;
+    color: yellowgreen;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.profileContainer .creatorContent p {
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
 /*Format creator list*/
 .profileContainer .creatorContent nav ul li {
     list-style-type: none;
@@ -57,6 +76,30 @@ body {
     background-color: #7A7F85;
     border-radius: 8px;
     padding: 8px;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.profileContainer .creatorContent nav ul li a:hover {
+    scale: 1.1;
+    color: aquamarine;
+}
+
+
+/*Format creator img*/
+.profileContainer .creatorContent img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/*Format icons*/
+.profileContainer .creatorContent nav ul li a i {
+    display: inline-block;
+    width: 50px;
 }
 
 /*Footer formatting*/
