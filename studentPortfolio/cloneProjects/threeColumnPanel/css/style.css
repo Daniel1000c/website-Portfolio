@@ -1,0 +1,142 @@
+/*General Formatting*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*End of general formatting*/
+
+/*Font face formatting*/
+@font-face {
+    font-family: 'IBMPlexSans';
+    src: url(../fonts/IBMPlexSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'IBMPlexSansMedium';
+    src: url(../fonts/IBMPlexSans-Medium.ttf);
+}
+
+/*Header formatting*/
+header {
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'IBMPlexSans';
+    font-size: 50px;
+}
+
+/*End of header formatting*/
+
+/*Section Formatting*/
+.panelContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Format panel icons*/
+.panelContainer section i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/*Format section links*/
+
+/*Format panel One*/
+.panelOne {
+    background-color: #e38425;
+    width: 400px;
+    padding: 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/*Format panel one links*/
+.panelOne a {
+    display: inline-block;
+    width: 150px;
+    font-family: 'IBMPlexSans';
+    background-color: white;
+    padding: 18px;
+    border-radius: 30px;
+    color: #e38425;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Format panel two*/
+.panelTwo {
+    width: 400px;
+    background-color: #016972;
+    padding: 50px;
+}
+
+/*Format panel two links*/
+.panelTwo a {
+    display: inline-block;
+    width: 150px;
+    font-family: 'IBMPlexSans';
+    background-color: white;
+    padding: 18px;
+    border-radius: 30px;
+    color: #016972;
+    text-decoration: none;
+    text-align: center;
+}
+
+.panelThree {
+    width: 400px;
+    background-color: #01403e;
+    padding: 50px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/*Format panel three links*/
+.panelThree a {
+    display: inline-block;
+    width: 150px;
+    font-family: 'IBMPlexSans';
+    background-color: white;
+    padding: 18px;
+    border-radius: 30px;
+    color: #01403e;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Format headers for each section*/
+.panelContainer section h2 {
+    font-family: 'IBMPlexSans';
+    font-size: 35px;
+    color: white;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*Format p for each section*/
+.panelContainer section p {
+    font-family: 'IBMPlexSansMedium';
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    width: 250px;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+
+/*End of section Formatting*/
+
+/*Footer formatting*/
+footer {
+    padding: 20px;
+    text-align: center;
+    font-family: 'IBMPlexSans';
+    font-size: 20px;
+}
+/*End of footer formatting*/
