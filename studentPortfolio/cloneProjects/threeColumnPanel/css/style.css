@@ -140,3 +140,35 @@ footer {
     font-size: 20px;
 }
 /*End of footer formatting*/
+
+/*Media query*/
+@media screen and (min-width: 1000px) {
+    /*Format panel container to row*/
+    .panelContainer {
+        flex-direction: row;
+    }
+
+    /*Format panel one container*/
+    .panelOne {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+
+    /*Format panel three container*/
+    .panelThree {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+    }
+
+    /*Format section fonts*/
+    .panelContainer section h2 {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+
+    .panelContainer section p {
+        font-size: 22px;
+        margin-bottom: 100px;
+        width: 300px;
+    }
+}
