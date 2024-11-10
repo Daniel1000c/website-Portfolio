@@ -6,7 +6,15 @@
 }
 /*End of general formatting*/
 
-
+/*Keyfram Formatting*/
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  } 
+  100% {
+    opacity: 1;
+  }
+}
 /*Header formatting*/
 header {
   padding: 20px;
@@ -25,6 +33,7 @@ header h1 {
 /*Format nav bar*/
 header nav {
   padding: 20px;
+  animation: fadeIn 1.5s ease/*Apply fade in animation*/
 }
 
 header nav ul li{
@@ -60,7 +69,6 @@ header nav ul li a:hover {
     url(../images/jewleryIntro.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -83,6 +91,54 @@ header nav ul li a:hover {
   font-weight: bolder;
   text-align: center;
   color: aqua;
+}
+
+/*Format about us header img*/
+.aboutHeaderImg {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(../images/aboutUsHeader.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-direction: column;
+}
+
+/*Format header title*/
+.aboutHeaderImg h2 {
+  margin-left: 100px;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: white;
+}
+
+/*Format contact us header img*/
+.contactHeaderImg {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(../images/contactUsHeader.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-direction: column;
+}
+
+/*Format contact header title*/
+.contactHeaderImg h2 {
+  margin-left: 100px;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: white;
 }
 
 /*Footer Formatting*/
