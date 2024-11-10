@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      h1= title 
+      nav 
+        ul 
+          li 
+            a(href="/") Home
+          li 
+            a(href="/about") About Us
+          li 
+            a(href="/contact") Contact Us 
+    block content            
+    footer
+      p &copy; 2024 Broward College. All rights reserved.
