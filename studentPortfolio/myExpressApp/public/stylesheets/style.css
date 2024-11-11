@@ -1,0 +1,97 @@
+/*General Formatting*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*End of general formatting*/
+
+
+/*Header formatting*/
+header {
+  padding: 20px;
+  background-color: #222E50;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Format header h1*/ 
+header h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+  color: white;
+}
+
+/*Format nav bar*/
+header nav {
+  padding: 20px;
+}
+
+header nav ul li{
+  display: inline-block;
+  margin-right: 25px;
+}
+
+
+/*Format nav links*/
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: light;
+  font-family: monospace;
+  transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+header nav ul li a:hover {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 25px;
+  text-decoration: underline;
+  color: aquamarine;
+  cursor: pointer;
+}
+/*End of header formatting*/
+
+/*Section Formatting*/
+.introSection {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(../images/jewleryIntro.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Format intro section header*/
+.introSection h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 25px;
+}
+
+/*Format intro section catchphrase*/
+.introSection p {
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+  color: aqua;
+}
+
+/*Footer Formatting*/
+footer {
+  background-color:  #222E50;
+  text-align: center;
+  padding: 20px;
+  font-family: monospace;
+  font-size: 13px;
+  color: white;
+}
+/*End of footer formatting*/
