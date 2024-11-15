@@ -6,148 +6,139 @@
 }
 /*End of general formatting*/
 
-/*Keyfram Formatting*/
-@keyframes fadeIn {
-  0%{
+/*Keyframes formatting*/
+@keyframes appear {
+  0% {
     opacity: 0;
-  } 
+  }
   100% {
     opacity: 1;
   }
 }
+/*End of keyframe formatting*/
+
 /*Header formatting*/
 header {
   padding: 20px;
-  background-color: #222E50;
-  display: flex;
-  justify-content: space-between;
 }
 
-/*Format header h1*/ 
+/*Format header h1*/
 header h1 {
   font-family: sans-serif;
   font-size: 50px;
-  color: white;
 }
+/*End of footer formatting*/
 
-/*Format nav bar*/
-header nav {
-  padding: 20px;
-  animation: fadeIn 1.5s ease/*Apply fade in animation*/
-}
+/*Section formatting*/
 
-header nav ul li{
-  display: inline-block;
-  margin-right: 25px;
-}
-
-
-/*Format nav links*/
-header nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-weight: light;
-  font-family: monospace;
-  transition: 0.5s ease;/*Create smooth hover transition*/
-}
-
-header nav ul li a:hover {
-  font-weight: bolder;
-  font-style: italic;
-  font-size: 25px;
-  text-decoration: underline;
-  color: aquamarine;
-  cursor: pointer;
-}
-/*End of header formatting*/
-
-/*Section Formatting*/
+/**index.html**/
 .introSection {
-  background-image: 
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url(../images/jewleryIntro.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-/*Format intro section header*/
-.introSection h2 {
-  font-size: 40px;
-  font-family: sans-serif;
-  color: white;
-  margin-bottom: 25px;
-}
-
-/*Format intro section catchphrase*/
-.introSection p {
-  font-family: monospace;
-  font-size: 15px;
-  font-weight: bolder;
-  text-align: center;
-  color: aqua;
-}
-
-/*Format about us header img*/
-.aboutHeaderImg {
-  background-image: 
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url(../images/aboutUsHeader.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: normal;
-  flex-direction: column;
-}
-
-/*Format header title*/
-.aboutHeaderImg h2 {
-  margin-left: 100px;
-  font-size: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
-  color: white;
-}
-
-/*Format contact us header img*/
-.contactHeaderImg {
   background-image:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url(../images/contactUsHeader.jpg);
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url(../images/jewleryIntro.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: normal;
-  flex-direction: column;
+  height: 20vh;
 }
 
-/*Format contact header title*/
-.contactHeaderImg h2 {
-  margin-left: 100px;
-  font-size: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
+/*Format intro header h2 tag*/
+.introSection h2 {
   color: white;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/*Format intro section text*/
+.introSection p {
+  font-style: italic;
+  color: aquamarine;
+  animation: appear 1s ease/*Create appear animation*/
+}
+
+/*Format index about container*/
+.aboutContainer {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-image: url(../images/aboutStatic.png);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+}
+
+
+/*Format span tag element in about container*/
+.aboutContainer span {
+  color: Orange;
+}
+/*Format index contact container*/
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url(../images/contactSection.png);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+}
+
+/*Format contact section text*/
+.contactContainer h2 {
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: black;
+  font-size: 30px;
+}
+
+/*Format link*/
+.contactContainer a {
+  display: inline-block;
+  width: 100px;
+  background-color: orange;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+  transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+.contactContainer a:hover {
+  background-color: black;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+}
+/*End of section Formatting*/
 
 /*Footer Formatting*/
 footer {
-  background-color:  #222E50;
-  text-align: center;
-  padding: 20px;
   font-family: monospace;
-  font-size: 13px;
-  color: white;
+  font-size: 15px;
+  text-align: center;
+  border-top: 10px solid black;
+}
+
+/*Privacy link formatting*/
+.privacyContainer {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+/*Format privacy container text*/
+.privacyContainer p {
+  color:black;
+}
+
+/*Format privacy container link*/
+.privacyContainer a {
+  color: black;
+  text-decoration: none;
+  cursor: none;
 }
 /*End of footer formatting*/

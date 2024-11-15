@@ -4,17 +4,17 @@ html
     meta(charset='utf-8')
     title !{title} 
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+    
   body
     header
       h1 !{title} 
-      nav 
-        ul 
-          li 
-            a(href="/") Home
-          li 
-            a(href="/about") About Us
-          li 
-            a(href="/contact") Contact Us 
+      
     block content            
     footer
-      p &copy; 2024 Broward College. All rights reserved.
+      div.privacyContainer 
+        p &copy; 2024 Broward Pawn, Inc. | All Rights Reserverd | 
+          a(href='/privacy') Privacy 

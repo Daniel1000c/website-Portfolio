@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: '💎 Broward Pawn' });
+  res.render('index', { title: 'Broward Pawn' });
 });
 
 /*Get about us page */
