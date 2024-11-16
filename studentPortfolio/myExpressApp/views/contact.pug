@@ -1,4 +1,47 @@
 extends layout
 
 block content
+    section.formContainer 
+        h2 Get in Touch with Our Team
+
+        form(action="/https://https://professorcooke.org/forms/processform.php" method="POST" class="contactForm") 
+
+            //Prompt user for first name
+            label(for="firstName") First Name
+            br 
+            input(type="text" name="firstName" id="firstName" required placeholder="john...") 
+            br
+
+            //Prompt user for last Name
+            label(for="lastName") Last Name
+            br 
+            input(type="text" name="lastName" id="lastName" required placeholder="doe...") 
+            br
+
+            //Prompt user for email
+            label(for="email") Email
+            br 
+            input(type="email" name="email" id="email" required placeholder="johndoe413@gmail.com")
+            br
+
+            //Prompt user for phone #
+            label(for="phoneNumber") Phone Number
+            br 
+            input(type="tel" name="phoneNumber" id="phoneNumber" required placeholder="xxx-xxx-xxxx")
+            br
+
+            //Prompt user for subject line
+            label(for="subject") Subject 
+            br
+            input(type="text" name="subject" id="subject" required placeholder="Type in Message Subject")
+            br
+
+            //Prompt user with text message
+            label(for="message") Message
+            br 
+            textarea#message(name="message" rows="5" cols="40" required)   
+            br
+
+            //Prompt user for submit button
+            input(type="submit" value="Send")
     
