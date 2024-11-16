@@ -1,4 +1,46 @@
 extends layout
 
-block content
-    
+block content 
+    //Create about intro section
+    section.aboutUsHeader 
+        h2 About Broward Pawn
+
+    //Create story section
+    section.storyContainer 
+        h2 Our Story 
+        div.storyItem
+            img(src="images/pawnShopFront.jpg", alt="About Broward Pawn")
+            p Here at Broward Pawn, we take pride in being your local Floridian pawnbroker. With over 20 years of experience, our main goal is to provide honest,reliable, and accessible financial solutions to the community while offering high-end products at competitive market prices. 
+
+    //Create services container
+    section.servicesContainer 
+        h2 Services
+        div.serviceTypeContainer
+            div.serviceItem
+                img(src="images/jewerlyService.jpg", alt="Jewelry")
+                h3 Jewelry
+            div.serviceItem
+                img(src="images/firearmsService.jpg", alt="Firearms Purchase")
+                h3 Firearms
+            div.serviceItem
+                img(src="images/electronicService.jpg", alt="Electronic Sales")
+                h3 Electronics
+            div.serviceItem
+                img(src="images/pawnLoanService.jpg", alt="Collateral Loans")
+                h3 Loans
+    //Create why choosing us section
+    section.chooseUsContainer 
+        h2 Why choose Broward Pawn?
+
+        //Create list items
+        div.listContainer
+            ul
+                li Over 20 years of field experience.
+                li Friendly and trained staff.
+                li Competitive pricing and fair loan payment terms.
+                li Over 10 years of brand integrity.
+
+    //Create contact button section
+    div.contactContainer
+        h2 Get in Touch
+        a(href="/contact") See More 
