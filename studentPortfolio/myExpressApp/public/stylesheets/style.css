@@ -64,7 +64,7 @@ header h1 {
     url(../images/jewleryIntro.jpg);
   background-position: center;
   background-size: cover;
-  height: 50vh;
+  height: 20vh;
 }
 
 /*Format intro header h2 tag*/
@@ -387,6 +387,65 @@ header h1 {
   margin-top: 10px;
   color: #EC0868;
 }
+
+/**Index Page Formatting**/
+
+/*Format online loan container*/
+.LoanPaymentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url(../images/loanPayment.png);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+/*Format title*/
+.LoanPaymentContainer h2 {
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 25px;
+  color: white;
+}
+/*Format span element*/
+.LoanPaymentContainer  h2 span {
+  color: orange;
+}
+
+
+/*Format items*/
+.LoanPaymentContainer .itemContainer .loanItem {
+  text-align: center;
+  transition: 0.5s ease;/*Create hover effect*/
+}
+
+
+.LoanPaymentContainer .itemContainer .loanItem:hover {
+  transform: scale(1.1);
+}
+
+.LoanPaymentContainer .itemContainer .loanItem i {
+  font-size: 40px;
+}
+.LoanPaymentContainer .itemContainer .loanItem h4 {
+  color: orange;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.LoanPaymentContainer .itemContainer .loanItem p {
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+
 /*End of section Formatting*/
 
 /*Footer Formatting*/

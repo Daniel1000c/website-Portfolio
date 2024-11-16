@@ -1,10 +1,32 @@
 extends layout
 
 block content
+  //Create header intro img
   section.introSection 
     h2 Broward Pawn
     p "Find your hidden Treasure here"
   
+  //Create Payment loans container
+  section.LoanPaymentContainer 
+    h2 Pay Your Loans 
+      span Online!
+    
+    //Create item container
+    div.itemContainer
+      div.loanItem
+        i.bi.bi-telephone-forward-fill
+        h4 Request Access 
+        p Give us a call at the store you initiated your loan or layaway.
+      div.loanItem
+        i.bi.bi-phone
+        h4 Receive Your Activation Text
+        p After giving us a call, you will receive an activation text that will ask you a few questions.
+      div.loanItem
+        i.bi.bi-person-badge
+        h4 Create an Account 
+        p You will be prompted to create an account where you can view and make payments on your items.
+        
+  //Create contact button section
   div.contactContainer
     h2 Get in Touch
     a(href="/contact") See More 
