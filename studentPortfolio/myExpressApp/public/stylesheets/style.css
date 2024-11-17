@@ -32,22 +32,46 @@
 /*Header formatting*/
 header {
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Format nav header*/
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+/*Format nav links*/
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-right: 25px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 20px;
+  transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+header nav ul li a:hover {
+  text-decoration: none;
+  font-size: 25px;
+  color: orange;
+  font-weight: bolder;
 }
 
 /*Format header img*/
 header img {
   width: 150px;
-}
-
-/*Format hamburger menu icon*/
-header i {
-  font-size: 55px;
-}
-
-/*Format header h1*/
-header h1 {
-  font-family: sans-serif;
-  font-size: 35px;
+  height: auto;
 }
 /*End of footer formatting*/
 
@@ -586,3 +610,134 @@ footer .quickLinksContainer ul li a:hover {
   cursor: pointer;
 }
 /*End of footer formatting*/
+
+
+/*Media query formatting*/
+
+/*Desktop media query*/
+@media screen and (min-width: 1100px) {
+  
+  /*Format header img*/
+  header img {
+    width: 270px;
+  }
+
+  /*Format header nav*/
+  header nav ul li a{
+    font-size: 35px;
+  }
+  
+  header nav ul li a:hover {
+    font-size: 40px;
+  }
+
+  /*Format about page*/
+  .aboutUsHeader {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .aboutUsHeader h2 {
+    font-size: 100px;
+  }
+
+  /*Format our story section*/
+  .storyContainer h2 {
+    font-size: 50px;
+  }
+
+  .storyContainer .storyItem {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .storyContainer .storyItem img {
+    width: 500px;
+    margin-right: 25px;
+  }
+
+  .storyContainer .storyItem p {
+    margin-top: 25px;
+    line-height: 2;
+    width: 800px;
+    font-size: 25px;
+  }
+
+  /*Format services section*/
+  .servicesContainer h2 {
+    font-size: 50px;
+  }
+
+  /*Format services into two column grids*/
+  .servicesContainer .serviceTypeContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 25px;
+    gap: 20px;
+  }
+
+  .servicesContainer .serviceTypeContainer .serviceItem  img {
+    width: 500px;
+  }
+
+  .servicesContainer .serviceTypeContainer .serviceItem h3 {
+    font-size: 35px;
+  }
+
+  /*Format why choose us section*/
+  .chooseUsContainer h2 {
+    font-size: 50px;
+  }
+
+  .chooseUsContainer .listContainer ul li{
+    font-size: 20px;
+  }
+
+  /*Format contact section title*/
+  .contactContainer h2 {
+    font-size: 50px;
+  }
+
+  /*index formatting*/
+  .introSection {
+    height: 35vh;
+  }
+
+  .introSection h2 {
+    font-size: 100px;
+  }
+
+  .introSection p {
+    font-size: 40px;
+  }
+
+  /*Format loan section*/
+  .LoanPaymentContainer {
+    height: 100vh;
+  } 
+
+  .LoanPaymentContainer h2 {
+    font-size: 50px;
+  }
+
+  /*Format loan icon*/
+  .LoanPaymentContainer .itemContainer .loanItem i {
+    font-size: 80px;
+  }
+
+  /*Format loan header*/
+  .LoanPaymentContainer .itemContainer .loanItem h4 {
+    font-size: 35px;
+  }
+
+  /*Format loan paragraph*/
+  .LoanPaymentContainer .itemContainer .loanItem p {
+    font-size: 25px;
+    width: 700px;
+  }
+}
+
+/*End of media query formatting*/
