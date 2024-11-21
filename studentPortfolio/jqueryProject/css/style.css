@@ -1,0 +1,181 @@
+/*General Formatting*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*End of general Formatting*/
+
+/*Font formatting*/
+@font-face {
+    font-family: 'SourceSans3-Regular';
+    src: url(../fonts/SourceSans3-Regular.ttf);
+}
+/*End of font formatting*/
+
+/*Keyframe formatting*/
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes appearFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/*End of keyframe formatting*/
+
+/*Header Formatting*/
+header {
+    background-color: #5371fe;
+}
+/*Format company logo*/
+header img {
+    width: 150px;
+    animation: appearFromLeft 1s ease;
+}
+
+/*Format nav links*/
+header nav .nav-link {
+    color: white;
+    transition: 0.5s ease;/*Smooth hover transition*/
+    font-family: 'SourceSans3-Regular', sans-serif;
+    font-size: 20px;
+}
+
+header nav .nav-link:hover {
+   color: lightcoral;
+}
+/*End of header formatting*/
+
+/*Section Formatting*/
+.introStatement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #FEB952;
+}
+
+/*Format section img*/
+.introStatement img {
+    width: 300px;
+    animation: fadeDown 1s ease;/*Apply fadeDown animation*/
+}
+
+/*Format intro title*/
+.introStatement h2 {
+    font-family: 'SourceSans3-Regular', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: #005F5F;
+}
+
+/*Format title span*/
+.introStatement h2 span {
+    color: #5371fe;
+}
+
+/*Format section text*/
+.introStatement p {
+    text-align: center;
+    line-height: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    width: 80%;
+   color: #005F5F;
+}
+
+
+/*Format section button*/
+.introStatement .btn-primary {
+    background-color: #5371fe;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    border-radius: 100px;
+    padding: 10px;
+    font-weight: bolder;
+    transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+.introStatement .btn-primary:hover {
+    background-color: transparent;
+    border: 1px solid #5371fe;
+    color: #5371fe;
+}
+
+/*Create img gallery section*/
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/wave.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*Format img gallery title*/
+.imgContainer h2 {
+    /*Make position of title lower*/
+    position: relative;
+    top: 160px;
+    font-family: 'SourceSans3-Regular', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: #005F5F;
+}
+
+
+
+
+/*Create hover section*/
+.hoverSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-image: url(../images/Master\ Card.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+/*Format section title*/
+.hoverSection h2 {
+    font-family: 'SourceSans3-Regular', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: #005F5F;
+}
+
+/*Format section button*/
+.hoverSection button {
+    border: none;
+    padding: 12px;
+    font-weight: bolder;
+    color: white;
+    background-color: #5371fe;
+    border-radius: 100px;
+    display: inline-block;
+    width: 120px;
+}
+/*Footer Formatting*/
+footer {
+   
+}
+/*End of footer formatting*/
