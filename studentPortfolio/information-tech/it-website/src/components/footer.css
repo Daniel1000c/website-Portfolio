@@ -6,4 +6,104 @@ footer {
     color: white;
     font-family: monospace;
     font-family: 13px;
+    position: relative;
+}
+
+
+/*Format footer img*/
+footer .footerLogo {
+    font-size: 17px;
+}
+footer .footerLogo img {
+    width: 120px;
+}
+
+/*Format footer social media icons*/
+footer .footerLogo .socialIconContainer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footerLogo .socialIconContainer i {
+    color: darkcyan;
+    border: 1px solid darkcyan;
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.5s ease;/*Smooth transition hover*/
+}
+
+/*Create social icon hover effect*/
+footer .footerLogo .socialIconContainer i:hover {
+    color: white;
+}
+
+/*Format footer text*/
+footer .footerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Format text for footer information*/
+footer .footerInfo .contactInformation, footer .footerInfo .quickLinks {
+    text-align: left;
+}
+
+/*Format quick links*/
+footer .footerInfo .quickLinks ul {
+    list-style-type: none;
+}
+
+/*Format list items*/
+footer .footerInfo .quickLinks ul li {
+    margin: 5px 0px;
+}
+
+/*Format list a tags*/
+footer .footerInfo .quickLinks ul li a {
+    text-decoration: none;
+    color: white;
+    cursor: none;
+    font-size: 16px;
+    transition: 0.5s ease;/*Smooth  hover transition*/
+}
+
+/**Create hover effect for list a tags*/
+footer .footerInfo .quickLinks ul li a:hover {
+    color: lightgreen;
+    cursor: pointer;
+}
+
+
+/*Format text titles*/
+footer .footerInfo .contactInformation h4, footer .footerInfo .quickLinks h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    color: lightgreen;
+}
+
+/*Format contact information p tags*/
+footer .footerInfo .contactInformation p {
+    margin-bottom: 5px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+/*Format text span*/
+footer .footerInfo .contactInformation p span {
+    color: yellowgreen;
+}
+
+footer .footerInfo .contactInformation {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+footer .footerInfo .quickLinks {
+    margin-bottom: 15px;
 }
