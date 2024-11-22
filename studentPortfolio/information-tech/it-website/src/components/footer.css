@@ -1,0 +1,9 @@
+/*Footer Formatting*/
+footer {
+    background-color: #031b3b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-family: 13px;
+}

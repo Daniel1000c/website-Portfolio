@@ -1,0 +1,30 @@
+/*Format header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #031b3b;
+}
+
+/*Format header logo*/
+header img {
+    width: 110px;
+}
+
+/*Format nav icon*/
+header .bx-menu {
+    color: white;
+    font-size: 55px;
+    padding: 25px;
+    transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+/*Create menu icon hover*/
+header .bx-menu:hover {
+    color: lightgreen;
+    cursor: pointer;
+}
+
+/*Format nav menu*/
+header nav {
+    display: none;
+}
