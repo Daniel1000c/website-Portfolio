@@ -17,14 +17,14 @@
 /*Format section text*/
 .contactContainer p {
     font-family: monospace;
-    font-size: 11px;
+    font-size: 10px;
     margin-top: 5px;
     color: #D4F1F4;
     padding: 8px;
 }
 
 /*Format section a tag*/
-.contactContainer a {
+.contactContainer .contactBtn {
     margin-top: 10px;
     text-decoration: none;
     background-color: #91ee91;
@@ -40,7 +40,7 @@
 }
 
 /*Format section a tag on hover*/
-.contactContainer a:hover {
+.contactContainer .contactBtn:hover {
     cursor: pointer;
     background-color: transparent;
     color: #91ee91;

@@ -1,0 +1,163 @@
+/*Font family formatting*/
+@font-face {
+    font-family: 'Ubuntu-Light',sans-serif;
+    src: url(../fonts/Ubuntu-Light.ttf);
+}
+/*End of font family formatting*/
+
+/*Keyframe Formatting*/
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*End of keyframe formatting*/
+
+/*Format intro section*/
+.homeIntro {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column;
+    padding: 20px;
+    background-image: url(../images/endless-constellation.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Format homeIntro h2 tag*/
+.homeIntro h2 {
+    color: lightgreen;
+    font-size: 23px;
+    font-style: italic;
+}
+
+/*Format homeIntro p tag*/
+.homeIntro p {
+    color: yellow;
+    width: 330px;
+    line-height: 2;
+    font-size: 14px;
+    margin-top: 13px;
+    letter-spacing: 1.5px;
+    font-family: 'Ubuntu-Light',sans-serif;
+}
+
+/*Format company logo*/
+.homeIntro img {
+    width: 200px;
+    margin: auto;
+    animation: fadeDown 1s ease;/*Create fadedown animation*/
+}
+
+/*Format homeIntro a tag*/ 
+.homeIntro .btn {
+    margin-top: 10px;
+    text-decoration: none;
+    color: lightcoral;
+    background-color: transparent;
+    border: 2px solid lightgreen;
+    padding: 15px;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    text-align: center;
+    border-radius: 100px;
+    font-weight: bolder;
+    transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+/*Create hover effect for a tag*/
+.homeIntro .btn:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+
+/*Create programs container*/
+.programsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/*Format programs container title*/
+.programsContainer h3 {
+    color: lightgreen;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/*Format programs container*/
+.programsContainer .programs {
+    margin-top: 20px;
+}
+/*Format program items*/
+.programsContainer .programs .programItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 280px;
+    height: 350px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #212D40;
+}
+
+/*Format program item icons*/
+.programsContainer .programs .programItem i {
+    font-size: 150px;
+    color: #41bbd9;
+}
+
+/*Format program item text title*/
+.programsContainer .programs .programItem h4{
+    font-family: 'Ubuntu-Light',sans-serif;
+    margin-top: 8px;
+    color: lightgreen;
+    font-size: 22px;
+}
+
+/*Format program item text*/
+.programsContainer .programs .programItem p {
+    text-align: center;
+    width: 250px;
+    font-size: 10px;
+    color: lightpink;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+/*Format program links*/
+.programsContainer .programs .programItem a {
+    margin-top: 8px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Ubuntu-Light',sans-serif;
+    font-weight: bolder;
+    background-color: #a8d0db;
+    color: darkcyan;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+/*Create hover effect for program links*/
+.programsContainer .programs .programItem a:hover {
+    background-color: transparent;
+    border: 1px solid darkcyan;
+    color: #a8d0db;
+    cursor: pointer;
+}
