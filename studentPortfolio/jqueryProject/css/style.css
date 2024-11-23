@@ -123,24 +123,35 @@ header nav .nav-link:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../images/wave.svg);
-    background-position: center;
-    background-size: cover;
+    padding: 20px;
+    
 }
 
 /*Format img gallery title*/
 .imgContainer h2 {
     /*Make position of title lower*/
-    position: relative;
-    top: 160px;
     font-family: 'SourceSans3-Regular', sans-serif;
     font-weight: bolder;
     margin-bottom: 20px;
-    color: #005F5F;
+    color: #5371fe;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
 }
 
+/*Format img gallery imgs*/
+.imgContainer .imgGallery .imgItem img {
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
 
-
+.imgContainer .imgGallery .imgItem h2 {
+    color: #005F5F;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: monospace;
+}
 
 /*Create hover section*/
 .hoverSection {
@@ -153,6 +164,87 @@ header nav .nav-link:hover {
     background-position: center;
     background-size: cover;
     height: 200px;
+}
+
+
+/*Format contact container*/
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-image: url(../images/sun-tornado.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Format contact title*/
+.contactContainer h2 {
+    color: #005F5F;
+    font-family: 'SourceSans3-Regular', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+/*Format form*/
+.contactContainer form {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*Format form labels*/
+.contactContainer form label {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: #005F5F;
+}
+/*Format input element*/
+.contactContainer form input[type="text"],
+.contactContainer form input[type="email"],
+.contactContainer form input[type="tel"] {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+}
+
+/*Format textarea*/
+.contactContainer form textarea {
+    margin-top: 8px;
+    border-radius: 8px;
+    border: none;
+    display: inline-block;
+    width: 250px;
+}
+/*Format form input submit button*/
+.contactContainer form input[type="submit"] {
+   margin-top: 20px;
+   display: inline-block;
+   width: 100px;
+   padding: 12px;
+   text-align: center;
+   border-radius: 100px;
+   border: none;
+   background-color: #5371fe;
+   color: white;
+   font-weight: bolder;
+   transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+.contactContainer form input[type="submit"]:hover {
+    background-color: transparent;
+    border: 1px solid #5371fe;
+    color: #5371fe;
 }
 
 /*Format section title*/

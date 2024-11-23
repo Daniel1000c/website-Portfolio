@@ -18,3 +18,22 @@ $(document).ready(function () {
         }
     );
 });
+
+
+//Create button click larger hover animation
+$(document).ready(function () {
+    //add click effect
+    $('.imgGallery img').click(function () {
+        if ($(this).hasClass('Scaled')) {
+            $(this).animate({
+                width: '-=20px',
+                height: '-=20px'
+            }, 300).removeClass('Scaled');
+        } else {
+            $(this).animate({
+                width: '+=20px',
+                height: '+=20px'
+            }, 300).addClass('Scaled');
+        }
+    }); 
+});
