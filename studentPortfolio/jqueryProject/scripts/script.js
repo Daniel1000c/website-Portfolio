@@ -37,3 +37,115 @@ $(document).ready(function () {
         }
     }); 
 });
+
+//Create input form validation
+$(document).ready(function () {
+    $("#contactForm").on("submit",function (event) {
+        //Prevent form submission
+        event.preventDefault();
+
+        let isValid = true;
+        $(".error").remove();
+
+        //Validate the first name field
+        const firstName = $("#firstName").val();
+        if (firstName.trim() === "") {
+            isValid = false;
+            $("#firstName")
+                .css("border", "2px solid red")
+                .after('<span class="error">First Name is required!!!</span>');
+        } else {
+            $("#firstName").css("border", "").next(".error").remove();
+        }
+
+        //Validate the lastName field
+        const lastName = $("#lastName").val();
+        if (lastName.trim() === "") {
+            isValid = false;
+            $("#lastName")
+                .css("border", "2px solid red")
+                .after('<span class="error">Last Name is required!!!</span>');
+        } else {
+            $("#lastName").css("border", "").next(".error").remove();
+        }
+
+        //Validate user email
+        const email = $("#email").val();
+        const emailChars = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        if(!emailChars.test(email)) {
+            isValid = false;
+            $("#email")
+                .css("border", "2px solid red")
+                .after('<span class="error">Valid email is required!!!</span>')
+        } else {
+            $("#email").css("border", "").next(".error").remove();
+        }
+
+        //Validate phoneNumber
+        const phone = $("#phoneNumber").val();
+        if (phone.trim() === "") {
+            isValid = false;
+            $("#phoneNumber")
+                .css("border", "2px solid red")
+                .after('<span class="error">Phone number is required!!!</span>')
+        } else {
+            $("#phoneNumber").css("border", "").next(".error").remove();
+        }
+
+        //Validate user Address
+        const address = $("#address").val();
+        if(address.trim() ==="") {
+            isValid = false;
+            $('#address')
+                .css("border", "2px solid red")
+                .after('<span class="error">Address is required!!!</span>');
+        } else {
+            $("#address").css("border", "").next(".error").remove();
+        }
+
+        //Validate subject line
+        const subject = $("#subject").val();
+        if(subject.trim() ==="") {
+            isValid = false;
+            $("#subject")
+            .css("border", "2px solid red")
+            .after('<span class="error">Subject is required!!!</span>'); 
+        } else {
+            $("#subject").css("border", "").next(".error").remove();
+        }
+
+        //Validate user message
+        const message = $("#message").val();
+        if(message.trim().length < 10) {
+            isValid = false;
+            $("#message")
+            .css("border", "2px solid red")
+            .after('<span class="error">Message is required!!!</span>');  
+        } else {
+            $("#message").css("border", "").next(".error").remove();
+        }
+
+        //Display message if form submission is valid
+        $(".success").remove();
+        if (isValid) {
+            $("#contactForm").after('<p class="success">Form submitted successfully!!!</p>');
+        }
+    });
+});
+
+//Create nav effect
+$(document).ready(function () {
+    $("#home").show();
+    $("#about, #contact").hide();
+
+    $(".nav-link").click(function (e) {
+        e.preventDefault();
+
+        const targetSection = $(this).attr("href");
+
+
+        $("section").fadeOut(300, function () {
+            $(targetSection).fadeIn(300);
+        });
+    });
+});

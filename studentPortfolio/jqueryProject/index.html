@@ -20,20 +20,20 @@
             <nav>
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
             <!--Create intro section-->
-            <section class="introStatement">
+            <section class="introStatement" id="home">
                 <!--Insert koala img-->
                 <img src="images/koala.png" alt="FitFocus Mascot"> 
                 <h2>Unleash Your Inner <span>Strength</span></h2>
@@ -45,7 +45,7 @@
             </section>
 
             <!--Create image gallery section-->
-            <section class="imgContainer">
+            <section class="imgContainer" id="about">
                 <h2>FitFocus Members</h2>
 
                 <!--Create image gallery-->
@@ -84,38 +84,38 @@
 
 
             <!--Create contact form section-->
-            <section class="contactContainer">
+            <section class="contactContainer" id="contact">
                 <h2>Talk To Our Team</h2>
 
                 <!--Create contact form-->
-                <form action="" method="post" class="formFormat">
+                <form id="contactForm" method="post" class="formFormat" novalidate>
                     <!--Prompt user for first name-->
                     <label for="firstName">First Name:</label><br>
-                    <input type="text" id="firstName" name="firstName"><br>
+                    <input type="text" id="firstName" name="firstName" required placeholder="John..."><br>
 
                     <!--Prompt user for last name-->
                     <label for="lastName">Last Name:</label><br>
-                    <input type="text" id="lastName" name="lastName"><br>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Doe...."><br>
 
                     <!--Prompt user for email-->
                     <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="email"><br>
+                    <input type="email" id="email" name="email" required placeholder="johndoe413@gmail.com..."><br>
 
                     <!--Prompt user for phone number-->
                     <label for="phoneNumber">Phone Number:</label><br>
-                    <input type="tel" id="phoneNumber" name="phoneNumber"><br>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="xxx-xxx-xxxx..."><br>
 
                     <!--Prompt user for address-->
                     <label for="address">Address:</label><br>
-                    <input type="text" id="address" name="address"><br>
+                    <input type="text" id="address" name="address" required placeholder="123 Main St, Apt 4B..."><br>
 
                     <!--Prompt user for subject line-->
                     <label for="subject">Subject:</label><br>
-                    <input type="text" id="subject" name="subject"><br>
+                    <input type="text" id="subject" name="subject" required placeholder="Subject..."><br>
 
                     <!--Prompt user for message-->
                     <label for="message">Message:</label><br>
-                    <textarea id="message" name="message"></textarea><br>
+                    <textarea id="message" name="message" required placeholder="Write a comment..."></textarea><br>
 
                     <!--Create submit button-->
                     <input type="submit" value="Submit">
@@ -124,10 +124,14 @@
 
             <!--Create hover me section-->
             <section class="hoverSection">
-                <h2>Join us Today!</h2>
 
-               <!--Insert hover button-->
-               <button onclick="alert('You clicked me!!!')" id="hoverButton" type="button">Hover me!</button>
+                <div class="hoverItem">
+                    <h2>Join us Today!</h2>
+
+                    <!--Insert hover button-->
+                    <button onclick="alert('You clicked me!!!')" id="hoverButton" type="button">Hover me!</button>    
+                </div>
+                
             </section>
         </main>
         <footer>

@@ -60,13 +60,20 @@ header nav .nav-link:hover {
 /*End of header formatting*/
 
 /*Section Formatting*/
+/*Format main tag*/
+main {
+    background-image: url(../images/sun-tornado.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .introStatement {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    background-color: #FEB952;
 }
 
 /*Format section img*/
@@ -160,9 +167,22 @@ header nav .nav-link:hover {
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    background-image: url(../images/Master\ Card.jpg);
+}
+
+/*Format hover item*/
+.hoverSection  .hoverItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
     background-position: center;
     background-size: cover;
+    height: 200px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    border-radius: 8px;
+    width: 300px;
     height: 200px;
 }
 
@@ -174,10 +194,6 @@ header nav .nav-link:hover {
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    background-image: url(../images/sun-tornado.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 /*Format contact title*/
@@ -216,12 +232,14 @@ header nav .nav-link:hover {
     width: 250px;
     border-radius: 8px;
     border: none;
+    padding: 8px;
 }
 
 /*Format textarea*/
 .contactContainer form textarea {
     margin-top: 8px;
     border-radius: 8px;
+    padding: 8px;
     border: none;
     display: inline-block;
     width: 250px;
@@ -247,6 +265,26 @@ header nav .nav-link:hover {
     color: #5371fe;
 }
 
+/*Form input placeholders*/
+.contactContainer form input::placeholder, .contactContainer form textarea::placeholder {
+    padding-left: 10px;
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+/*Error messages formatting*/
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.success {
+    color: green;
+    font-size: 1em;
+    margin-top: 10px;
+}
 /*Format section title*/
 .hoverSection h2 {
     font-family: 'SourceSans3-Regular', sans-serif;
