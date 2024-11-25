@@ -14,10 +14,10 @@
     <body>
         <header>
             <!--Insert company logo-->
-            <img src="images/FitFocus.png" alt="FitFocus">
+            <img src="images/FitFocus.png" alt="FitFocus" aria-label="FitFocus Logo">
 
             <!--Create nav bar that contains links: home, about, contact-->
-            <nav>
+            <nav aria-label="Main Navigation">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
@@ -28,113 +28,139 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tracker">Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apply">Apply</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <main>
             <!--Create intro section-->
-            <section class="introStatement" id="home">
+            <section class="introStatement" id="home" aria-labelledby="home-heading">
                 <!--Insert koala img-->
                 <img src="images/koala.png" alt="FitFocus Mascot"> 
-                <h2>Unleash Your Inner <span>Strength</span></h2>
+                <h2 id="home-heading">Unleash Your Inner <span>Strength</span></h2>
                 <!--Create short Paragraph-->
                 <p>At FitFocus, we're here to guide, inspire, and push you toward becoming the best version of yourself.</p>
 
                 <!--Create button-->
-                <button type="button" class="btn btn-primary">Get Fit!</button>
+                <button type="button" class="btn btn-primary" onclick="alert('Start your fitness journey today!')">Get Fit!</button>
             </section>
 
             <!--Create image gallery section-->
-            <section class="imgContainer" id="about">
-                <h2>FitFocus Members</h2>
+            <section class="imgContainer" id="about" aria-labelledby="about-heading">
+                <h2 id="about-heading">FitFocus Members</h2>
 
                 <!--Create image gallery-->
-                <div class="imgGallery">
-                    <div class="imgItem">
-                        <img src="images/boxing.jpg" alt="Boxing Training" onclick="alert('Start Boxing today!')">
-                        <h2>Boxing Training</h2>
+                <div class="imgGallery" role="list">
+                    <div class="imgItem" role="listitem">
+                        <img src="images/outsideTraining.jpg" alt="Outside Training" onclick="alert('Get an Active workout outside in the elements!')">
+                        <h2>Outdoor Training</h2>
                     </div>
 
-                    <div class="imgItem">
+                    <div class="imgItem" role="listitem">
                         <img src="images/dumbellShoes.jpg" alt="Dumbbell with Shoes" onclick="alert('State of the art gym equipment.')">
                         <h2>Gym Equipment</h2>
                     </div>
 
-                    <div class="imgItem">
+                    <div class="imgItem" role="listitem">
                         <img src="images/gymCouple.jpg" alt="Gym Couple" onclick="alert('Great place for gym couple goals.')">
                         <h2>Gym Goers</h2>
                     </div>
 
-                    <div class="imgItem">
+                    <div class="imgItem" role="listitem">
                         <img src="images/ladyWorkout.jpg" alt="Lady Working Out" onclick="alert('Purchase a gym membership today!')">
                         <h2>Gym Membership</h2>
                     </div>
 
-                    <div class="imgItem">
+                    <div class="imgItem" role="listitem">
                         <img src="images/personalTrainer.jpg" alt="Personal Trainer" onclick="alert('Hire a personal trainer')">
                         <h2>Personal Training</h2>
                     </div>
 
-                    <div class="imgItem">
-                        <img src="images/pushUp.jpg" alt="Push Ups" onclick="alert('Get a full body workout in.')">
-                        <h2>Full Body Workouts</h2>
+                    <div class="imgItem" role="listitem">
+                        <img src="images/crossfit.jpg" alt="Crossfit Training" width="300" onclick="alert('Join our crossfit and yoga classes')">
+                        <h2>Yoga</h2>
                     </div>
                 </div>
             </section>
 
 
             <!--Create contact form section-->
-            <section class="contactContainer" id="contact">
-                <h2>Talk To Our Team</h2>
+            <section class="contactContainer" id="contact" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Talk To Our Team</h2>
 
                 <!--Create contact form-->
                 <form id="contactForm" method="post" class="formFormat" novalidate>
                     <!--Prompt user for first name-->
                     <label for="firstName">First Name:</label><br>
-                    <input type="text" id="firstName" name="firstName" required placeholder="John..."><br>
+                    <input type="text" id="firstName" name="firstName" required placeholder="John..." aria-required="true"><br>
 
                     <!--Prompt user for last name-->
                     <label for="lastName">Last Name:</label><br>
-                    <input type="text" id="lastName" name="lastName" required placeholder="Doe...."><br>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Doe...." aria-required="true"><br>
 
                     <!--Prompt user for email-->
                     <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="johndoe413@gmail.com..."><br>
+                    <input type="email" id="email" name="email" required placeholder="johndoe413@gmail.com..." aria-required="true"><br>
 
                     <!--Prompt user for phone number-->
                     <label for="phoneNumber">Phone Number:</label><br>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="xxx-xxx-xxxx..."><br>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="xxx-xxx-xxxx..." aria-required="true"><br>
 
                     <!--Prompt user for address-->
                     <label for="address">Address:</label><br>
-                    <input type="text" id="address" name="address" required placeholder="123 Main St, Apt 4B..."><br>
+                    <input type="text" id="address" name="address" required placeholder="123 Main St, Apt 4B..." aria-required="true"><br>
 
                     <!--Prompt user for subject line-->
                     <label for="subject">Subject:</label><br>
-                    <input type="text" id="subject" name="subject" required placeholder="Subject..."><br>
+                    <input type="text" id="subject" name="subject" required placeholder="Subject..." aria-required="true"><br>
 
                     <!--Prompt user for message-->
                     <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" required placeholder="Write a comment..."></textarea><br>
+                    <textarea id="message" name="message" required placeholder="Write a comment..." aria-required="true"></textarea><br>
 
                     <!--Create submit button-->
                     <input type="submit" value="Submit">
                 </form>
             </section>
 
+            <!--Create tracker list-->
+            <section class="trackerContainer" id="tracker" aria-labelledby="tracker-heading">
+                <h2 id="tracker-heading">Fit Focus List Tracker</h2>
+
+                <div class="inputContainer">
+                    <h3>Create a New Task</h3>
+                    <!--Prompt user for new task-->
+                    <input type="text" id="taskInput" placeholder="Enter your goal..." aria-label="Enter your goal">
+
+                    <!--Create task button-->
+                    <button id="addTaskBtn" aria-label="Add Task">Add Task</button>
+
+                    <!--Create empty task list-->
+                    <ul id="taskList" aria-live="polite" aria-relevant="additions"></ul>    
+                </div>
+                
+            </section>
+
             <!--Create hover me section-->
-            <section class="hoverSection">
+            <section class="hoverSection" id="apply" aria-labelledby="apply-heading">
 
                 <div class="hoverItem">
-                    <h2>Join us Today!</h2>
+                    <h2 id="apply-heading">Join us Today!</h2>
 
                     <!--Insert hover button-->
-                    <button onclick="alert('You clicked me!!!')" id="hoverButton" type="button">Hover me!</button>    
+                    <button onclick="alert('You clicked me!!!')" id="hoverButton" type="button" aria-label="Hover me to join">Hover me!</button>    
                 </div>
                 
             </section>
         </main>
-        <footer>
+        <footer aria-label="Fit Focus Footer">
+
+            <img src="images/FitFocus.png" alt="Fit Focus">
             &copy; FitFocus 2024 | All Rights Reserved
         </footer>
     </body>

@@ -136,7 +136,7 @@ $(document).ready(function () {
 //Create nav effect
 $(document).ready(function () {
     $("#home").show();
-    $("#about, #contact").hide();
+    $("#about, #contact, #apply, #tracker").hide();
 
     $(".nav-link").click(function (e) {
         e.preventDefault();
@@ -147,5 +147,29 @@ $(document).ready(function () {
         $("section").fadeOut(300, function () {
             $(targetSection).fadeIn(300);
         });
+    });
+});
+
+//Create add task list button
+$(document).ready(function () {
+    $("#addTaskBtn").on("click", function () {
+        const taskText = $("#taskInput").val().trim();
+        if(taskText) {
+            const taskItem = `
+                <li class="task-item">
+                <span>${taskText}</span>
+                <button class="deleteTask">X</button>
+                </li>
+            `
+            $("#taskList").append(taskItem);
+            $("#taskInput").val("");
+        } else{
+            alert("Please enter a task");
+        }
+    });
+
+    //Remove task from list when delete button is clicked
+    $("#taskList").on("click", ".deleteTask", function () {
+        $(this).parent().remove();
     });
 });
