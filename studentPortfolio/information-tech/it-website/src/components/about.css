@@ -1,0 +1,20 @@
+/*Format about container*/
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-image: url(../images/abstractVector.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*Format about title*/
+.aboutContainer h2 {
+    color: lightgreen;
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}

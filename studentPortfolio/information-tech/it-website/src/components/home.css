@@ -71,6 +71,7 @@
     border-radius: 100px;
     font-weight: bolder;
     transition: 0.5s ease;/*Smooth hover transition*/
+    margin-top: 20px;
 }
 
 /*Create hover effect for a tag*/
@@ -79,6 +80,73 @@
     cursor: pointer;
 }
 
+
+/*Format over view container*/
+.overviewContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/*Format overview title*/
+.overviewContainer h3 {
+    color: lightgreen;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/*Format cloud ware img*/
+.overviewContainer img {
+    width: 250px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/*Format overview text*/
+.overviewContainer p {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/*Format key highlights list*/
+.overviewContainer ul {
+    padding: 25px;
+    list-style-type: square;
+}
+
+/*Format key highlights list items*/
+.overviewContainer ul li {
+    padding: 5px;
+    color: lightpink;
+    font-family: monospace;
+    font-size: 17px;
+    font-style: italic;
+}
+
+/*Format mission container*/
+.missionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/*Format missiont title*/
+.missionContainer h3 {
+    color: lightgreen;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/*Format mission container img*/
+.missionContainer .missionStatement img {
+    width: 350px;
+}
 
 /*Create programs container*/
 .programsContainer {

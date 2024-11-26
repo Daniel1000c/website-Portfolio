@@ -4,6 +4,8 @@ import Header from './components/Header';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/siteContact';
 import './App.css';
 
 function App() {
@@ -12,8 +14,8 @@ function App() {
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" />
-      <Route path="/contact" />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="/faculty" />
       <Route path="/program" />
     </Routes>
