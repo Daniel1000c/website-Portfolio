@@ -18,7 +18,6 @@ function Header() {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>
                     <li><Link to="/contact">Contact Us</Link></li>
-                    <li><Link to="/faculty">Faculty</Link></li>
                     <li><Link to="/program">Programs</Link></li>
                 </ul>
             </nav>    

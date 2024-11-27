@@ -1,3 +1,24 @@
+/*Keyframe Formatting*/
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*End of keyframe formatting*/
+
 /*Format about container*/
 .aboutContainer {
     display: flex;
@@ -5,9 +26,10 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    background-image: url(../images/abstractVector.jpg);
+    background-image: url(../images/aboutBackground.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /*Format about title*/
@@ -18,3 +40,100 @@
     font-family: sans-serif;
     font-weight: bolder;
 }
+
+/*Format video container*/
+.videoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Format video*/
+.videoContainer iframe {
+    width: 330px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+/*Format story container*/
+.storyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/*Format story title*/
+.storyContainer h3 {
+    color: lightgreen;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+/*Format story text*/
+.storyContainer p::first-letter {
+    font-size: 30px;
+}
+
+.storyContainer p {
+    color: yellow;
+    line-height: 2;
+    width: 300px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    text-align: left;
+}
+
+/*Format scrolling banner container*/
+.scrollBanner {
+    overflow: hidden;
+}
+
+/*Format banner content*/
+.bannerContent {
+    display: flex;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+/*Format banner text*/
+.bannerText {
+    display: flex;
+}
+
+/*Format banner item*/
+.bannerItem {
+    padding: 0 30px;
+    color: white;
+}
+
+.bannerContent>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+/*Create team container*/ 
+.teamContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/*Format team title*/
+.teamContainer h3 {
+    color: lightgreen;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+
+
