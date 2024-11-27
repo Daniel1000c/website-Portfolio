@@ -14,41 +14,41 @@ function Contact() {
 
                     {/*Create contact info*/}
 
-                    <p><i class='bx bxs-phone'></i><span>Phone:</span> 305-527-0765</p>
-                    <p><i class='bx bx-envelope' ></i><span>Email:</span> velezdaniel516@gmail</p>
-                    <p><i class='bx bx-current-location' ></i><span>Address:</span> 123 Cloud Street, Sky City</p>
+                    <p><i className="bx bxs-phone"></i><span>Phone:</span> 305-527-0765</p>
+                    <p><i className="bx bx-envelope"></i><span>Email:</span> velezdaniel516@gmail</p>
+                    <p><i className="bx bx-current-location"></i><span>Address:</span> 123 Cloud Street, Sky City</p>
                 </div>
 
                 <div className="contactFormContainer">
                     {/*Create contact form*/}
                     <form className="contactForm">
                         {/*Prompt user for first name*/}
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
-                            <label for="firstName">First Name<span>*</span></label>
+                        <div className="form-floating">
+                            <input type="text" className="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                            <label htmlFor="firstName">First Name<span>*</span></label>
                         </div>
 
                         {/*Prompt user for last name*/}
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
-                            <label for="lastName">Last Name<span>*</span></label>
+                        <div className="form-floating">
+                            <input type="text" className="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                            <label htmlFor="lastName">Last Name<span>*</span></label>
                         </div>
 
                         {/*Prompt user for email*/}
-                        <div class="form-floating">
-                            <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="Email" />
-                            <label for="userEmail">Email<span>*</span></label>
+                        <div className="form-floating">
+                            <input type="email" className="form-control" id="userEmail" name="userEmail" placeholder="Email" />
+                            <label htmlFor="userEmail">Email<span>*</span></label>
                         </div>
 
                         {/*Prompt user for phone number*/}
-                        <div class="form-floating">
-                            <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" />
-                            <label for="phoneNumber">Phone Number<span>*</span></label>
+                        <div className="form-floating">
+                            <input type="tel" className="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" />
+                            <label htmlFor="phoneNumber">Phone Number<span>*</span></label>
                         </div>
 
                         {/*Prompt user for studentYear*/}
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Choose Student Year</option>
+                        <select className="form-select" aria-label="Default select example">
+                            <option value="Choose Student Year" disabled>Choose Student Year</option>
                             <option value="Freshman">Freshman</option>
                             <option value="Sophomore">Sophomore</option>
                             <option value="Junior">Junior</option>
@@ -56,9 +56,9 @@ function Contact() {
                         </select>
 
                         {/*Create text area for message*/}
-                        <div class="form-floating">
-                            <textarea class="form-control" id="message" name="message" placeholder="Message"></textarea>
-                            <label for="message">Message<span>*</span></label>
+                        <div className="form-floating">
+                            <textarea className="form-control" id="message" name="message" placeholder="Message"></textarea>
+                            <label htmlFor="message">Message<span>*</span></label>
                         </div>
 
                         {/*Create submit button*/}

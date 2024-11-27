@@ -79,28 +79,28 @@ function Home() {
 
                     {/*Create program items */}
                     <div className="programItem">
-                        <i class='bx bx-cloud' ></i>
+                        <i className="bx bx-cloud"></i>
                         <h4>Cloud Solutions</h4>
                         <p>Empower your students with cloud-based IT solutions.</p>
-                        <a href="#" target="_blank">Learn More</a>
+                        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">Learn More</a>
                     </div>
                     <div className="programItem">
-                    <i class='bx bx-shield' ></i>
+                    <i className="bx bx-shield" ></i>
                         <h4>Cybersecurity Services</h4>
                         <p>Have your students learn the fundamentals of cybersecurity.</p>
-                        <a href="#" target="_blank">Learn More</a>
+                        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">Learn More</a>
                     </div>
                     <div className="programItem">
-                        <i class='bx bx-layout' ></i>
+                        <i className="bx bx-layout" ></i>
                         <h4>Web Design</h4>
                         <p>Build reponsive and user-friendly websites for businesses.</p>
-                        <a href="#" target="_blank">Learn More</a>
+                        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">Learn More</a>
                     </div>
                     <div className="programItem">
-                        <i class='bx bx-brain' ></i>
+                        <i className="bx bx-brain"></i>
                         <h4>IT Training & Support</h4>
                         <p>Empower your team with the skills and support to excel in the digital landscape.</p>
-                        <a href="#" target="_blank">Learn More</a>
+                        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">Learn More</a>
                     </div>
                 </div>
             </div>

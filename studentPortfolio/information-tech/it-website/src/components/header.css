@@ -2,6 +2,9 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
     background-color: #031b3b;
 }
 
@@ -27,4 +30,37 @@ header .bx-menu:hover {
 /*Format nav menu*/
 header nav {
     display: none;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 200px;
+    background-color: rgba(95, 158, 160, 0.8);
+    transition: right 0.7s ease;
+    z-index: 10;
+    height: 100vh;
+}
+
+/*Create nav open*/
+header nav.open {
+    display: block;
+    right: 0;
+}
+
+/*Format nav list*/
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+}
+
+header nav ul li {
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
 }

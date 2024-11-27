@@ -1,3 +1,10 @@
+/*Font Face Formatting*/
+@font-face {
+    font-family: 'Ubuntu-Regular',sans-serif;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+/*End of font face formatting*/
+
 /*Keyframe Formatting*/
 @keyframes scroll-left {
     0% {
@@ -74,6 +81,13 @@
     font-family: sans-serif;
 }
 
+/*Format story img*/
+.storyContainer img {
+    width: 300px;
+    border-radius: 8px;
+   border: #6495ED 2px solid;
+}
+
 /*Format story text*/
 .storyContainer p::first-letter {
     font-size: 30px;
@@ -90,6 +104,7 @@
 
 /*Format scrolling banner container*/
 .scrollBanner {
+    width: 100%;
     overflow: hidden;
 }
 
@@ -124,6 +139,7 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    width: 100%;
 }
 
 /*Format team title*/
@@ -135,5 +151,209 @@
     font-weight: bolder;
 }
 
+
+/*Format team text*/
+.teamContainer p {
+    color: yellow;
+    font-style: italic;
+    text-align: center;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+/*Format faculty container*/ 
+.facultyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/*Format faculty profile card items*/
+.facultyContainer .facultyProfileCard {
+    margin-bottom: 30px;
+    background-color: #6495ED;
+    border-radius: 8px;
+    border: 2px solid lightgreen;
+}
+.facultyContainer .facultyProfileCard img{
+    width: 300px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+} 
+
+/*Format faculty profile card title*/
+.facultyContainer .facultyProfileCard h4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: 'Ubuntu-Regular',sans-serif;
+    padding-left: 5px;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*Format profile card text*/
+.facultyContainer .facultyProfileCard p {
+    color: white;
+    font-style: normal;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 5px;
+    font-family: sans-serif;
+}
+
+/*Format profile card links*/
+.facultyContainer .facultyProfileCard a {
+    text-decoration: none;
+    padding-left: 5px;
+    color: white;
+    font-size: 12px;
+    font-family: monospace;
+    transition: 0.5s ease;/*Smooth hover transition*/
+    margin-bottom: 8px;
+}
+
+/*Create hover effect for profile card links*/
+.facultyContainer .facultyProfileCard a:hover {
+    color: lightgreen;
+}
+
+/*Format social Links container*/
+.facultyContainer .facultyProfileCard .socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*Format social icons*/
+.facultyContainer .facultyProfileCard .socialLinks i {
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    color: skyblue;
+    transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+/*Create hover effect for social icons*/
+.facultyContainer .facultyProfileCard .socialLinks i:hover {
+    cursor: pointer;
+    color: lightgreen;
+}
+
+/*Format staff container*/
+.staffContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/*Format staff profile cards*/
+.staffContainer .staffProfileCard {
+    background-color: #6495ED;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 2px solid lightgreen;
+}
+
+/*Format staff container card imgs*/
+.staffContainer .staffProfileCard img {
+    width: 300px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/*Format staff profile card title*/
+.staffContainer .staffProfileCard h4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: 'Ubuntu-Regular',sans-serif;
+    padding-left: 5px;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*Format p tag*/
+.staffContainer .staffProfileCard p {
+    color: white;
+    font-size: 10px;
+    text-align: left;
+    padding: 5px;
+    text-align: center;
+}
+
+/*Format staff profile card links*/
+.staffContainer .staffProfileCard .socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*Format links*/
+.staffContainer .staffProfileCard .socialLinks i {
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    color: skyblue;
+    transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+/*Create hover effect for links*/
+.staffContainer .staffProfileCard .socialLinks i:hover {
+    cursor: pointer;
+    color: lightgreen;
+}
+
+/*Create goals container*/
+.goalsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/*Format goals title*/
+.goalsContainer h3 {
+    color: lightgreen;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/*Format goals list*/
+.goalsContainer ul {
+    background-color: rgba(100, 149, 237, 0.5);
+    list-style-type: square;
+    text-align: center;
+    border-radius: 8px;
+}
+.goalsContainer ul li {
+    color: yellow;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+    padding: 5px;
+    text-align: left;
+    font-style: italic;
+}
 
 
