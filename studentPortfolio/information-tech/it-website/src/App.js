@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/siteContact';
+import Programs from './components/Programs';
 import './App.css';
 
 function App() {
@@ -16,8 +17,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/faculty" />
-      <Route path="/program" />
+      <Route path="/program" element={<Programs />}/>
     </Routes>
     <ContactUs />
     <Footer />
