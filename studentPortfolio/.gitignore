@@ -4,7 +4,7 @@ node_modules/
 # Production build
 build/
 
-# Local environment files
+# Environment variables
 .env
 .env.local
 .env.development.local
@@ -26,3 +26,15 @@ Thumbs.db
 # Temporary folders
 coverage/
 .cache/
+.next/
+.out/
+dist/
+.parcel-cache/
+
+# Lint/Formatting cache
+.eslintcache
+.prettiercache
+
+# Lock files (if not consistently using one package manager)
+package-lock.json
+yarn.lock
