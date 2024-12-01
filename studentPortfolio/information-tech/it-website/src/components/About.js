@@ -42,7 +42,7 @@ function About() {
             
            {/*Create video container first*/}
            <div className="videoContainer">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/9VAIFBs8qDY?si=Hpkd6Bjl-GYkbmVz" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9VAIFBs8qDY?si=Hpkd6Bjl-GYkbmVz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
            </div>
 
            {/*Create goals container*/}
