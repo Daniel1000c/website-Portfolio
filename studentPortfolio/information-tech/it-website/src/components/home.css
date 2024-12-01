@@ -229,3 +229,187 @@
     color: #a8d0db;
     cursor: pointer;
 }
+
+/*Create mobile media query*/
+
+/*Mobile media query*/
+@media screen and (min-width: 768px) and (max-width: 1367px) {
+
+    /*Format home logo*/
+    .homeIntro .homeLogo {
+        width: 500px;
+    }
+
+    /*Format intro container*/
+    .introContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*Format intro container title*/
+    .introContainer h2 {
+        font-size: 50px;
+    }
+
+    /*Format intro container button*/
+    .introContainer .btn {
+        font-size: 20px;
+        width: 150px;
+        transform: translateX(-230px);
+    }
+
+    /*Format intro container text*/
+    .introContainer p {
+        font-size: 25px;
+        width: 600px;
+    }
+
+    /*Format mission statement title*/
+    .missionContainer h3 {
+        font-size: 50px;
+    }
+
+    /*Format missionon statement img*/
+    .missionContainer .missionStatement img {
+        width: 600px;
+    }
+
+    /*Format overview container titles*/
+    .overviewContainer h3 {
+        font-size: 50px;
+    }
+
+    /*Format overview text*/
+    .overviewContainer p {
+        font-size: 25px;
+        width: 600px;
+    }
+
+    /*Format overview img*/
+    .overviewContainer img {
+        width: 500px;
+    }
+
+    /*Format overview list items*/
+    .overviewContainer ul li {
+        font-size: 25px;
+    }
+
+    /*Format programs container title*/
+    .programsContainer h3 {
+        font-size: 50px;
+    }
+
+    /*Format program container cards*/
+    .programsContainer .programs .programItem {
+        width: 400px;
+        height: 450px;
+    }
+
+    /*Format program item icons*/
+    .programsContainer .programs .programItem i {
+        font-size: 200px;
+    }
+
+    /*Format program item text title*/
+    .programsContainer .programs .programItem h4{
+        font-size: 30px;
+    }
+
+    /*Format program item text*/
+    .programsContainer .programs .programItem p {
+        font-size: 15px;
+        width: 350px;
+    }
+
+    /*Format program links*/
+    .programsContainer .programs .programItem a {
+        font-size: 20px;
+        width: 150px;
+    }
+}
+
+/*Create desktop media query*/
+
+/*Desktop media query*/
+@media screen and (min-width: 1368px) {
+
+    /*Format home intro logo*/
+    .homeIntro .homeLogo {
+        width: 600px;
+    }
+
+    /*Format intro container*/
+    .homeIntro  .introContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*Format intro container title*/
+    .homeIntro .introContainer h2 {
+        font-size: 50px;
+    }
+
+    /*Format intro text*/
+    .homeIntro .introContainer p {
+        font-size: 25px;
+        width: 900px;
+    }
+
+    /*Format intro button*/
+    .homeIntro .introContainer .btn {
+        font-size: 20px;
+        width: 150px;
+        transform: translateX(-370px);
+    }
+
+    /*Format mission statement title*/
+    .missionContainer h3 {
+        font-size: 40px;
+    }
+
+
+    /*Format overview titles*/
+    .overviewContainer h3 {
+        font-size: 60px;
+    }
+
+    /*Format overview text*/
+    .overviewContainer p {
+        font-size: 30px;
+        width: 1200px;
+    }
+
+    /*Format overview img*/
+    .overviewContainer img {
+        width: 600px;
+    }
+
+    /*Format overview list items*/
+    .overviewContainer ul li {
+        font-size: 25px;
+    }
+
+    /*Format programs container title*/
+    .programsContainer h3 {
+        font-size: 50px;
+    }
+
+    /*Format programs container*/
+    .programsContainer .programs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    /*Format mission statement img*/
+    .missionContainer .missionStatement img {
+        width: 700px;
+    }
+}

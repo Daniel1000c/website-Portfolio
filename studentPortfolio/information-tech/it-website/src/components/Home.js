@@ -16,17 +16,19 @@ function Home() {
         
         <section className="homeIntro">
             {/*insert home company logo */}
-            <img src={homeImage} alt="Cloud ware logo"/>
+            <img className="homeLogo" src={homeImage} alt="Cloud ware logo"/>
 
             {/*Create home intro section */}
-            <h2>Cloud ware: The Future of IT</h2>
+            <div className="introContainer">
+                <h2>Cloud ware: The Future of IT</h2>
 
-            {/*Create intro home paragraph */}
-            <p>We are a leading provider of cloud-based IT solutions for businesses of all sizes. Our mission is to empower organizations with the tools they need to succeed in the digital age.</p>
+                {/*Create intro home paragraph */}
+                <p>We are a leading provider of cloud-based IT solutions for businesses of all sizes. Our mission is to empower organizations with the tools they need to succeed in the digital age.</p>
 
-            {/*Create about us button */}
-            <Link to="/about" className="btn">See More</Link>
-
+                {/*Create about us button */}
+                <Link to="/about" className="btn">See More</Link>    
+            </div>
+            
             {/*Create mission statement*/}
             <div className="missionContainer">
                 <h3>CloudWare's Mission</h3>
@@ -82,25 +84,25 @@ function Home() {
                         <i className="bx bx-cloud"></i>
                         <h4>Cloud Solutions</h4>
                         <p>Empower your students with cloud-based IT solutions.</p>
-                        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">Learn More</a>
+                        <Link to={"/program"}>Learn More</Link>
                     </div>
                     <div className="programItem">
                     <i className="bx bx-shield" ></i>
                         <h4>Cybersecurity Services</h4>
                         <p>Have your students learn the fundamentals of cybersecurity.</p>
-                        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">Learn More</a>
+                        <Link to="/program">Learn More</Link>
                     </div>
                     <div className="programItem">
                         <i className="bx bx-layout" ></i>
                         <h4>Web Design</h4>
-                        <p>Build reponsive and user-friendly websites for businesses.</p>
-                        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">Learn More</a>
+                        <p>Build responsive and user-friendly websites for businesses.</p>
+                        <Link to="/program">Learn More</Link>
                     </div>
                     <div className="programItem">
                         <i className="bx bx-brain"></i>
                         <h4>IT Training & Support</h4>
                         <p>Empower your team with the skills and support to excel in the digital landscape.</p>
-                        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">Learn More</a>
+                        <Link to="/program">Learn More</Link>
                     </div>
                 </div>
             </div>

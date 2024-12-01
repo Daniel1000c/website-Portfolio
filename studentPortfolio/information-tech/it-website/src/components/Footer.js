@@ -27,7 +27,6 @@ function Footer () {
                     <p><span>Phone:</span> 305-527-0765</p>
                     <p><span>Email:</span> velezdaniel516@gmail</p>
                     <p><span>Address:</span> 123 Cloud Street, Sky City</p>
-                    <p></p>
                 </div>
                 <div className="quickLinks">
                     <h4>Quick Links</h4>
@@ -40,7 +39,7 @@ function Footer () {
                 </div>
             </div>
 
-            <p>&copy; Cloud Ware 2024 | All Rights Reserved</p>
+            <p className="copyright">&copy; Cloud Ware 2024 | All Rights Reserved</p>
         </footer>
     );
 }

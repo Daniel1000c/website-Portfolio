@@ -109,11 +109,6 @@
     text-align: center;
 }
 
-/*Format contact info text statements*/
-.contactUsContainer .contactInfoContainer .contactItemText p {
-    text-align: left;
-}
-
 /*Format contact info icons*/
 .contactUsContainer .contactInfoContainer .contactItemText p i {
     margin-right: 10px;
@@ -138,4 +133,104 @@
     color: lightblue;
     font-family: monospace;
     font-size: 12px;
+    text-align: left;
+}
+
+
+/*Format for mobile view*/
+@media screen and (min-width: 768px) and (max-width: 1367px) {
+    /*Format contact us title*/
+    .contactUsContainer h2 {
+        font-size: 40px;
+    }
+
+    /*Format contact information title*/
+    .contactUsContainer .contactInfoContainer .contactItemText h3 {
+        font-size: 30px;
+    }
+
+    /*Format contact information text*/
+    .contactUsContainer .contactInfoContainer .contactItemText p {
+        font-size: 20px;
+    }
+
+    /*Format icons*/
+    .contactUsContainer .contactInfoContainer .contactItemText p i {
+        font-size: 30px;
+        margin-right: 15px;
+    }
+    
+    
+    /*Format contact form*/
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm .form-floating input[type="text"],
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm .form-floating input[type="email"],
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm .form-floating input[type="tel"],
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm select,
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm .form-floating textarea {
+        width: 400px;
+    }
+
+    /*Format submit button*/
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm input[type="submit"] {
+        width: 180px;
+        padding: 20px;
+        font-size: 25px;
+    }
+}
+
+/*Create desktop media query*/
+@media screen and (min-width: 1368px) {
+    /*Format contact us title*/
+    .contactUsContainer h2 {
+        font-size: 50px;
+    }
+
+    /*Format contact container orientation*/
+    .contactUsContainer .contactInfoContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: normal;
+        flex-direction: row;
+        gap: 300px;
+    }
+
+    /*Format contact info container title*/
+    .contactUsContainer .contactInfoContainer .contactItemText h3 {
+        font-size: 50px;
+    }
+
+    /*Format contact info container text*/
+    .contactUsContainer .contactInfoContainer .contactItemText p {
+        font-size: 25px;
+    }
+
+    /*Format icons*/
+    .contactUsContainer .contactInfoContainer .contactItemText p i {
+        font-size: 40px;
+        margin-right: 25px;
+    }
+
+    /*Format contact form*/
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm {
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: normal;
+        flex-direction: column;
+    }
+
+    /*Format form inputs*/
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm .form-floating input[type="text"],
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm .form-floating input[type="email"],
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm .form-floating input[type="tel"],
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm select,
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm .form-floating textarea {
+        width: 400px;
+    }
+
+    /*Format submit button*/
+    .contactUsContainer .contactInfoContainer .contactFormContainer .contactForm input[type="submit"] {
+        font-size: 30px;
+        width: 160px;
+    }
 }

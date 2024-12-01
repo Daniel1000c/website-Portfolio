@@ -21,9 +21,11 @@ function About() {
     return(
        <section className="aboutContainer">
            <h2>About Cloud Ware</h2>
+           
+           <h3>Our Story</h3>
             {/*Create our story div*/}
            <div className="storyContainer">
-                <h3>Our Story</h3>
+                
 
                 <img src={groupPhoto} alt="Cloud Ware Team" />
 
@@ -113,10 +115,9 @@ function About() {
                     </div>
                 </div>
 
+                <h3>Staff Spotlight</h3>
                 {/*Create staff container*/}
                 <div className="staffContainer">
-                    <h3>Staff Spotlight</h3>
-
                     <div className="staffProfileCard">
                         <img src={josh} alt="Josh Alvarez" />
                         <h4>Josh Alvarez</h4>

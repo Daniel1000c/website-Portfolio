@@ -4,7 +4,7 @@ import './programs.css';
 //Import program images
 import cloud from '../images/cloud.jpg';
 import cybersecurity from '../images/cybersecurity.jpg';
-import engineering from '../images/engineer.jpg';
+import engineering from '../images/engineering.jpg';
 import itTraining from '../images/itTraining.jpg';
 import webDevelopment from '../images/webDesign.jpg';
 import dataAnalytics from '../images/dataAnalytics.png';
@@ -29,6 +29,7 @@ function Programs() {
                     <h3>Cloud Computing</h3>
                     <p>Duration: 4 Years</p>
                     <p>Learn cloud infrastructure, networking, and security using platforms like AWS and Azure.</p>
+                    
                     <div className="btnContainer">
                         <button>Learn More</button>
                     </div>

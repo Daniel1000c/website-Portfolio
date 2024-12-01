@@ -181,3 +181,135 @@
     background-color: darkmagenta;
     cursor: pointer;
 }
+
+/*Create tablet media query*/
+@media screen and (min-width: 768px) and (max-width: 1367px) {
+    /*Format programs title*/
+    .programContainer h2 {
+        font-size: 40px;
+    }
+
+    /*Format program intro text*/
+    .programContainer p {
+        font-size: 18px;
+        width: 700px;
+        text-align: left;
+    }
+
+    /**Format program cards*/
+    .programCardContainer .programCard {
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+
+    }
+
+    .programCardContainer .programCard img {
+        width: 100%;
+        height: auto; /* Maintains the aspect ratio */
+        object-fit: cover; /* Ensures consistent cropping without distortion */
+        height: 200px; /* Optionally constrain the maximum height */
+    }
+
+    /*Format program text*/
+    .programCardContainer .programCard p {
+        font-size: 13px;
+        width: 450px;
+    }
+
+    /*Format program buttons*/
+    .programCardContainer .programCard .btnContainer button {
+        width: 180px;
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    /*Format apply form title*/
+    .applyFormContainer h3 {
+        font-size: 45px;
+    }
+
+    /*Format apply form*/
+    .applyFormContainer .applyForm {
+        width: 450px;
+    }
+
+    /*Format inputs*/
+    .applyFormContainer .applyForm input {
+        width: 400px;
+    }
+
+    /*Format select container*/ 
+    .applyFormContainer .applyForm select {
+        width: 400px;
+    }
+
+    /*Format submit button*/
+    .applyFormContainer .applyForm button {
+        width: 180px;
+        padding: 20px;
+        font-size: 25px;
+    }
+}
+
+/*Create desktop media query*/
+@media screen and (min-width: 1368px) {
+    /*Format programs title*/
+    .programContainer h2 {
+        font-size: 50px;
+    }
+
+    /*Format program intro text*/
+    .programContainer p {
+        font-size: 20px;
+        width: 1000px;
+        text-align: left;
+    }
+
+    /*Format program cards*/
+    .programCardContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .programCardContainer .programCard {
+        width: 450px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .programCardContainer .programCard img {
+        width: 100%;
+        height: auto; /* Maintains the aspect ratio */
+        object-fit: cover; /* Ensures consistent cropping without distortion */
+        height: 200px; /* Optionally constrain the maximum height */
+    }
+
+    /*Format program text*/
+    .programCardContainer .programCard p {
+        font-size: 15px;
+        width: 430px;
+    }
+
+    /*Format apply form title*/
+    .applyFormContainer h3 {
+        font-size: 40px;
+    }
+
+    /*Format apply form*/
+    .applyFormContainer .applyForm {
+        width: 450px;
+    }
+
+    /*Format inputs*/
+    .applyFormContainer .applyForm input {
+        width: 400px;
+    }
+
+    /*Format select container*/
+    .applyFormContainer .applyForm select {
+        width: 400px;
+    }
+}

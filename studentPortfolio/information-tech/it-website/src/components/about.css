@@ -48,6 +48,14 @@
     font-weight: bolder;
 }
 
+.aboutContainer h3 {
+    color: lightgreen;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
 /*Format video container*/
 .videoContainer {
     display: flex;
@@ -69,7 +77,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
     padding: 20px;
 }
 
@@ -354,6 +361,224 @@
     padding: 5px;
     text-align: left;
     font-style: italic;
+}
+
+/*Create mobile media query*/
+@media screen and (min-width: 768px) and (max-width: 1367px) {
+    /*Format story container title*/
+    .aboutContainer h2 {
+        font-size: 50px;
+    }
+
+    .aboutContainer h3 {
+        font-size: 40px;
+    }
+
+    /*Format story container img*/
+    .storyContainer img {
+        width: 600px;
+    }
+
+    /*Format story container text*/
+    .storyContainer p {
+        font-size: 25px;
+        width: 600px;
+        margin-top: 25px;
+    }
+
+    /*Format video */
+    .videoContainer iframe {
+        width: 600px;
+        height: 400px;
+    }
+
+    /*Format our goals title*/
+    .goalsContainer h3 {
+        font-size: 45px;
+    }
+    
+    /*Format our goals list*/
+    .goalsContainer ul {
+        padding: 30px;
+    }
+
+    .goalsContainer ul li {
+        font-size: 25px;
+    }
+
+    /*Format our staff title*/
+    .teamContainer h3 {
+        font-size: 45px;
+    }
+
+    /*Format our staff text*/
+    .teamContainer p {
+        font-size: 20px;
+    }
+
+    /*Format our faculty cards*/
+    .teamContainer .facultyProfileCard {
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /*Format our faculty imgs*/
+    .teamContainer .facultyProfileCard img {
+        width: 495px;
+    }
+
+    /*Format our faculty names*/
+    .teamContainer .facultyProfileCard h4 {
+        font-size: 40px;
+    }
+
+    /*Format our faculty p tags*/
+    .teamContainer .facultyProfileCard p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*Format our faculty links*/
+    .teamContainer .facultyProfileCard a {
+        font-size: 20px;
+    }
+
+    /*Format our staff links*/
+    .teamContainer .facultyProfileCard .socialLinks i {
+        font-size: 40px;
+    }
+
+    /*Format our staff profile cards*/
+    .staffContainer .staffProfileCard {
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /*Format our staff imgs*/
+    .staffContainer .staffProfileCard img {
+        width: 495px;
+    }
+
+    /*Format our staff names*/
+    .staffContainer .staffProfileCard h4 {
+        font-size: 40px;
+    }
+
+    /*Format our staff p tags*/
+    .staffContainer .staffProfileCard p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*Format our staff icons*/
+    .staffContainer .staffProfileCard .socialLinks i {
+        font-size: 40px;
+    }
+
+}
+
+/*Create desktop media query*/
+@media screen and (min-width: 1368px) {
+    /*Format our story title*/
+    .storyContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    /*Format our story img*/
+    .storyContainer img {
+        width: 500px;
+    }
+
+    /*Format our story title*/
+    .storyContainer h3 {
+        font-size: 50px;
+    }
+
+    /*Format out story text*/
+    .storyContainer p {
+        font-size: 20px;
+        width: 900px;
+    }
+
+    /*Format video */
+    .videoContainer iframe {
+        width: 1000px;
+        height: 600px;
+    }
+
+    /*Format our goals title*/
+    .goalsContainer h3 {
+        font-size: 50px;
+    }
+
+    /*Format our goals list*/
+    .goalsContainer ul {
+        padding: 25px;
+    }
+
+    .goalsContainer ul li {
+        font-size: 20px;
+    }
+
+    /*Format faculty title*/
+    .teamContainer h3 {
+        font-size: 50px;
+    }
+
+    /*Format team container text*/
+    .teamContainer p {
+        font-size: 20px;
+    }
+
+    /*Format faculty container oreintation*/
+    .facultyContainer {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    /*Format staff container*/
+    .staffContainer {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    /*Format staff container card*/
+    .staffContainer .staffProfileCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Format staff container card imgs*/
+    .staffContainer .staffProfileCard img {
+        width: 400px;
+    }
+
+    /*Format staff profile card title*/
+    .staffContainer .staffProfileCard h4 {
+        font-size: 30px;
+    }
+
+    /*Format staff profile card links*/
+    .staffContainer .staffProfileCard .socialLinks i {
+        font-size: 30px;
+    }
+
+    /*format card text*/
+    .staffContainer .staffProfileCard p {
+        font-size: 11.5px;
+        width: 300px;
+        text-align: center;
+    }
 }
 
 
