@@ -1,0 +1,214 @@
+/*Footer Formatting*/
+footer {
+    background-color: #031b3b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    position: relative;
+    font-size: 13px;
+}
+
+
+/*Format footer img*/
+footer .footerLogo {
+    font-size: 17px;
+}
+footer .footerLogo img {
+    width: 120px;
+}
+
+/*Format footer social media icons*/
+footer .footerLogo .socialIconContainer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footerLogo .socialIconContainer i {
+    color: darkcyan;
+    border: 1px solid darkcyan;
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.5s ease;/*Smooth transition hover*/
+}
+
+/*Create social icon hover effect*/
+footer .footerLogo .socialIconContainer i:hover {
+    color: white;
+}
+
+/*Format footer text*/
+footer .footerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Format text for footer information*/
+footer .footerInfo .contactInformation, footer .footerInfo .quickLinks {
+    text-align: left;
+}
+
+/*Format quick links*/
+footer .footerInfo .quickLinks ul {
+    list-style-type: none;
+}
+
+/*Format list items*/
+footer .footerInfo .quickLinks ul li {
+    margin: 5px 0px;
+}
+
+/*Format list a tags*/
+footer .footerInfo .quickLinks ul li a {
+    text-decoration: none;
+    color: white;
+    cursor: none;
+    font-size: 16px;
+    transition: 0.5s ease;/*Smooth  hover transition*/
+}
+
+/**Create hover effect for list a tags*/
+footer .footerInfo .quickLinks ul li a:hover {
+    color: lightgreen;
+    cursor: pointer;
+}
+
+
+/*Format text titles*/
+footer .footerInfo .contactInformation h4, footer .footerInfo .quickLinks h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    color: lightgreen;
+    text-align: center;
+}
+
+/*Format contact information p tags*/
+footer .footerInfo .contactInformation p {
+    margin-bottom: 5px;
+    font-family: monospace;
+    font-size:  10.5px;
+    margin-left: 130px;
+}
+
+/*Format text span*/
+footer .footerInfo .contactInformation p span {
+    color: yellowgreen;
+}
+
+footer .footerInfo .contactInformation {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+footer .footerInfo .quickLinks {
+    margin-bottom: 15px;
+}
+
+
+/*Create media query for mobile view*/
+@media screen and (min-width: 768px) and (max-width: 1367px) {
+/*Format footer logo*/
+    footer .footerLogo img {
+        width: 250px;
+    }
+
+    /*Format footer social icons*/
+    footer .footerLogo .socialIconContainer i{
+        padding: 15px;
+        font-size: 40px;
+    }
+
+    /*Format contact information title*/
+    footer .footerInfo .contactInformation h4 {
+        font-size: 35px;
+    }
+
+    /*Format contact information text*/
+    footer .footerInfo .contactInformation p {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    /*Format quick links title*/
+    footer .footerInfo .quickLinks h4 {
+        font-size: 35px;
+    }
+
+    /*Format list items*/
+    footer .footerInfo .quickLinks ul li a {
+        margin: 10px 0px;
+        font-size: 35px;
+    }
+
+    /*Format copyright*/
+    footer .copyright { 
+        font-size: 25px;
+    }
+}
+
+
+/*Create media query for desktop*/
+@media screen and (min-width: 1368px) {
+    /*Format container orientation*/
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    /*Format footer information into row*/
+    footer .footerInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        gap: 200px;
+    }
+
+    /*Format footer img*/
+    footer .footerLogo img {
+        width: 150px;
+    }
+
+    /*Format footer social icons*/
+    footer .footerLogo .socialIconContainer i{
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    /*Format footer text and quicklinks*/
+    footer .footerInfo .contactInformation h4 {
+        text-align: left;
+        font-size: 35px;
+    }
+
+    /*Format contact information text*/
+    footer .footerInfo .contactInformation p {
+        font-size: 20px;
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+
+    /*Format quick links text*/
+    footer .footerInfo .quickLinks h4 {
+        text-align: left;
+        font-size: 35px;
+    }
+
+    /*Format list a tags*/
+    footer .footerInfo .quickLinks ul li a {
+        font-size: 20px;
+    }
+
+    /*Format footer p tag */
+    footer .copyright {
+        transform: translateY(100px);
+    }
+}
