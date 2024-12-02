@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title> </title>
+    <title>Broward Pawn </title>
     <link rel="stylesheet" href="../public/stylesheets/style.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
@@ -22,24 +22,31 @@
                 <li> <a href="../public/contact.html">Contact Us</a></li>
             </ul>
         </nav>
-    </header>
-    <section class="formContainer">
-        <h2>Get in Touch with Our Team</h2>
-        <form class="contactForm" action="/https://https://professorcooke.org/forms/processform.php" method="POST">
-            <!--Prompt user for first name--><label for="firstName">First Name</label><br><input type="text"
-                name="firstName" id="firstName" required
-                placeholder="john..."><br><!--Prompt user for last Name--><label for="lastName">Last
-                Name</label><br><input type="text" name="lastName" id="lastName" required
-                placeholder="doe..."><br><!--Prompt user for email--><label for="email">Email</label><br><input
-                type="email" name="email" id="email" required
-                placeholder="johndoe413@gmail.com"><br><!--Prompt user for phone #--><label for="phoneNumber">Phone
-                Number</label><br><input type="tel" name="phoneNumber" id="phoneNumber" required
-                placeholder="xxx-xxx-xxxx"><br><!--Prompt user for subject line--><label for="subject">Subject
-            </label><br><input type="text" name="subject" id="subject" required
-                placeholder="Type in Message Subject"><br><!--Prompt user with text message--><label
-                for="message">Message</label><br><textarea id="message" name="message" rows="5" cols="40"
-                required>  </textarea><br><!--Prompt user for submit button--><input type="submit" value="Send"></form>
-    </section>
+    </header><!--Create header intro img-->
+    <section class="introSection">
+        <h2>Broward Pawn</h2>
+        <p>"Find your hidden Treasure here"</p>
+    </section><!--Create Payment loans container-->
+    <section class="LoanPaymentContainer">
+        <h2>Pay Your Loans <span>Online!</span></h2><!--Create item container-->
+        <div class="itemContainer">
+            <div class="loanItem"><i class="bi bi-telephone-forward-fill"></i>
+                <h4>Request Access </h4>
+                <p>Give us a call at the store you initiated your loan or layaway.</p>
+            </div>
+            <div class="loanItem"><i class="bi bi-phone"></i>
+                <h4>Receive Your Activation Text</h4>
+                <p>After giving us a call, you will receive an activation text that will ask you a few questions.</p>
+            </div>
+            <div class="loanItem"><i class="bi bi-person-badge"></i>
+                <h4>Create an Account </h4>
+                <p>You will be prompted to create an account where you can view and make payments on your items.</p>
+            </div>
+        </div>
+    </section><!--Create contact button section-->
+    <div class="contactContainer">
+        <h2>Get in Touch</h2><a href="../public/contact.html">See More </a>
+    </div>
     <footer>
         <div class="socialMediaContainer"><img src="images/browardPawnLogo.png" alt="Broward Pawn">
             <div class="socialIconsContainer"><a href="https://www.facebook.com/" target="_blank"> <i
