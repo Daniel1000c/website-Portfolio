@@ -19,6 +19,7 @@
 ### 📫 How to Reach Me
 
 - **Email**: [velezdaniel6162@gmail.com](mailto:velezdaniel6162@gmail.com)
+- **Phone #**: [+1 (305) 527-0765](tel:+13055270765)
 
 ### ⚡ Fun Fact
 
