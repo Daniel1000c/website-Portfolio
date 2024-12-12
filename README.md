@@ -29,6 +29,8 @@
 ## Connect with Me
 
 <!-- Add social media links or additional contact methods here -->
+- **Work Email**: [velezdaniel6162@gmail.com](mailto:velezdaniel6162@gmail.com)
+- **LinkedIn**: [Daniel Velez](https://www.linkedin.com/in/daniel-velez-b17748286/)
 
 ---
 
@@ -71,8 +73,4 @@
 
 <p>
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=daniel1000c&show_icons=true&locale=en" alt="daniel1000c" />
-</p>
-
-<p>
-  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=daniel1000c&" alt="daniel1000c" />
 </p>
